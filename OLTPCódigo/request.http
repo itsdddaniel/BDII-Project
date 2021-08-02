@@ -1,0 +1,26 @@
+###
+GET http://localhost:4000/job HTTP/1.1
+
+###
+GET http://localhost:4000/branchOffice HTTP/1.1
+
+###
+GET http://localhost:4000/client HTTP/1.1
+
+###
+GET http://localhost:4000/conveyance HTTP/1.1
+
+###
+GET http://localhost:4000/carModel HTTP/1.1
+
+###
+GET http://localhost:4000/employee HTTP/1.1
+
+###
+GET http://localhost:4000/vehicle HTTP/1.1
+
+###
+GET http://localhost:4000/trip HTTP/1.1
+
+###
+GET http://localhost:4000/tripState HTTP/1.1
