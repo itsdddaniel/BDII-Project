@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MongoDB to SQLServer", "Integration Services Project2\MongoDB to SQLServer.dtproj", "{1410FC79-D287-42D1-8403-CF8A17C2398D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1410FC79-D287-42D1-8403-CF8A17C2398D}.Development|Default.ActiveCfg = Development
+		{1410FC79-D287-42D1-8403-CF8A17C2398D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAF45398-AB0B-47F2-9A58-3ECB07A0D251}
+	EndGlobalSection
+EndGlobal
