@@ -1,0 +1,3349 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/13/2021 12:37:01 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="EMILIO-PC"
+  DTS:CreatorName="Emilio-PC\Emilio"
+  DTS:DTSID="{A33809BB-5115-413E-9063-62981E65E855}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{9CB218F3-5133-4465-BA3D-25D87AA7EF36}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OLAP - API]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A26831D4-5C0A-43DB-B6FB-F89EEA10D84D}"
+      DTS:ObjectName="OLAP - API">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;User ID=admin;Initial Catalog=OLAPAPI;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD/GjB3A2MWwUvIcMxYB5TgxkrM1dKswfj9ciWcEWHT+AAAAAAOgAAAAAIAACAAAADe0L4IgPF/1q6VaGxlxRCMF33cA1raVXT3fr+jjl1IvBAAAABVqRKmX8Y2xFUoP4ifO23kQAAAACJpJbzBPxq4Q1vC7S0SmZuuzWG/LhiV/MXP4i5XfiFFriEptQUISW6ZdXsq0sPCb+cMjvz2xrsjEv9KuTdaTfQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OLTP]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CB94F8B5-6E14-49DD-91A8-F523B9C383B4}"
+      DTS:ObjectName="OLTP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;User ID=admin;Initial Catalog=APIOLTP;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC7a0MbPyD82FTuL9Fg5Mw8En+R0cmRwzIlnpw5XwHUKwAAAAAOgAAAAAIAACAAAABEkVslq0cq42zkp+Sbo1CSQwuZOFv/8UxUm22m8k/s4RAAAAC3JDxkSG++KE2iZrZHKKMKQAAAAKH1RlS0YQDbIAnuol3ZiHDI7RIEV7ukwy8c3pIPcTk1Flkzj89yw530xxfcWXMw2hmNoGNSQN7AvG5yPGNFqY8</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Carga Tabla de Hechos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{3E4EB4FA-CD14-4415-893B-1C5E8223D798}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga Tabla de Hechos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos de Hechos 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Inputs[Entrada de conversión de datos]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tabla de Hechos\Destino de Hechos 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de Hechos 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[H_CANAL]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[ID_ESTADISTICAS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_ESTADISTICAS"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]" />
+                    <inputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[ID_VIDEOS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ID_VIDEOS"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_ESTADISTICAS" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_VIDEOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[H_ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="H_ID_CANAL" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tabla de Hechos\Origen de Hechos"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Hechos"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'ID_CANAL',
+CAST([_id] AS VARCHAR(1000)) AS 'ID_ESTADISTICAS',
+CAST([video_id] AS VARCHAR(1000)) AS 'ID_VIDEOS'
+FROM apidata;</property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tabla de Hechos\Origen de Hechos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLTP]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      length="50"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
+                      length="50"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      name="ID_ESTADISTICAS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      length="50"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
+                      name="ID_VIDEOS"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_CANAL" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_ESTADISTICAS" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_VIDEOS" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      name="ID_ESTADISTICAS" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
+                      name="ID_VIDEOS" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
+              endId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\Carga Tabla de Hechos.Paths[Salida de origen de OLE DB]"
+              endId="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Carga Tablas de Dimensión"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{94DAA838-FB3D-4E23-8F22-7CD4E475C4D6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga Tablas de Dimensión"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos de Canal"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Inputs[Entrada de conversión de datos]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos de Estadisticas"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Conversión de datos"
+              name="Conversión de datos de Videos"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]"
+                  name="Entrada de conversión de datos">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de conversión de datos]"
+                  exclusionGroup="1"
+                  name="Salida de conversión de datos"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de conversión de datos"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Destino de Canal"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de Canal"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[D_CANAL]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tablas de Dimensión\Destino de Canal.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].Columns[channel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="channel"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRE]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[channel]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_CANAL]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_CANAL" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Destino de Canal.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Canal.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Canal.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de Estadisticas"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[D_ESTADISTICAS]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[likes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="likes"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[LIKES]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[likes]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[dislikes]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="dislikes"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[DISLIKES]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[dislikes]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[views]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="views"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[VISTAS]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[views]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[comments]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="comments"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[COMENTARIOS]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[comments]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[published]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="published"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[PUBLISHED]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[published]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_ESTADISTICA" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[VISTAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="VISTAS" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[LIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="LIKES" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[DISLIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="DISLIKES" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[COMENTARIOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="COMENTARIOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[PUBLISHED]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="PUBLISHED" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Destino de Videos"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Destino de Videos"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[D_VIDEOS]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tablas de Dimensión\Destino de Videos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].Columns[url]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="url"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[URL]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[url]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].Columns[id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].Columns[title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[TITULO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[title]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_VIDEO" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[TITULO]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="TITULO" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[URL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="URL" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Origen de Canal"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Canal"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
+CAST([channel_title] AS VARCHAR(1000)) AS 'channel'
+FROM apidata;</property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tablas de Dimensión\Origen de Canal.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLTP]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[channel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[channel]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[channel]"
+                      name="channel"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="channel" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[channel]"
+                      name="channel" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Estadisticas"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
+CAST([views] AS VARCHAR(1000)) AS 'views',
+CAST([likes] AS VARCHAR(1000)) AS 'likes',
+CAST([dislikes] AS VARCHAR(1000)) AS 'dislikes',
+CAST([comments] AS VARCHAR(1000)) AS 'comments',
+CAST([date_video] AS VARCHAR(1000)) AS 'published'
+FROM apidata;</property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLTP]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[views]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[views]"
+                      name="views"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[likes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[likes]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[likes]"
+                      name="likes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[dislikes]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[dislikes]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[dislikes]"
+                      name="dislikes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[comments]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[comments]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[comments]"
+                      name="comments"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[published]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[published]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[published]"
+                      name="published"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="views" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[likes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="likes" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[dislikes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="dislikes" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[comments]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="comments" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[published]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="published" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[views]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[views]"
+                      name="views" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[likes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[likes]"
+                      name="likes" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[dislikes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[dislikes]"
+                      name="dislikes" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[comments]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[comments]"
+                      name="comments" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[published]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[published]"
+                      name="published" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Carga Tablas de Dimensión\Origen de Videos"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Videos"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
+CAST([video_title] AS VARCHAR(1000)) AS 'title',
+CAST([url_video] AS VARCHAR(1000)) AS 'url'
+FROM apidata;</property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Carga Tablas de Dimensión\Origen de Videos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLTP]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[url]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[url]"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[url]"
+                      name="url"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[url]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="url" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      name="id" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[title]"
+                      name="title" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[url]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[url]"
+                      name="url" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos]"
+              endId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
+              endId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos2]"
+              endId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de conversión de datos"
+              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de conversión de datos]" />
+            <path
+              refId="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
+              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB]" />
+            <path
+              refId="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
+              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB]" />
+            <path
+              refId="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Vaciado de Tabla de Hechos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{0A19D9BA-9471-488C-953E-539AEAC42F6A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Vaciado de Tabla de Hechos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Ejecuta una instrucción SQL para cada fila de un flujo de datos. Por ejemplo, se usa para llamar al procedimiento almacenado de configuración de nuevo empleado para cada fila de la tabla de nuevos empleados. Nota: la ejecución de una instrucción SQL para cada fila de un flujo de datos de gran tamaño puede tardar mucho tiempo."
+              name="Eliminación de Hechos"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM H_CANAL WHERE H_ID_CANAL = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB]"
+                  errorOrTruncationOperation="Ejecución de comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de comando de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].Columns[H_ID_CANAL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="H_ID_CANAL"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[H_ID_CANAL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Outputs[Salida de comando de OLE DB]"
+                  exclusionGroup="1"
+                  name="Salida de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Outputs[Salida de error de comando de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Hechos"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[H_CANAL]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      name="ID_ESTADISTICAS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
+                      name="ID_VIDEOS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[H_ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[H_ID_CANAL]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[H_ID_CANAL]"
+                      name="H_ID_CANAL"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_ESTADISTICAS" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_VIDEOS" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[H_ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="H_ID_CANAL" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[H_ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[H_ID_CANAL]"
+                      name="H_ID_CANAL" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      name="ID_ESTADISTICAS" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
+                      name="ID_VIDEOS" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Vaciado de Tabla de Hechos.Paths[Salida de origen de OLE DB]"
+              endId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Vaciado de Tablas de Dimensión"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{735B1548-30B7-4A12-8F98-2628B7A3AE4E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Vaciado de Tablas de Dimensión"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Ejecuta una instrucción SQL para cada fila de un flujo de datos. Por ejemplo, se usa para llamar al procedimiento almacenado de configuración de nuevo empleado para cada fila de la tabla de nuevos empleados. Nota: la ejecución de una instrucción SQL para cada fila de un flujo de datos de gran tamaño puede tardar mucho tiempo."
+              name="Eliminación de Canal"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM D_CANAL WHERE ID_CANAL = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB]"
+                  errorOrTruncationOperation="Ejecución de comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de comando de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB].Columns[ID_CANAL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="ID_CANAL"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Outputs[Salida de comando de OLE DB]"
+                  exclusionGroup="1"
+                  name="Salida de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Outputs[Salida de error de comando de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Ejecuta una instrucción SQL para cada fila de un flujo de datos. Por ejemplo, se usa para llamar al procedimiento almacenado de configuración de nuevo empleado para cada fila de la tabla de nuevos empleados. Nota: la ejecución de una instrucción SQL para cada fila de un flujo de datos de gran tamaño puede tardar mucho tiempo."
+              name="Eliminación de Estadisticas"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM D_ESTADISTICAS WHERE ID_ESTADISTICA = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB]"
+                  errorOrTruncationOperation="Ejecución de comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de comando de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB].Columns[ID_ESTADISTICA]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="ID_ESTADISTICA"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICA]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Outputs[Salida de comando de OLE DB]"
+                  exclusionGroup="1"
+                  name="Salida de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Outputs[Salida de error de comando de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Comando de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Ejecuta una instrucción SQL para cada fila de un flujo de datos. Por ejemplo, se usa para llamar al procedimiento almacenado de configuración de nuevo empleado para cada fila de la tabla de nuevos empleados. Nota: la ejecución de una instrucción SQL para cada fila de un flujo de datos de gran tamaño puede tardar mucho tiempo."
+              name="Eliminación de Videos"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM D_VIDEOS WHERE ID_VIDEO = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB]"
+                  errorOrTruncationOperation="Ejecución de comando"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de comando de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB].Columns[ID_CANAL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1000"
+                      cachedName="ID_CANAL"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
+                      dataType="i4"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Información de parámetros. Coincide con los valores de DBPARAMFLAGSENUM de OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Outputs[Salida de comando de OLE DB]"
+                  exclusionGroup="1"
+                  name="Salida de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Outputs[Salida de error de comando de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de comando de OLE DB"
+                  synchronousInputId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Outputs[Salida de error de comando de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Canal"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[D_CANAL]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      name="NOMBRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NOMBRE" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_CANAL" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      name="NOMBRE" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Estadisticas"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[D_ESTADISTICAS]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      name="ID_ESTADISTICA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[VISTAS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[VISTAS]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[VISTAS]"
+                      name="VISTAS"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[LIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[LIKES]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[LIKES]"
+                      name="LIKES"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[DISLIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[DISLIKES]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[DISLIKES]"
+                      name="DISLIKES"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[COMENTARIOS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[COMENTARIOS]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[COMENTARIOS]"
+                      name="COMENTARIOS"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_ESTADISTICA" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[VISTAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="VISTAS" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[LIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="LIKES" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[DISLIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="DISLIKES" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[COMENTARIOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="COMENTARIOS" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      name="ID_ESTADISTICA" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[VISTAS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[VISTAS]"
+                      name="VISTAS" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[LIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[LIKES]"
+                      name="LIKES" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[DISLIKES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[DISLIKES]"
+                      name="DISLIKES" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[COMENTARIOS]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[COMENTARIOS]"
+                      name="COMENTARIOS" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de Videos"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[D_CANAL]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[OLAP - API]"
+                  connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      length="50"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      name="NOMBRE"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_CANAL" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="NOMBRE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      name="NOMBRE" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
+              endId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB]" />
+            <path
+              refId="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
+              endId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB]" />
+            <path
+              refId="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+              endId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{050BA755-803A-4925-911C-9DB71381C147}"
+      DTS:From="Package\Vaciado de Tablas de Dimensión"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Carga Tablas de Dimensión" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{E54F2C32-E104-4ED2-BC86-BC8F54CC6EBA}"
+      DTS:From="Package\Carga Tablas de Dimensión"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Carga Tabla de Hechos" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{F25BB286-57A0-48FB-83B5-E38DD59F088D}"
+      DTS:From="Package\Vaciado de Tabla de Hechos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Vaciado de Tablas de Dimensión" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="190,42"
+          Id="Package\Carga Tabla de Hechos"
+          TopLeft="217,338" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Carga Tablas de Dimensión"
+          TopLeft="210,249" />
+        <NodeLayout
+          Size="214,42"
+          Id="Package\Vaciado de Tabla de Hechos"
+          TopLeft="204,75" />
+        <NodeLayout
+          Size="234,42"
+          Id="Package\Vaciado de Tablas de Dimensión"
+          TopLeft="199,164" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="315.5,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="313.5,291">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="313.5,117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Carga Tabla de Hechos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Carga Tabla de Hechos\Origen de Hechos"
+          TopLeft="278,141" />
+        <NodeLayout
+          Size="235,42"
+          Id="Package\Carga Tabla de Hechos\Conversión de datos de Hechos 1"
+          TopLeft="244,207" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Carga Tabla de Hechos\Destino de Hechos 1"
+          TopLeft="280,279" />
+        <EdgeLayout
+          Id="Package\Carga Tabla de Hechos.Paths[Salida de origen de OLE DB]"
+          TopLeft="361.5,183">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
+          TopLeft="363.75,249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tabla de Hechos\Origen de Hechos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tabla de Hechos\Destino de Hechos 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Carga Tablas de Dimensión">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Canal"
+          TopLeft="74,167" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Canal"
+          TopLeft="81,30" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Videos"
+          TopLeft="370,179" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Videos"
+          TopLeft="365,23" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Videos"
+          TopLeft="336,98" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Canal"
+          TopLeft="47,97" />
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
+          TopLeft="446.25,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33"
+              Start="0,0"
+              End="0,25.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
+          TopLeft="157.25,72">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
+          TopLeft="449.75,140">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos]"
+          TopLeft="155,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Estadisticas"
+          TopLeft="90,298" />
+        <NodeLayout
+          Size="247,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas"
+          TopLeft="56,364" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Estadisticas"
+          TopLeft="92,436" />
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+          TopLeft="180.5,340">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24"
+              Start="0,0"
+              End="0,16.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos2]"
+          TopLeft="182.5,406">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Canal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Canal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Videos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Videos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Vaciado de Tabla de Hechos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos"
+          TopLeft="218,194" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Vaciado de Tabla de Hechos\Origen de Hechos"
+          TopLeft="229,110" />
+        <EdgeLayout
+          Id="Package\Vaciado de Tabla de Hechos.Paths[Salida de origen de OLE DB]"
+          TopLeft="311.25,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Vaciado de Tabla de Hechos\Origen de Hechos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Vaciado de Tablas de Dimensión">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos"
+          TopLeft="355,167" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas"
+          TopLeft="66,349" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas"
+          TopLeft="54,451" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Origen de Videos"
+          TopLeft="368,87" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Origen de Canal"
+          TopLeft="78,73" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal"
+          TopLeft="64,155" />
+        <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
+          TopLeft="156.75,391">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
+          TopLeft="153.5,115">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+          TopLeft="446.5,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Videos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Canal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Estadisticas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Estadisticas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

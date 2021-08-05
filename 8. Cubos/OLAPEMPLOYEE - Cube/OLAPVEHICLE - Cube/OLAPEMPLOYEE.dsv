@@ -1,0 +1,190 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3c73b8dd-f486-4859-b019-9956a987b565" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAPEMPLOYEE</ID>
+  <Name>OLAPEMPLOYEE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>OLAPEMPLOYEE</DataSourceID>
+  <Schema>
+    <xs:schema id="OLAPEMPLOYEE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OLAPEMPLOYEE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="eab64211-bc30-44eb-a225-4bfb6a4c017e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_H_EMPLEADO" msprop:design-time-name="ca4d4a72-20a5-4d2f-b386-3ce2ab877cf1" msprop:DbTableName="H_EMPLEADO" msprop:FriendlyName="H_EMPLEADO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_EMPLEADO" msprop:design-time-name="1a6432df-4fe8-4150-bd62-655cc83586b5" msprop:DbColumnName="ID_EMPLEADO" msprop:FriendlyName="ID_EMPLEADO" type="xs:int" />
+                  <xs:element name="ID_SUCURSAL" msprop:design-time-name="fe218d91-fb2f-4b82-95fd-ccad80df3f39" msprop:DbColumnName="ID_SUCURSAL" msprop:FriendlyName="ID_SUCURSAL" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_TRABAJO" msprop:design-time-name="d91bf454-d7ec-444b-a6d6-a3f3065438b1" msprop:DbColumnName="ID_TRABAJO" msprop:FriendlyName="ID_TRABAJO" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_VIAJE" msprop:design-time-name="d0f314d7-f366-4a30-8a2b-8822e0c2e42e" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="27d4eae4-cd32-4a81-9b07-a67ec6f98a95" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="NOMBREEMPLEADO" msprop:design-time-name="c76e77de-c12c-4ca4-bab5-85b166cc7d97" msprop:DbColumnName="NOMBREEMPLEADO" msprop:FriendlyName="NOMBREEMPLEADO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_TIEMPO" msprop:design-time-name="70ffef1e-5249-4dff-b80a-80c4a6dc8725" msprop:DbTableName="D_TIEMPO" msprop:FriendlyName="D_TIEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="8a190b1b-a904-4aa5-b03e-4e34bb4af6e0" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" />
+                  <xs:element name="DIA" msprop:design-time-name="ad24c650-7885-4436-b3d6-1b56fafcc7c4" msprop:DbColumnName="DIA" msprop:FriendlyName="DIA" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MES" msprop:design-time-name="80b5b21e-e9d3-4c80-b363-f04ec0b08e2b" msprop:DbColumnName="MES" msprop:FriendlyName="MES" type="xs:int" minOccurs="0" />
+                  <xs:element name="AÑO" msprop:design-time-name="16a403fd-ffd1-4038-a12f-bbbc2fefc25d" msprop:DbColumnName="AÑO" msprop:FriendlyName="AÑO" type="xs:int" minOccurs="0" />
+                  <xs:element name="TRIMESTRE" msprop:design-time-name="59d7ce0e-87c1-45de-af60-803e11868d98" msprop:DbColumnName="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEMESTRE" msprop:design-time-name="9007010b-42c7-4d89-992e-9fffc8dea3e0" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIADESEMANA" msprop:design-time-name="2cdb3e42-f5f9-4441-836c-f297439026ba" msprop:DbColumnName="DIADESEMANA" msprop:FriendlyName="DIADESEMANA" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_TRABAJO" msprop:design-time-name="9ad47fc7-55da-4002-84e5-c6b3b4945475" msprop:DbTableName="D_TRABAJO" msprop:FriendlyName="D_TRABAJO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TRABAJO" msprop:design-time-name="c3e04cc5-7cdb-4e40-87cc-24060814d267" msprop:DbColumnName="ID_TRABAJO" msprop:FriendlyName="ID_TRABAJO" type="xs:int" />
+                  <xs:element name="CARGO" msprop:design-time-name="b5de074b-3e34-4f9e-9727-b368b88bb6a7" msprop:DbColumnName="CARGO" msprop:FriendlyName="CARGO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_EMPLEADOS" msprop:design-time-name="d567c175-00f2-490a-9ba4-d201d5c26919" msprop:DbTableName="D_EMPLEADOS" msprop:FriendlyName="D_EMPLEADOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_EMPLEADO" msprop:design-time-name="0d944948-d7b0-46fd-8a9b-8f0a71c45da8" msprop:DbColumnName="ID_EMPLEADO" msprop:FriendlyName="ID_EMPLEADO" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="27424e5b-2961-4748-b129-ad8ed701531e" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_VIAJES" msprop:design-time-name="326c20ff-3081-4e0d-94e6-ecef12c1cee6" msprop:DbTableName="D_VIAJES" msprop:FriendlyName="D_VIAJES" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_VIAJE" msprop:design-time-name="5a40573b-83bf-466a-a039-0f81e51a21c5" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" />
+                  <xs:element name="DIRECCION" msprop:design-time-name="3ef29c5f-85e2-4f08-a52f-c71b485e3739" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_SUCURSAL" msprop:design-time-name="158dfe98-2d97-48ab-b444-1b61852ef8bd" msprop:DbTableName="D_SUCURSAL" msprop:FriendlyName="D_SUCURSAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_SUCURSAL" msprop:design-time-name="6b2827c1-6b25-409d-b671-4d0160e73142" msprop:DbColumnName="ID_SUCURSAL" msprop:FriendlyName="ID_SUCURSAL" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_H_EMPLEADO" />
+          <xs:field xpath="ID_EMPLEADO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_TIEMPO" />
+          <xs:field xpath="ID_TIEMPO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_TRABAJO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_TRABAJO" />
+          <xs:field xpath="ID_TRABAJO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_EMPLEADOS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_EMPLEADOS" />
+          <xs:field xpath="ID_EMPLEADO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_VIAJES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_VIAJES" />
+          <xs:field xpath="ID_VIAJE" />
+        </xs:unique>
+        <xs:unique name="dbo_D_SUCURSAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_SUCURSAL" />
+          <xs:field xpath="ID_SUCURSAL" />
+        </xs:unique>
+        <xs:keyref name="FK__H_EMPLEAD__ID_VI__30F848ED" refer="dbo_D_VIAJES_Constraint1">
+          <xs:selector xpath=".//dbo_H_EMPLEADO" />
+          <xs:field xpath="ID_VIAJE" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_EMPLEAD__ID_SU__31EC6D26" refer="dbo_D_SUCURSAL_Constraint1">
+          <xs:selector xpath=".//dbo_H_EMPLEADO" />
+          <xs:field xpath="ID_SUCURSAL" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_EMPLEAD__ID_EM__300424B4" refer="dbo_D_EMPLEADOS_Constraint1">
+          <xs:selector xpath=".//dbo_H_EMPLEADO" />
+          <xs:field xpath="ID_EMPLEADO" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_EMPLEAD__ID_TI__2F10007B" refer="dbo_D_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_H_EMPLEADO" />
+          <xs:field xpath="ID_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_EMPLEAD__ID_TR__2E1BDC42" refer="dbo_D_TRABAJO_Constraint1">
+          <xs:selector xpath=".//dbo_H_EMPLEADO" />
+          <xs:field xpath="ID_TRABAJO" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OLAPEMPLOYEE xmlns="" />
+  </Schema>
+</DataSourceView>

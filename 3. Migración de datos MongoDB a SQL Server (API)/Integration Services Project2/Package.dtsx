@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{93BEDF12-985F-4E7B-9348-72FFD5C3C6DD}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{23AF6E1B-C3D0-4241-A7CD-4F457558E260}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,11 +25,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="User ID=admin;Provider=MSOLEDBSQL.1;Auto Translate=False;">
+          DTS:ConnectionString="User ID=admin;Provider=MSOLEDBSQL.1;Auto Translate=False;Application Name=SSIS-Package-{95A98990-FD61-4737-ABB3-B0AC151264DA}.admin;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB3im65npCwJRhZ0c7Tyx56OfreAWKfLEKK/q6Yx1i7fwAAAAAOgAAAAAIAACAAAADk93krILZYWDWW8tJxfHX/9RUoAcKMp0GW/1qHeimIZBAAAAArgowVfUDZabr8ahx+ytFRQAAAAJPa8LdC6cngwIZUM0ywKJrTJa6OnXHL2eULnC7rPDHbjU4ZWa/g9fDfvG9rpCfD9SyFQG+sZD90rt4Xz/dqXKg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABNViSt8pyJiQ61SyleyGXim/4vskyfXA90VXjI73tWxgAAAAAOgAAAAAIAACAAAAAdWW2Iv99UQvLvjAu6bUKl1F4ryCG6z3ouXsHT7lbXcRAAAACySiX/N52Mu8WgoIArE3vZQAAAABLc/2tsbgOFK5XlJHumzoSO5Dbn5kDjgOMSZOpa9AUbLZiq6hbJYtrMBGunAcgX5ua19iBRix1w/ev6dW1y5MM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -51,6 +51,57 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="Dsn=CData MongoDB Sys;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-E4HF9F0.APIOLTP.adminOLAP]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C3EAF6CA-BC55-492A-B188-80ACC961C574}"
+      DTS:ObjectName="DESKTOP-E4HF9F0.APIOLTP.adminOLAP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;User ID=adminOLAP;Initial Catalog=APIOLTP;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACYnMl7b3nCXwM+UCUg0JuqoYnegT2nnaySt2TzHw8VxwAAAAAOgAAAAAIAACAAAAC8RwtyqwfbcOfVDKDPRzh16fiKx23qinit/XBgk2cwmSAAAAAgmx15qhdHMJQUqcLctHfrHUx1qRcDQXvkVmQ1/HSuJUAAAAAGX3PydOFO/TwhNum316NBprbOtTMyQ4cctFS55oysOmBme77P7w8FseUixgB85j67dwcWQcadNajfauf6JHqf</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-E4HF9F0.OLAPAPI.adminOLAP]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C461BDD7-3ED2-4CAA-B905-9C36548673BA}"
+      DTS:ObjectName="DESKTOP-E4HF9F0.OLAPAPI.adminOLAP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;User ID=adminOLAP;Initial Catalog=OLAPAPI;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACJCCoF4/sL9/V5XfTIHTWIGTwgnaBbqk1CP9wDukVREwAAAAAOgAAAAAIAACAAAABQB9foyLSCjkAv1EU8XvZa1zJEqJU1sXnyS36sj8BOIyAAAAChE6nBF8OeN9G+FfkCollY4tP4Rr3hYIPpIrtejhlQEEAAAAC33Hn4xBfMvokWZTcLb9qZSQEX6BYXkDqJuCvdFBdVGPObVZw+B79Eco3atcYa2aQRULterbyvoqIxeJAYYaZC</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-E4HF9F0.OLAPAPI.adminOLAP 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{68A2A3A2-527A-4A2E-B5E4-13E8DC2275CD}"
+      DTS:ObjectName="DESKTOP-E4HF9F0.OLAPAPI.adminOLAP 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;User ID=adminOLAP;Initial Catalog=OLAPAPI;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACJbgCYgjRsIzTyEWuzJ2HTYBM3lBftMpXuqq26Bx9GdwAAAAAOgAAAAAIAACAAAABYIMmA5mtX4BwErYj0mWKX3eSs3LtW1IL7juJuAtK/gyAAAAB5DBqn+PXh08y970XvkYvfJgvOkrCeK3lN8n6ck+oXfUAAAAAeqDP9fXMq0rfY3tb2fbZgIAk8YZdYSktcK8CfhcbfarzPia8oRz/goHG0dMrlnkEmFtjweBkn20aqg6LHv338</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -427,8 +478,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[.admin]"
-                  connectionManagerRefId="Package.ConnectionManagers[.admin]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-E4HF9F0.APIOLTP.adminOLAP]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-E4HF9F0.APIOLTP.adminOLAP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>

@@ -1,0 +1,263 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="95259b79-0652-43ce-b59e-ceb75483ea37" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAPEMPLOYEE</ID>
+  <Name>OLAPEMPLOYEE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="5a87e9bc-c95b-40a3-b263-2d545db4d2b6">
+      <ID>H EMPLEADO</ID>
+      <Name>H EMPLEADO</Name>
+      <DimensionID>H EMPLEADO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="718a7c4e-db8a-4d0e-a32a-ef66519ccb35">
+          <AttributeID>ID EMPLEADO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0df57bd1-ea89-4b62-95ca-0835ae54aa4d">
+          <AttributeID>ID TRABAJO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42252380-ace7-4d83-a2a0-1ed51c33aec3">
+          <AttributeID>ID TIEMPO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14bd2f29-649c-40b9-8d1c-fdd4d11eb45d">
+          <AttributeID>ID SUCURSAL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7e76d353-63db-4cd1-a89d-1f1e111ec6c8">
+          <AttributeID>ID VIAJE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c64a24d2-fe88-4004-9870-e6deb85069f0">
+      <ID>D TRABAJO</ID>
+      <Name>D TRABAJO</Name>
+      <DimensionID>D TRABAJO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="db9c9e98-e84d-46c4-877e-f71a57923468">
+          <AttributeID>ID TRABAJO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7f1c7c43-31ff-45b8-bd55-f919cd5d4638">
+      <ID>D TIEMPO</ID>
+      <Name>D TIEMPO</Name>
+      <DimensionID>D TIEMPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="69decc5b-675c-4cce-be77-a660e0e2cd3f">
+          <AttributeID>ID TIEMPO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4208e5ef-eb1a-44ab-b335-d3b96367f483">
+      <ID>D EMPLEADOS</ID>
+      <Name>D EMPLEADOS</Name>
+      <DimensionID>D EMPLEADOS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0e492dfa-1f0a-469f-815e-2d233b079bdb">
+          <AttributeID>ID EMPLEADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="90fca20d-b944-4b75-a987-d35f42116b18">
+      <ID>D SUCURSAL</ID>
+      <Name>D SUCURSAL</Name>
+      <DimensionID>D SUCURSAL</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="32f09700-c032-48e8-a039-a0ca50a0675c">
+          <AttributeID>ID SUCURSAL</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="886687c5-d111-40d3-8b33-5382ba989953">
+      <ID>D VIAJES</ID>
+      <Name>D VIAJES</Name>
+      <DimensionID>D VIAJES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5ecff296-b2f8-4384-bca7-54241b61a1da">
+          <AttributeID>ID VIAJE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="9f5cff7c-172c-4370-94fe-5a766d9a96d6">
+      <ID>H EMPLEADO</ID>
+      <Name>H EMPLEADO</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="3aea0292-2051-44c5-a646-b43a994444c9">
+          <ID>H EMPLEADO Count</ID>
+          <Name>H EMPLEADO Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2c2094b4-b977-424b-b026-ecb07561bcaa">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="09644399-1073-4689-b414-e31d66c84379">
+              <TableID>dbo_H_EMPLEADO</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a27d2fef-c938-495c-ae6f-ff0d818346be">
+          <CubeDimensionID>H EMPLEADO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e29ef85a-a22a-40c7-a591-ce4a222890b0">
+              <AttributeID>ID EMPLEADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6223569f-717e-4a69-bc76-b4b093171d95">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c41ae06-1d61-48e6-b4fb-5365d92210e0">
+                    <TableID>dbo_H_EMPLEADO</TableID>
+                    <ColumnID>ID_EMPLEADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="377242e9-524c-4257-8f03-49a21ff67e8e">
+          <CubeDimensionID>D TRABAJO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4e4debe3-9a94-4bc1-bd94-5fed74631625">
+              <AttributeID>ID TRABAJO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75a91f04-6ff1-4a45-b4bd-8f33011fd1ac">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2217613e-873e-497e-b682-4932f4c30911">
+                    <TableID>dbo_H_EMPLEADO</TableID>
+                    <ColumnID>ID_TRABAJO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="80f7ef2a-e876-4174-a525-bc61cf849f1c">
+          <CubeDimensionID>D TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dafcc3cc-6e1b-4cce-919e-758c523ed32c">
+              <AttributeID>ID TIEMPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="10c5934d-6bc2-444a-8936-6077fa2af73b">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d8be3d8e-a397-4d08-9825-ca25afe95e72">
+                    <TableID>dbo_H_EMPLEADO</TableID>
+                    <ColumnID>ID_TIEMPO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d14f1d80-74e1-4191-8861-61fab1e3be7e">
+          <CubeDimensionID>D EMPLEADOS</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0b9308f6-6262-4473-b8dd-0bc37c3c61b6">
+              <AttributeID>ID EMPLEADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="46a19641-198d-4e81-a1b4-7b295eee8b2b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e76dba78-fc4b-46cd-8ee5-28f60bb08ac8">
+                    <TableID>dbo_H_EMPLEADO</TableID>
+                    <ColumnID>ID_EMPLEADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c4d57b13-3bc1-424e-bfc5-093264820133">
+          <CubeDimensionID>D SUCURSAL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0ac510aa-a592-423e-87d5-742f22721222">
+              <AttributeID>ID SUCURSAL</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4699adbd-fc39-4d5f-b3b1-2a9e5ee0a8c8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="148e4318-46eb-4603-bf25-2fd58ef7f665">
+                    <TableID>dbo_H_EMPLEADO</TableID>
+                    <ColumnID>ID_SUCURSAL</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd4dc984-1ef1-44ee-bb1d-485b06d26646">
+          <CubeDimensionID>D VIAJES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3adf3151-b63b-4cec-a4bc-48fe69cc4086">
+              <AttributeID>ID VIAJE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2db1da1a-02fb-4c05-8a27-fb503b9b73eb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3bdde6af-a682-4e7e-a21f-5337b3517039">
+                    <TableID>dbo_H_EMPLEADO</TableID>
+                    <ColumnID>ID_VIAJE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="6b6137bf-46a8-4569-8116-c6df6b9c85f7">
+    <DataSourceViewID>OLAPEMPLOYEE</DataSourceViewID>
+  </Source>
+</Cube>

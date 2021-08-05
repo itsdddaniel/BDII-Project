@@ -67,7 +67,7 @@ CREATE TABLE Viaje (
   Conductor INT,
   Estado INT,
   Monto FLOAT,
-  Fecha VARCHAR(1000),
+  Fecha DATE,
   DireccionDeDestino VARCHAR(1000),
   Vehiculo INT,
   Sucursal INT,

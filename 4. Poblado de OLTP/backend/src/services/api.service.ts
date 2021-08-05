@@ -103,7 +103,6 @@ export class APIService
         const nRegistros = 10000;
         for (let i = 0; i < nRegistros; i++) 
         {
-            let gender = (i % 2 === 0) ? 0 : 1;
             let test = await database.executeQuery('INSERT INTO Empleados(NumeroDeIdentidad,Trabajo,Sucursal,Nombre,FechaDeNacimiento,Telefono,Rating) VALUES(@NumeroDeIdentidad,@Trabajo,@Sucursal,@Nombre,@FechaDeNacimiento,@Telefono,@Rating)', 
             [{
                 name: 'NumeroDeIdentidad',
@@ -184,55 +183,65 @@ export class APIService
     public static trip = async () =>
     {
         const nRegistros = 10000;
-        for (let i = 0; i < nRegistros; i++) 
+        //console.log(typeof(date))
+        try
         {
-            let test = await database.executeQuery('INSERT INTO Viaje(Cliente,Conductor,Estado,Monto,Fecha,DireccionDeDestino,Vehiculo,Sucursal) VALUES(@Cliente,@Conductor,@Estado,@Monto,@Fecha,@DireccionDeDestino,@Vehiculo,@Sucursal)',
-            [{
-                name: 'Cliente',
-                type:  'varchar',
-                value: i
-            },
+            for (let i = 0; i < nRegistros; i++) 
             {
-                name: 'Conductor',
-                type:  'varchar',
-                value: i
-            },
-            {
-                name: 'Estado',
-                type:  'varchar',
-                value: faker.datatype.number(
+                let date = new Date(2012,i,i).toISOString().slice(0, 19).replace('T', ' ');
+                let test = await database.executeQuery('INSERT INTO Viaje(Cliente,Conductor,Estado,Monto,Fecha,DireccionDeDestino,Vehiculo,Sucursal) VALUES(@Cliente,@Conductor,@Estado,@Monto,@Fecha,@DireccionDeDestino,@Vehiculo,@Sucursal)',
+                [{
+                    name: 'Cliente',
+                    type:  'varchar',
+                    value: i
+                },
                 {
-                    'min': 0,
-                    'max': 1
-                })
-            },
-            {
-                name: 'Monto',
-                type:  'varchar',
-                value: faker.datatype.float()
-            },
-            {
-                name: 'Fecha',
-                type:  'datetime',
-                value: faker.datatype.datetime()
-            },
-            {
-                name: 'DireccionDeDestino',
-                type:  'varchar',
-                value: faker.address.streetAddress()
-            },
-            {
-                name: 'Vehiculo',
-                type:  'varchar',
-                value: i
-            },
-            {
-                name: 'Sucursal',
-                type:  'varchar',
-                value: i
-            }])
+                    name: 'Conductor',
+                    type:  'varchar',
+                    value: i
+                },
+                {
+                    name: 'Estado',
+                    type:  'varchar',
+                    value: faker.datatype.number(
+                    {
+                        'min': 0,
+                        'max': 1
+                    })
+                },
+                {
+                    name: 'Monto',
+                    type:  'varchar',
+                    value: faker.datatype.float()
+                },
+                {
+                    name: 'Fecha',
+                    type:  'datetime',
+                    value: date
+                },
+                {
+                    name: 'DireccionDeDestino',
+                    type:  'varchar',
+                    value: faker.address.streetAddress()
+                },
+                {
+                    name: 'Vehiculo',
+                    type:  'varchar',
+                    value: i
+                },
+                {
+                    name: 'Sucursal',
+                    type:  'varchar',
+                    value: i
+                }])
+                console.log(test)
+            }
+            console.log('Finished - Trip');
         }
-        console.log('Finished - Trip');
+        catch(err)
+        {
+            console.log(err);
+        }
     }
     public static tripState = async () =>
     {
@@ -251,5 +260,18 @@ export class APIService
             }])
         }
         console.log('Finished - Trip State');
+    }
+    public static randomDate = async(start: any, end: any) => 
+    {
+        var d = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+
+        if (month.length < 2) month = '0' + month;
+        if (day.length < 2) day = '0' + day;
+        
+        let test = `${year}-${month}-${day}`;
+        return test;
     }
 }

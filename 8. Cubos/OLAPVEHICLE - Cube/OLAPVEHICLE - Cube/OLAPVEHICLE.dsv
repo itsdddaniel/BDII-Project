@@ -1,0 +1,181 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3b2e130a-4bee-4bef-986a-ee47d2516b9f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAPVEHICLE</ID>
+  <Name>OLAPVEHICLE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>OLAPVEHICLE</DataSourceID>
+  <Schema>
+    <xs:schema id="OLAPVEHICLE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OLAPVEHICLE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="81a667e5-0ae4-4a29-8fb8-267639e17530">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_H_VEHICULO" msprop:design-time-name="b2cebe71-289e-4cb7-98d0-b312d552a19c" msprop:DbTableName="H_VEHICULO" msprop:FriendlyName="H_VEHICULO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_H_VEHÍCULO" msprop:design-time-name="0b88ff60-de21-4276-817a-03b789deac6e" msprop:DbColumnName="ID_H_VEHÍCULO" msprop:FriendlyName="ID_H_VEHÍCULO" type="xs:int" />
+                  <xs:element name="ID_MARCA" msprop:design-time-name="abc6834f-def0-4b57-bb18-f8df68995e71" msprop:DbColumnName="ID_MARCA" msprop:FriendlyName="ID_MARCA" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_MEDIO" msprop:design-time-name="12c1fb37-f53c-40b0-b8a5-9c17b512a296" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_VIAJES" msprop:design-time-name="3aba4f8a-8bcc-400d-b1ad-44f537eaca4a" msprop:DbColumnName="ID_VIAJES" msprop:FriendlyName="ID_VIAJES" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="da28e9d3-d83b-421d-a2ae-f8aed717c34c" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID_VEHÍCULO" msprop:design-time-name="1d413273-e36c-41a4-b133-ee48af3f8258" msprop:DbColumnName="ID_VEHÍCULO" msprop:FriendlyName="ID_VEHÍCULO" type="xs:int" minOccurs="0" />
+                  <xs:element name="NOMBRECLIENTE" msprop:design-time-name="88db4d3d-af5b-4d16-a103-c4457387c8df" msprop:DbColumnName="NOMBRECLIENTE" msprop:FriendlyName="NOMBRECLIENTE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_MARCA" msprop:design-time-name="56a641c6-c51b-4c74-aeda-54eeff3f9067" msprop:DbTableName="D_MARCA" msprop:FriendlyName="D_MARCA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_MARCA" msprop:design-time-name="32e9065b-dada-4c02-9af0-26a8651ba0c7" msprop:DbColumnName="ID_MARCA" msprop:FriendlyName="ID_MARCA" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="74ceb1bf-459e-47d4-8274-1f718e7ffb95" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_VEHÍCULO" msprop:design-time-name="3382a1f5-f3b6-4899-b2b4-189df054ee5b" msprop:DbTableName="D_VEHÍCULO" msprop:FriendlyName="D_VEHÍCULO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_VEHICULO" msprop:design-time-name="3d071733-6a68-4920-9282-fea1a116b5bd" msprop:DbColumnName="ID_VEHICULO" msprop:FriendlyName="ID_VEHICULO" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="e7bb23a5-7b0c-4000-8a0b-4f2bbb202f70" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_VIAJES" msprop:design-time-name="7a160172-6672-4f9c-9ec7-b8a3dc0feccc" msprop:DbTableName="D_VIAJES" msprop:FriendlyName="D_VIAJES" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_VIAJE" msprop:design-time-name="3c0773bc-8ef7-4d31-84e8-5f2788b593c8" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" />
+                  <xs:element name="DIRECCION" msprop:design-time-name="201d8397-72c8-4c72-bc44-40aec2bf6bea" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_TIEMPO" msprop:design-time-name="1c4e1430-2b07-4ae1-a240-bed7a4357016" msprop:DbTableName="D_TIEMPO" msprop:FriendlyName="D_TIEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="7ab5af4b-df02-4feb-8ebc-93a62a0de9a6" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" />
+                  <xs:element name="FECHA" msprop:design-time-name="d9b86d50-647c-4844-94b6-af2c1224a3e0" msprop:DbColumnName="FECHA" msprop:FriendlyName="FECHA" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_MEDIO_DE_TRANSPORTE" msprop:design-time-name="de8d0de0-6134-4285-b9b7-92165d922414" msprop:DbTableName="D_MEDIO_DE_TRANSPORTE" msprop:FriendlyName="D_MEDIO_DE_TRANSPORTE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TRABAJO" msprop:design-time-name="2eac200f-763a-4ab5-b196-f9fd68b40480" msprop:DbColumnName="ID_TRABAJO" msprop:FriendlyName="ID_TRABAJO" type="xs:int" />
+                  <xs:element name="Cargo" msprop:design-time-name="0405dc71-c734-41bb-9810-5c777d746e4a" msprop:DbColumnName="Cargo" msprop:FriendlyName="Cargo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_H_VEHICULO" />
+          <xs:field xpath="ID_H_VEHÍCULO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_MARCA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_MARCA" />
+          <xs:field xpath="ID_MARCA" />
+        </xs:unique>
+        <xs:unique name="dbo_D_VEHÍCULO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_VEHÍCULO" />
+          <xs:field xpath="ID_VEHICULO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_VIAJES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_VIAJES" />
+          <xs:field xpath="ID_VIAJE" />
+        </xs:unique>
+        <xs:unique name="dbo_D_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_TIEMPO" />
+          <xs:field xpath="ID_TIEMPO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_MEDIO_DE_TRANSPORTE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_MEDIO_DE_TRANSPORTE" />
+          <xs:field xpath="ID_TRABAJO" />
+        </xs:unique>
+        <xs:keyref name="FK__H_VEHICUL__ID_ME__2E1BDC42" refer="dbo_D_MEDIO_DE_TRANSPORTE_Constraint1">
+          <xs:selector xpath=".//dbo_H_VEHICULO" />
+          <xs:field xpath="ID_MEDIO" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_VEHICUL__ID_VI__30F848ED" refer="dbo_D_VIAJES_Constraint1">
+          <xs:selector xpath=".//dbo_H_VEHICULO" />
+          <xs:field xpath="ID_VIAJES" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_VEHICUL__ID_TI__2F10007B" refer="dbo_D_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_H_VEHICULO" />
+          <xs:field xpath="ID_TIEMPO" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_VEHICUL__ID_MA__31EC6D26" refer="dbo_D_MARCA_Constraint1">
+          <xs:selector xpath=".//dbo_H_VEHICULO" />
+          <xs:field xpath="ID_MARCA" />
+        </xs:keyref>
+        <xs:keyref name="FK__H_VEHICUL__ID_VE__300424B4" refer="dbo_D_VEHÍCULO_Constraint1">
+          <xs:selector xpath=".//dbo_H_VEHICULO" />
+          <xs:field xpath="ID_VEHÍCULO" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OLAPVEHICLE xmlns="" />
+  </Schema>
+</DataSourceView>

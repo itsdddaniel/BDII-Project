@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>OLAPVEHICLE - Cube</Database>
+    <Server>DESKTOP-E4HF9F0:2383</Server>
+    <ConnectionString>Data Source=DESKTOP-E4HF9F0:2383;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>24XkrUan20fYet42wR4c8sZ7Wfc=8/5/2021 4:40:11 PM8/5/2021 4:40:11 PM</TimeStamp>
+        <ID>
+          <String>OLAPINCOME</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>ZAiW130/kRHOr/GtODncYf0SX7Q=8/5/2021 4:40:18 PM8/5/2021 4:40:18 PM</TimeStamp>
+        <ID>
+          <String>OLAPINCOME</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kbZCQoZr2aqMeeJ3p3fFcic4jIU=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <ID>
+          <String>D TIEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+qJ5W9168Q7Z7PDzlDLDmiS26Rk=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <ID>
+          <String>D VIAJES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9g8p7idStufS21VL5ccyI4KwPGI=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <ID>
+          <String>D MEDIO DE TRANSPORTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>A6UYSTMe3/lMZY4HDkjkvnUfBFU=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <ID>
+          <String>D EMPLEADOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b2BBFGiqRgaolmKoXNcNoZN4FeE=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <ID>
+          <String>D SUCURSAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>4DiUpfspO8qojPwzbC300er+fGU=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PMMa9b3yATB8XqazMkrsLZBkbxWpk=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <ID>
+          <String>OLAPINCOME</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>CbOrNeKIGegD6fvGkVXA8BnjOt4=8/5/2021 4:39:57 PM8/5/2021 4:39:13 PM</TimeStamp>
+      <ID>
+        <String>OLAPVEHICLE - Cube</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-08-05T22:40:32.776667Z</LastDeployed>
+</DeploymentSnapshot>

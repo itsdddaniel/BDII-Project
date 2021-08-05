@@ -1,0 +1,267 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="66ec79ff-b414-4182-961b-f44a3c73254c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAPVEHICLE</ID>
+  <Name>OLAPVEHICLE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="52ce3b46-d325-40be-9d5f-20c62d495e70">
+      <ID>H VEHICULO</ID>
+      <Name>H VEHICULO</Name>
+      <DimensionID>H VEHICULO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="76b11d36-7c4e-4fa1-92db-e84da3f6ae01">
+          <AttributeID>ID H VEHÍCULO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="184372dd-ab38-4539-a0e3-7fb27575faa2">
+          <AttributeID>ID VEHÍCULO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="47daf584-4aa8-49f6-b656-329dfe8a203f">
+          <AttributeID>ID MARCA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="39604cc2-f8c5-4823-9691-3b9c5be96deb">
+          <AttributeID>ID TIEMPO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="17020869-ad29-4b9a-91a6-e010c02b63e5">
+          <AttributeID>ID VIAJES</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="faf08298-45bc-4b62-9183-9e568df780f7">
+          <AttributeID>ID MEDIO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6525f315-bb6f-489b-9597-ab195601f1ef">
+      <ID>D MARCA</ID>
+      <Name>D MARCA</Name>
+      <DimensionID>D MARCA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4cfb166f-dd66-4e2a-8048-50905057ce47">
+          <AttributeID>ID MARCA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="479aa32c-75b6-4c9a-a3a5-43c1e1d1581e">
+      <ID>D TIEMPO</ID>
+      <Name>D TIEMPO</Name>
+      <DimensionID>D TIEMPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d5843ddb-481b-4c76-af3f-c4a716038dc4">
+          <AttributeID>ID TIEMPO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="09c10673-40ad-4eb7-8a17-b72ec5f5c931">
+      <ID>D VEHÍCULO</ID>
+      <Name>D VEHÍCULO</Name>
+      <DimensionID>D VEHÍCULO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c6bf6308-8fa6-4c42-91c9-a6f964727625">
+          <AttributeID>ID VEHICULO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2022ce80-440c-4aba-873e-6d4b58c00303">
+      <ID>D VIAJES</ID>
+      <Name>D VIAJES</Name>
+      <DimensionID>D VIAJES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e49beaf2-d1e9-4266-bc66-7e47b466b4fd">
+          <AttributeID>ID VIAJE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4dc958b2-4038-414b-8a85-0b3b854aeb4f">
+      <ID>D MEDIO DE TRANSPORTE</ID>
+      <Name>D MEDIO DE TRANSPORTE</Name>
+      <DimensionID>D MEDIO DE TRANSPORTE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="398c0b25-f744-43f1-a9bf-91e2338bbc62">
+          <AttributeID>ID TRABAJO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="9e8da788-facd-4001-be16-8c7050bf27e2">
+      <ID>H VEHICULO</ID>
+      <Name>H VEHICULO</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="57952f30-6bf8-4c07-a34a-ed0ad213e9fe">
+          <ID>H VEHICULO Count</ID>
+          <Name>H VEHICULO Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2c5bded3-d507-4bc4-a90e-4a5c2bf6067f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4fc699fb-1816-4857-9329-da944f098f54">
+              <TableID>dbo_H_VEHICULO</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4ce83e1f-c538-4081-b53b-ad0a5eebb09a">
+          <CubeDimensionID>H VEHICULO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c35085f7-cb85-4042-a5aa-83a94462aedf">
+              <AttributeID>ID H VEHÍCULO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e17b10bd-b4b8-4a93-97d7-cb1aca2f2825">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="19922038-f7c7-4858-af16-46f4add08115">
+                    <TableID>dbo_H_VEHICULO</TableID>
+                    <ColumnID>ID_H_VEHÍCULO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f41e6fc3-5751-4c90-b685-d0f73ff53163">
+          <CubeDimensionID>D VEHÍCULO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="64aad7e7-e344-4e5e-9d41-a890ebdb9d7d">
+              <AttributeID>ID VEHICULO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="286b85d4-2421-4b1f-8728-13c7ff59c612">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f1c9c895-5d42-4823-9634-c50c4c8d42d0">
+                    <TableID>dbo_H_VEHICULO</TableID>
+                    <ColumnID>ID_VEHÍCULO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cb1fd01c-d918-40c2-9383-7e7ebbb051ab">
+          <CubeDimensionID>D MARCA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="692ec532-e4f2-4138-9b8f-32d696e250f1">
+              <AttributeID>ID MARCA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3948939a-1fb4-4b54-a64c-cd6d9763b4f7">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36ca18d7-5ba7-43a1-8ae5-23a81cf843c4">
+                    <TableID>dbo_H_VEHICULO</TableID>
+                    <ColumnID>ID_MARCA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e629a495-b26c-4933-bb5c-b3856536cabc">
+          <CubeDimensionID>D TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3ebf27d0-e8f4-467f-ac37-b8bdb5168412">
+              <AttributeID>ID TIEMPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e66c86be-3034-45e0-8138-deac6e5e62f7">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6cd3e236-a752-486f-b5da-8b1ca3500572">
+                    <TableID>dbo_H_VEHICULO</TableID>
+                    <ColumnID>ID_TIEMPO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="04f4abc1-2e01-4ab5-a8ef-c0a1235a9f3b">
+          <CubeDimensionID>D VIAJES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bd97378e-ece4-47a4-8388-6dfeba985343">
+              <AttributeID>ID VIAJE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="707f16e5-c364-486c-ac6b-fc7ebc337355">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="24f32191-3b9d-4d72-a826-2608b30ca983">
+                    <TableID>dbo_H_VEHICULO</TableID>
+                    <ColumnID>ID_VIAJES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="147b14d3-035a-499c-8e0d-860f0dba0a26">
+          <CubeDimensionID>D MEDIO DE TRANSPORTE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6ead7301-975b-4ffd-b6ec-f716faa15d14">
+              <AttributeID>ID TRABAJO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c0dba2f-2103-441c-ab2c-d43cbd929e99">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ac23ef67-19c2-42cf-9614-396baabc4881">
+                    <TableID>dbo_H_VEHICULO</TableID>
+                    <ColumnID>ID_MEDIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ff751377-e8df-4c96-80d7-93f81a54506a">
+    <DataSourceViewID>OLAPVEHICLE</DataSourceViewID>
+  </Source>
+</Cube>

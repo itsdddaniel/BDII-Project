@@ -1,0 +1,235 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="101da390-d912-4563-ac11-0323ba70df0b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAPINCOME</ID>
+  <Name>OLAPINCOME</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="bbceb0a4-beca-4bcb-a6ed-4bc6e1f498aa">
+      <ID>D TIEMPO</ID>
+      <Name>D TIEMPO</Name>
+      <DimensionID>D TIEMPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="913436f0-a834-4416-97fd-f74e705cd552">
+          <AttributeID>ID TIEMPO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0d7b47b0-6b06-48c3-9350-34bf57081484">
+      <ID>D MEDIO DE TRANSPORTE</ID>
+      <Name>D MEDIO DE TRANSPORTE</Name>
+      <DimensionID>D MEDIO DE TRANSPORTE</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8b64bebb-4b08-45f9-b952-36184d7d25a3">
+          <AttributeID>ID MEDIO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1807384e-c12a-4c74-81d7-3764b826f86e">
+      <ID>D SUCURSAL</ID>
+      <Name>D SUCURSAL</Name>
+      <DimensionID>D SUCURSAL</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2747ddfd-b870-4e19-a93d-836da882aee1">
+          <AttributeID>ID SUCURSAL</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b9c80546-cb2e-442f-9aef-4c4c50100edf">
+      <ID>D VIAJES</ID>
+      <Name>D VIAJES</Name>
+      <DimensionID>D VIAJES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bb785288-477f-4e6b-846f-7e6cf1799a55">
+          <AttributeID>ID VIAJE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9c799b18-5f76-461a-b41b-057877452ef0">
+      <ID>D EMPLEADOS</ID>
+      <Name>D EMPLEADOS</Name>
+      <DimensionID>D EMPLEADOS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7282f388-1ee7-4174-8b41-fe54e464be21">
+          <AttributeID>ID EMPLEADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3a548e66-5808-470f-876f-c4b2f3269d56">
+      <ID>H INGRESOS</ID>
+      <Name>H INGRESOS</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="be04ad72-32fb-4e98-8882-3d68ed5bd4b5">
+          <ID>INGRESO</ID>
+          <Name>INGRESO</Name>
+          <Source dwd:design-time-name="527e29a1-5a22-483a-96ac-1742c516965a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bfa09270-0263-47e5-b701-49a903bb7755">
+              <TableID>dbo_H_INGRESOS</TableID>
+              <ColumnID>INGRESO</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e67a6e34-e1df-4a8a-9ef6-470a4dcc7555">
+          <ID>H INGRESOS Count</ID>
+          <Name>H INGRESOS Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0d6922aa-5c70-4a06-acab-a3a3c0e58382">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f8aa084e-5bec-4139-8556-ddea30e948f4">
+              <TableID>dbo_H_INGRESOS</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="33ad3d29-0b85-47d9-9d5e-11c813738b0e">
+          <CubeDimensionID>D TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e581f0c9-9574-42cb-8127-f220571387bd">
+              <AttributeID>ID TIEMPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ae55a2ba-6920-4f4e-8fff-fbf5f17631f0">
+                  <DataType>Date</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37849cd9-df77-43d7-89a8-1dba03126765">
+                    <TableID>dbo_H_INGRESOS</TableID>
+                    <ColumnID>ID_TIEMPO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="27c3c9e8-a283-4dbd-aa49-b222d33806ef">
+          <CubeDimensionID>D VIAJES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2f494d2c-4fd3-4671-b9c9-6f149595af2a">
+              <AttributeID>ID VIAJE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="99c412c4-2969-464b-a684-a98e2acbe7cb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="21f69d42-c34f-416d-9566-8cc7d80e2ea7">
+                    <TableID>dbo_H_INGRESOS</TableID>
+                    <ColumnID>ID_VIAJES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8a059c68-8827-4b9c-ab80-d0ad2e4603ef">
+          <CubeDimensionID>D MEDIO DE TRANSPORTE</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1e3ee586-b2fd-430e-8287-4487ff85af57">
+              <AttributeID>ID MEDIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="15292943-ba96-4a63-af36-e735972044cf">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="300e34f3-c7e7-4172-8e70-cb9d9b077faf">
+                    <TableID>dbo_H_INGRESOS</TableID>
+                    <ColumnID>ID_MEDIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="594aa313-b6da-42bc-a0f1-5e1cf6ffc282">
+          <CubeDimensionID>D EMPLEADOS</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="531622cd-264b-4ac6-9fcf-02439227aa0c">
+              <AttributeID>ID EMPLEADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9fdac8ff-9ddd-4eda-a990-8687643259bc">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a4465c0-714e-40f7-958a-792c6e074b5f">
+                    <TableID>dbo_H_INGRESOS</TableID>
+                    <ColumnID>ID_EMPLEADOS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="00c0ff4e-2fbc-4184-b6d4-8aedf3f85096">
+          <CubeDimensionID>D SUCURSAL</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c36a2978-d222-4bba-a753-df3044bd70db">
+              <AttributeID>ID SUCURSAL</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1ce1c675-4fd3-4c0e-88e2-bb863bef1457">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="975df972-262f-4249-8292-b3ffa5356d93">
+                    <TableID>dbo_H_INGRESOS</TableID>
+                    <ColumnID>ID_SUCURSAL</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="37282806-db55-4961-8e7b-19651af4488c">
+    <DataSourceViewID>OLAPINCOME</DataSourceViewID>
+  </Source>
+</Cube>
