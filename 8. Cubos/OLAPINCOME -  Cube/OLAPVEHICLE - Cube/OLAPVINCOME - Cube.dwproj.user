@@ -4,7 +4,7 @@
       <Name>Development</Name>
       <Options>
         <TargetServer>DESKTOP-E4HF9F0:2383</TargetServer>
-        <TargetDatabase>OLAPVEHICLE - Cube</TargetDatabase>
+        <TargetDatabase>OLAPINCOME - Cube</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
           <ObjectType>Current</ObjectType>

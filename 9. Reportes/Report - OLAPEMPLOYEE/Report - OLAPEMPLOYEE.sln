@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report - OLAPEMPLOYEE", "Report - OLAPEMPLOYEE\Report - OLAPEMPLOYEE.rptproj", "{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.Debug|Default.ActiveCfg = Debug
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.Debug|Default.Build.0 = Debug
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.Debug|Default.Deploy.0 = Debug
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.DebugLocal|Default.Build.0 = DebugLocal
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.Release|Default.ActiveCfg = Release
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.Release|Default.Build.0 = Release
+		{CC2BB460-4C20-4A40-800B-BDF5528CD8AE}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F25F445C-7001-4963-B137-40469B54A3C4}
+	EndGlobalSection
+EndGlobal
