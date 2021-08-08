@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="30f226c3-1eb6-44bf-8096-8c36a276bdeb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0d9eea60-a655-4287-a61e-e71673c1fcd8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>H CANAL</ID>
   <Name>H CANAL</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,39 +68,39 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9941e376-68ac-4712-afd9-ee584ff28602">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="13890fbf-4be7-4eed-be7c-3ad46ac72378">
     <DataSourceViewID>OLAPAPI</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="79055b9a-a43f-44f0-8579-339e9982c4eb">
+  <ErrorConfiguration dwd:design-time-name="508bf70d-3e31-4ab4-96c5-540648bb5751">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="69c43f7b-36cc-4874-b6d3-79ed968c3df6">
+    <Attribute dwd:design-time-name="c1c4a662-2bcc-4e26-ab4b-16797b87b85f">
       <ID>ID CANAL</ID>
       <Name>ID CANAL</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0487e4ac-7653-436b-b353-95b5c16622fc">
+        <KeyColumn dwd:design-time-name="967ef988-4874-41c9-896c-9ae27bf367d1">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="953e023d-8ec0-4f90-ab25-4c62429024f5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2273d117-615e-4b2b-a046-0283088e3aa2">
             <TableID>dbo_H_CANAL</TableID>
             <ColumnID>ID_CANAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="e25507ba-96cd-4756-b121-c8c280d22b12">
+        <AttributeRelationship dwd:design-time-name="9f3d3735-51c3-476c-a78c-2ea328b27328">
           <AttributeID>ID VIDEO</AttributeID>
           <Name>ID VIDEO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="790039f3-c3ea-4173-b251-96f0eb298e45">
+        <AttributeRelationship dwd:design-time-name="ade9c345-c2fc-4579-ac54-3d1b72f7cfd9">
           <AttributeID>ID ESTADISTICA</AttributeID>
           <Name>ID ESTADISTICA</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="540c155d-ab98-423a-94ef-fb3f17b262ad">
+        <AttributeRelationship dwd:design-time-name="a8a57811-57fd-43df-9623-f0b2c7ecfce9">
           <AttributeID>VIDEOID</AttributeID>
           <Name>VIDEOID</Name>
         </AttributeRelationship>
@@ -109,13 +109,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="25182b78-142f-48b8-9766-0a5da588dc48">
+    <Attribute dwd:design-time-name="120c48b7-30fe-4893-9b90-d3658194774e">
       <ID>ID VIDEO</ID>
       <Name>ID VIDEO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="14b1a616-8e71-44b1-b8c8-1d6f4cb4d796">
+        <KeyColumn dwd:design-time-name="4e7d0cbf-33ca-46f6-b50d-1b2518fb045c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="24ff2c4d-7ed1-4b58-b611-cc1f61490843">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2597f66a-6313-46c3-9450-383ce7f17e77">
             <TableID>dbo_H_CANAL</TableID>
             <ColumnID>ID_VIDEO</ColumnID>
           </Source>
@@ -126,13 +126,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2990315e-61b7-4724-801f-4afce1fa1a15">
+    <Attribute dwd:design-time-name="36fd1242-496c-45e8-8b0b-15a33bf324f9">
       <ID>ID ESTADISTICA</ID>
       <Name>ID ESTADISTICA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="15500cce-0435-4d6f-978d-a42441746eb3">
+        <KeyColumn dwd:design-time-name="120e988c-ffce-4a88-99b4-8cab9c6756a9">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e31e67d3-b7e0-4196-8515-b963f1d3d8f8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33819a40-6575-4c3a-8ab5-6f6852519d71">
             <TableID>dbo_H_CANAL</TableID>
             <ColumnID>ID_ESTADISTICA</ColumnID>
           </Source>
@@ -143,14 +143,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cf4ccb34-cca4-48c0-9bcd-558433d87008">
+    <Attribute dwd:design-time-name="cfebd996-a150-47d1-b121-80dc710cb968">
       <ID>VIDEOID</ID>
       <Name>VIDEOID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8944b222-05a3-47e2-b000-29ace129190a">
+        <KeyColumn dwd:design-time-name="39157f3d-544a-4dfe-9f57-adf2c5250fd4">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5414d89b-2957-45c3-b762-ffb7c2ccdfb9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1a548017-da8d-4798-875a-14308d16bd61">
             <TableID>dbo_H_CANAL</TableID>
             <ColumnID>VIDEOID</ColumnID>
           </Source>

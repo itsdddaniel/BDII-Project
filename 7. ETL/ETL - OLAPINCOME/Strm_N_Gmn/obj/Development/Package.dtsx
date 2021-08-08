@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{6B443D08-B518-4998-BCE9-34F583B203D1}">
+  DTS:VersionBuild="41"
+  DTS:VersionGUID="{CB43F420-4456-4032-95B6-90BAEA45E854}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD9euoSUiZEK5MIVmbr6Dr8tgJ1Mwmbc4/BZIF70qvlMAAAAAAOgAAAAAIAACAAAACdQnIhFQFLfNYB3FctY5gS5JsABcRfWRb7QfRzrvPe5RAAAACYgbtOgyJd2mbBIYbfNHHtQAAAAH79GU/Fjrk81dDFXN5CSPbwkixt2qxA2bxsB6XKw34V9ShOa94NjCkwgkfboU/9nKQRA0orsegwuak7p+HGMaY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRkxLQDcLEObaMNAGcg1m1wIqELFSwMkbYjYYfm/+C/QAAAAAOgAAAAAIAACAAAAAQ5LA49Qahv9CvwKGZyWwsJFMzVcGC+lXSgyDQAWenZRAAAAD3h47HS5rOQ1KsKJ4ICf1CQAAAAJf+fFX0Vw8A3ONYA9ULhMQPasnJd2Ee5fmNXucZ9udG5YvCMiLBLOhuzIUM9b05Yx06E3Qo50beJejwZ7gGMq0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD//VamFowi7FflSzdarboEqyNXfyXad96z34kPYK2ghAAAAAAOgAAAAAIAACAAAABBYT6W5jkNh/Q7Xo7SaGKg2lmRuFEGUZokh5B3/xV9WBAAAACneI82nravRoVKd1U0cSwLQAAAACq++694O+5XkIRRnVlsYMHrhrQrboCbiYKtU+Kyt/4XrFMxg2jrhLzfELen8oUzdWR5SfiufpN0dfzWZuankJ8</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADsQ5pJo1Gu/a+Ejln3AZHbkFR1eHAMl3ivNTvytHW5JgAAAAAOgAAAAAIAACAAAAC3bBLl9ZPvjrgINSU47xx7XXFpSNA53+ITyIEum6vLsBAAAACjrq6HUrIddWfHoPuYeSybQAAAALZJ5lkFMLkwjSuaELk4NWoRNb0Bo29Wc6HS1uIxH1zAo7RzSi9tbrG1Jqu5VVcHqjDmbxWE9SAie/0WOUygYUk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3898,6 +3898,15 @@ FROM Viaje;</property>
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].Columns[MONTO]"
                       name="MONTO"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].Columns[ESTADO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].ExternalColumns[ESTADO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].Columns[ESTADO]"
+                      name="ESTADO"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3915,6 +3924,10 @@ FROM Viaje;</property>
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].ExternalColumns[MONTO]"
                       dataType="i4"
                       name="MONTO" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].ExternalColumns[ESTADO]"
+                      dataType="bool"
+                      name="ESTADO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3939,6 +3952,11 @@ FROM Viaje;</property>
                       dataType="i4"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[MONTO]"
                       name="MONTO" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[ESTADO]"
+                      dataType="bool"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[ESTADO]"
+                      name="ESTADO" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -4485,7 +4503,7 @@ FROM Viaje;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Empleados">
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4514,36 +4532,7 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Viajes">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Tiempo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4569,7 +4558,7 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Sucursal">
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4583,6 +4572,35 @@ FROM Viaje;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Origen de Sucursal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Viajes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Sucursal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Empleados">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4654,6 +4672,10 @@ FROM Viaje;</property>
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Medio De Transporte"
           TopLeft="57,372" />
         <NodeLayout
+          Size="163,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Origen de Tiempo"
+          TopLeft="78,73" />
+        <NodeLayout
           Size="156,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Viajes"
           TopLeft="688,197" />
@@ -4673,10 +4695,6 @@ FROM Viaje;</property>
           Size="185,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Tiempo"
           TopLeft="64,155" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Origen de Tiempo"
-          TopLeft="78,73" />
         <NodeLayout
           Size="178,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Viajes"
@@ -4812,6 +4830,19 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Tiempo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Viajes">
     <Properties>
       <Property>
@@ -4839,19 +4870,6 @@ FROM Viaje;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Sucursal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Tiempo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

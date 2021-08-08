@@ -41,11 +41,12 @@ export class APIService
         const nRegistros = 10000;
         for (let i = 0; i < nRegistros; i++) 
         {
+            let fullname = `${faker.name.firstName()} ${faker.name.lastName()}`;
             let test = await database.executeQuery('INSERT INTO Cliente(Nombre,Telefono,Email) VALUES(@Nombre,@Telefono,@Email)',
             [{
                 name: 'Nombre',
                 type:  'varchar',
-                value: faker.name.firstName()
+                value: fullname
             },
             {
                 name: 'Telefono',
@@ -103,6 +104,7 @@ export class APIService
         const nRegistros = 10000;
         for (let i = 0; i < nRegistros; i++) 
         {
+            let fullname = `${faker.name.firstName()} ${faker.name.lastName()}`;
             let test = await database.executeQuery('INSERT INTO Empleados(NumeroDeIdentidad,Trabajo,Sucursal,Nombre,FechaDeNacimiento,Telefono,Rating) VALUES(@NumeroDeIdentidad,@Trabajo,@Sucursal,@Nombre,@FechaDeNacimiento,@Telefono,@Rating)', 
             [{
                 name: 'NumeroDeIdentidad',
@@ -122,7 +124,7 @@ export class APIService
             {
                 name: 'Nombre',
                 type:  'varchar',
-                value: faker.name.firstName()
+                value: fullname
             },
             {
                 name: 'FechaDeNacimiento',

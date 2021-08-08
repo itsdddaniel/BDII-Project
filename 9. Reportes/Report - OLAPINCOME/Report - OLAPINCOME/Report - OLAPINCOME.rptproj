@@ -50,7 +50,8 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <Report Include="Reporte - OLAPINCOME.rdl" />
+    <Report Include="Report - Monto de Viaje - Ingresos.rdl" />
+    <Report Include="Report - Viajes Completados-No Completados - Ingresos.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

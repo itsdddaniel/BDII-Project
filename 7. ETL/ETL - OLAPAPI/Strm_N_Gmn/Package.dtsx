@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="76"
-  DTS:VersionGUID="{445E4BB1-8819-43F0-8809-F5A0DB651B78}">
+  DTS:VersionBuild="79"
+  DTS:VersionGUID="{88B8B6E9-5647-4832-BA60-F3817CD7D5C3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -41,7 +41,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD8gmCTdaK1JlcoStBldrlpelVBeD2bgRM74DqGAPA6hgAAAAAOgAAAAAIAACAAAADQXbFDbBFBGdCSk7p6GdxfRaBKYM+YqHvfeVdus67z9hAAAACezQbQDjiCllTLpuA1DPFGQAAAAI05PrX8A1sitlIzCoynoD2im3uCx7z84r8D1xYH8LYRQaDhtNCb25vn9+0m/DcwOOtXjJRjIrJ8GIOJ6ecf7ZA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACGR0aE2MBLu1KnO1RQwmbZ7VbL+SdPpIl0R7wIzCxwqgAAAAAOgAAAAAIAACAAAAAROApM06K+geGBqykVFq0o18yshZuHoD9JuwpiWNB2HRAAAABwinfX+6fGnif1Ow0gQg4JQAAAAAcuRESwG7hR4kJ/Jg+Ld/3a0msQfFIwWvRNP1YboWUyp0WkAL1NXvZkenJsI+eazo+HXyzBoj7WJcybTVJdozk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -181,28 +181,28 @@
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].Columns[ID_VIDEOS]"
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].Columns[ID_ESTADISTICAS]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="ID_VIDEOS"
+                      cachedName="ID_ESTADISTICAS"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]" />
+                    <inputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].Columns[VIDEOID]"
+                      cachedDataType="i4"
+                      cachedName="VIDEOID"
                       externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[VIDEOID]"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]" />
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[VIDEOID]" />
+                    <inputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].Columns[ID_VIDEO]"
+                      cachedDataType="i4"
+                      cachedName="ID_VIDEO"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
-                      dataType="i4"
-                      name="ID_ESTADISTICAS" />
-                    <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEOS]"
-                      dataType="i4"
-                      name="ID_VIDEOS" />
-                    <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID]"
-                      dataType="i4"
-                      name="ID" />
                     <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_CANAL]"
                       dataType="i4"
@@ -213,6 +213,14 @@
                       dataType="str"
                       length="1000"
                       name="VIDEOID" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      dataType="i4"
+                      name="ID_ESTADISTICA" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
+                      dataType="i4"
+                      name="ID_VIDEO" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -266,9 +274,9 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'ID_CANAL',
-CAST([_id] AS VARCHAR(1000)) AS 'ID_ESTADISTICAS',
-CAST([_id] AS VARCHAR(1000)) AS 'ID_VIDEOS'
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT id AS 'ID_VIDEO',
+id AS 'ID_ESTADISTICAS',
+id AS 'VIDEOID'
 FROM apidata;</property>
                 <property
                   dataType="System.String"
@@ -317,48 +325,38 @@ FROM apidata;</property>
                       name="ID_ESTADISTICAS"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
-                      length="50"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
-                      name="ID_VIDEOS"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEO]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]"
+                      name="ID_VIDEO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[VIDEOID]"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
-                      length="1000"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
-                      name="ID_CANAL"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[VIDEOID]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[VIDEOID]"
+                      name="VIDEOID"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="ID_ESTADISTICAS" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="ID_VIDEOS" />
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEO]"
+                      dataType="i4"
+                      name="ID_VIDEO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="ID_CANAL" />
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[VIDEOID]"
+                      dataType="i4"
+                      name="VIDEOID" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -367,26 +365,20 @@ FROM apidata;</property>
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
-                      name="ID_CANAL" />
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEO]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEO]"
+                      name="ID_VIDEO" />
                     <outputColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
                       name="ID_ESTADISTICAS" />
                     <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
-                      name="ID_VIDEOS" />
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[VIDEOID]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[VIDEOID]"
+                      name="VIDEOID" />
                     <outputColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -1143,7 +1135,7 @@ FROM apidata;</property>
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT
 CAST([views] AS INT) AS 'views',
 CAST([likes] AS INT) AS 'likes',
 CAST([dislikes] AS INT) AS 'dislikes',
@@ -1185,17 +1177,6 @@ FROM apidata;</property>
                   refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[views]"
                       codePage="1252"
@@ -1254,12 +1235,6 @@ FROM apidata;</property>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="id" />
                     <externalMetadataColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
                       dataType="i4"
@@ -1328,13 +1303,6 @@ FROM apidata;</property>
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      name="id" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1365,7 +1333,7 @@ FROM apidata;</property>
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
 CAST([video_title] AS VARCHAR(1000)) AS 'title',
 CAST([url_video] AS VARCHAR(1000)) AS 'url'
 FROM apidata;</property>
@@ -1405,17 +1373,6 @@ FROM apidata;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[title]"
                       codePage="1252"
                       dataType="str"
@@ -1440,12 +1397,6 @@ FROM apidata;</property>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="id" />
                     <externalMetadataColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
                       codePage="1252"
@@ -1491,13 +1442,6 @@ FROM apidata;</property>
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      name="id" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -2878,6 +2822,26 @@ FROM apidata;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="178,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Estadistica"
+          TopLeft="81,269" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Video"
+          TopLeft="390,227" />
+        <NodeLayout
+          Size="242,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica"
+          TopLeft="47,336" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Video"
+          TopLeft="424,160" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Estadistica"
+          TopLeft="74,406" />
+        <NodeLayout
           Size="154,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Canal"
           TopLeft="81,30" />
@@ -2889,62 +2853,10 @@ FROM apidata;</property>
           Size="219,42"
           Id="Package\Carga Tablas de Dimensión\Conversión de datos de Canal"
           TopLeft="47,97" />
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
-          TopLeft="157.25,72">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25"
-              Start="0,0"
-              End="0,17.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos]"
-          TopLeft="155,139">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28"
-              Start="0,0"
-              End="0,20.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="178,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Estadistica"
-          TopLeft="81,269" />
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Estadistica"
-          TopLeft="74,406" />
-        <NodeLayout
-          Size="242,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica"
-          TopLeft="47,336" />
+          Size="159,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Video"
+          TopLeft="417,297" />
         <EdgeLayout
           Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
           TopLeft="169,311">
@@ -2968,42 +2880,8 @@ FROM apidata;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
-          TopLeft="166.5,378">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28"
-              Start="0,0"
-              End="0,20.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Video"
-          TopLeft="424,160" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Video"
-          TopLeft="417,297" />
-        <NodeLayout
-          Size="219,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Video"
-          TopLeft="390,227" />
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
-          TopLeft="500.5,202">
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
+          TopLeft="157.25,72">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3045,9 +2923,104 @@ FROM apidata;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
+          TopLeft="166.5,378">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos]"
+          TopLeft="155,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+          TopLeft="500.5,202">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Estadistica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Video">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Estadistica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Origen de Canal">
     <Properties>
@@ -3058,6 +3031,19 @@ FROM apidata;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Canal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Video">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3124,7 +3110,7 @@ FROM apidata;</property>
     design-time-name="Package\Vaciado de Tablas de Dimensión">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="204,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas"
@@ -3168,7 +3154,9 @@ FROM apidata;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3190,7 +3178,9 @@ FROM apidata;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3212,7 +3202,9 @@ FROM apidata;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3246,48 +3238,6 @@ FROM apidata;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Estadistica">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Estadistica">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Video">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Video">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

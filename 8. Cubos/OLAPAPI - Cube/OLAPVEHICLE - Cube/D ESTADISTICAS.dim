@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="52fcba13-eb11-4c64-9fe6-f950da915d9a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0a59d384-a9d5-41f9-973c-abf7f5cd06f0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>D ESTADISTICAS</ID>
   <Name>D ESTADISTICAS</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,49 +68,49 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="97ba1d3d-21ba-490b-8e02-5b54d3690927">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="20a5534b-67a9-4854-81c5-12b74f1d3ccd">
     <DataSourceViewID>OLAPAPI</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="b6a86175-24bb-4e61-9723-4f230f7384ab">
+  <ErrorConfiguration dwd:design-time-name="bfb83c37-937c-424b-97dc-b0f22010ebcf">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="9580ad3a-1657-43e6-90b7-b3d10a6d4c17">
+    <Attribute dwd:design-time-name="fe1a5dab-2628-4ac1-a180-810fe4fa7fd5">
       <ID>ID ESTADISTICA</ID>
       <Name>ID ESTADISTICA</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="591032d7-328a-4b0c-84a7-0c12c7db826d">
+        <KeyColumn dwd:design-time-name="af0504ee-d17c-4b1f-81d5-fdb98e6b69db">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e97b8dc-f746-4662-8933-f6d40e1d094b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71901949-aefd-45af-89c6-feaf89b7e4a8">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>ID_ESTADISTICA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="488420e6-aa3a-4558-938a-f2420ae79dda">
+        <AttributeRelationship dwd:design-time-name="22454062-d95c-48b2-856d-db6ce300c59e">
           <AttributeID>VISTAS</AttributeID>
           <Name>VISTAS</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="669555ca-88bf-4a0a-a75c-43f2b057fd64">
+        <AttributeRelationship dwd:design-time-name="f3de106d-45a6-4c54-ae6f-300cef53952d">
           <AttributeID>LIKES</AttributeID>
           <Name>LIKES</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="33042dd7-2f07-4d1b-be1d-8a05d0df1aa5">
+        <AttributeRelationship dwd:design-time-name="831c0676-5380-418c-8695-0251eea02ca6">
           <AttributeID>DISLIKES</AttributeID>
           <Name>DISLIKES</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bd1674f3-e9a2-45d8-9169-a80dd817e684">
+        <AttributeRelationship dwd:design-time-name="974dbbbc-7209-40b2-b15b-f580f10a6834">
           <AttributeID>COMENTARIOS</AttributeID>
           <Name>COMENTARIOS</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="14511090-3968-483c-9d0c-0f22aa1780f5">
+        <AttributeRelationship dwd:design-time-name="dabcbe61-e49a-447c-88d7-30ee8874bbc9">
           <AttributeID>PUBLISHED</AttributeID>
           <Name>PUBLISHED</Name>
         </AttributeRelationship>
@@ -119,14 +119,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="80571ea2-80d0-4b00-a0da-f86fe5a9c096">
+    <Attribute dwd:design-time-name="c8df8ddf-9e2f-426d-9c1d-ed8e07473c33">
       <ID>VISTAS</ID>
       <Name>VISTAS</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="626c78fb-0df1-465c-bdd7-2588414e70ce">
+        <KeyColumn dwd:design-time-name="9969f2f5-8399-4187-a455-4222a19085fe">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b53ce91-6e67-435b-ba84-6f29f36ab973">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b49f5fd-f34b-4e77-b654-c5f8239ca48a">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>VISTAS</ColumnID>
           </Source>
@@ -135,14 +135,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="20c7455e-675d-48ee-8b58-27635004791f">
+    <Attribute dwd:design-time-name="19a866e5-aca3-4678-b4b5-b8b9f32e9fa8">
       <ID>LIKES</ID>
       <Name>LIKES</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f12fcce4-0a71-4274-8d86-79c2797cfdfc">
+        <KeyColumn dwd:design-time-name="6901453c-b9da-4dfd-bde3-61e378e981f2">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6bb9c833-3a4f-4bc1-8a21-8857edd8fbc1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cf8e4c9-0ffa-4795-9f97-081cc1daa736">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>LIKES</ColumnID>
           </Source>
@@ -151,14 +151,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="faf6c47d-89db-42cc-a292-4a60d68569f5">
+    <Attribute dwd:design-time-name="bffac24a-8d7b-400b-9d32-f1ec729e8e41">
       <ID>DISLIKES</ID>
       <Name>DISLIKES</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2c728b6a-a2d5-480b-a5e2-948b78cd8015">
+        <KeyColumn dwd:design-time-name="b45a2c63-e27c-4253-9a77-01b3e3a97c56">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="95d60971-0b51-466c-a14a-dd006e6b51e9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7ebf59c-ade6-4c4d-a459-fc9029021dc9">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>DISLIKES</ColumnID>
           </Source>
@@ -167,14 +167,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="30b411d6-265a-4274-a72c-777a01ff0b97">
+    <Attribute dwd:design-time-name="74ca89b3-91f4-4381-9bd8-5c8e47b7c584">
       <ID>COMENTARIOS</ID>
       <Name>COMENTARIOS</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c37247e4-347c-49ca-92b1-779b1b29e275">
+        <KeyColumn dwd:design-time-name="672de10f-f58e-4a7b-af53-303473de0501">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f581adfc-5055-43d8-a593-26ded473f4e8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de148e0f-44dd-45fe-9686-959917ec033d">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>COMENTARIOS</ColumnID>
           </Source>
@@ -183,14 +183,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0017b0ea-341d-426c-9d3f-86bf6b4fdefa">
+    <Attribute dwd:design-time-name="83fc6b5e-6aad-4484-81ed-628c19f22191">
       <ID>PUBLISHED</ID>
       <Name>PUBLISHED</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="52e037e6-a885-4f27-a774-13c23cb72e07">
+        <KeyColumn dwd:design-time-name="80ce3037-785b-4ac7-b050-d96f1d68da9e">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1be05cf5-11b6-4ee6-a814-3661b5cc762f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37617024-91bf-410c-b3f8-9ae10a43ed6f">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>PUBLISHED</ColumnID>
           </Source>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Report - OLAPAPI", "Report - OLAPAPI\Report - OLAPAPI.rptproj", "{F9316824-97CE-4480-B101-4877AEB4BE24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.Debug|Default.ActiveCfg = Debug
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.Debug|Default.Build.0 = Debug
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.Debug|Default.Deploy.0 = Debug
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.DebugLocal|Default.Build.0 = DebugLocal
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.Release|Default.ActiveCfg = Release
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.Release|Default.Build.0 = Release
+		{F9316824-97CE-4480-B101-4877AEB4BE24}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C245706-2311-4FEF-A886-5E0BEA95B426}
+	EndGlobalSection
+EndGlobal

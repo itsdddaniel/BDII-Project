@@ -6,18 +6,18 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>OLEDB-MD</DataProvider>
-        <ConnectString>Data Source=.;Initial Catalog="OLAPINCOME - Cube"</ConnectString>
+        <ConnectString>Data Source=.;Initial Catalog="OLAPEMPLOYEE - Cube"</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>b5761e53-0f15-479b-aab4-b4e908971dc3</rd:DataSourceID>
+      <rd:DataSourceID>ee522385-d893-4b06-ab1d-e2a4879cb6ef</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT NON EMPTY { [Measures].[H INGRESOS Count] } ON COLUMNS, NON EMPTY { ([D EMPLEADOS].[NOMBRE].[NOMBRE].ALLMEMBERS * [D VIAJES].[ESTADO].[ESTADO].ALLMEMBERS * [D VIAJES].[MONTO].[MONTO].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPINCOME] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText>SELECT NON EMPTY { [Measures].[H EMPLEADO Count] } ON COLUMNS, NON EMPTY { ([D EMPLEADOS].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPEMPLOYEE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -36,33 +36,11 @@
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D VIAJES</DimensionName>
-                      <HierarchyName>ESTADO</HierarchyName>
-                      <HierarchyUniqueName>[D VIAJES].[ESTADO]</HierarchyUniqueName>
-                      <LevelName>ESTADO</LevelName>
-                      <UniqueName>[D VIAJES].[ESTADO].[ESTADO]</UniqueName>
-                    </ID>
-                    <ItemCaption>ESTADO</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D VIAJES</DimensionName>
-                      <HierarchyName>MONTO</HierarchyName>
-                      <HierarchyUniqueName>[D VIAJES].[MONTO]</HierarchyUniqueName>
-                      <LevelName>MONTO</LevelName>
-                      <UniqueName>[D VIAJES].[MONTO].[MONTO]</UniqueName>
-                    </ID>
-                    <ItemCaption>MONTO</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
                     <ID xsi:type="Measure">
-                      <MeasureName>H INGRESOS Count</MeasureName>
-                      <UniqueName>[Measures].[H INGRESOS Count]</UniqueName>
+                      <MeasureName>H EMPLEADO Count</MeasureName>
+                      <UniqueName>[Measures].[H EMPLEADO Count]</UniqueName>
                     </ID>
-                    <ItemCaption>H INGRESOS Count</ItemCaption>
+                    <ItemCaption>H EMPLEADO Count</ItemCaption>
                     <BackColor>true</BackColor>
                     <ForeColor>true</ForeColor>
                     <FontFamily>true</FontFamily>
@@ -76,7 +54,7 @@
                 </Items>
               </Select>
               <AutoExecute>false</AutoExecute>
-              <From>OLAPINCOME</From>
+              <From>OLAPEMPLOYEE</From>
               <Filter>
                 <FilterItems />
               </Filter>
@@ -87,7 +65,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[H INGRESOS Count] } ON COLUMNS, NON EMPTY { ([D EMPLEADOS].[NOMBRE].[NOMBRE].ALLMEMBERS * [D VIAJES].[ESTADO].[ESTADO].ALLMEMBERS * [D VIAJES].[MONTO].[MONTO].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPINCOME] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[H EMPLEADO Count] } ON COLUMNS, NON EMPTY { ([D EMPLEADOS].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPEMPLOYEE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
@@ -98,16 +76,8 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D EMPLEADOS].[NOMBRE].[NOMBRE]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESTADO">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D VIAJES].[ESTADO].[ESTADO]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MONTO">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D VIAJES].[MONTO].[MONTO]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="H_INGRESOS_Count">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[H INGRESOS Count]" /&gt;</DataField>
+        <Field Name="H_EMPLEADO_Count">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[H EMPLEADO Count]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -124,7 +94,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Reporte - OLAPINCOME</Value>
+                    <Value>Report - Cantidad de Carreras en el dia Employee</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -159,14 +129,14 @@
                       <CellContents>
                         <Rectangle Name="List1_Contents">
                           <ReportItems>
-                            <Textbox Name="H_INGRESOS_Count">
+                            <Textbox Name="H_EMPLEADO_Count">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!H_INGRESOS_Count.Value</Value>
+                                      <Value>=Fields!H_EMPLEADO_Count.Value</Value>
                                       <Style>
                                         <FontFamily />
                                         <FontSize>14pt</FontSize>
@@ -176,7 +146,7 @@
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>H_INGRESOS_Count</rd:DefaultName>
+                              <rd:DefaultName>H_EMPLEADO_Count</rd:DefaultName>
                               <Height>0.27in</Height>
                               <Style>
                                 <FontFamily />
@@ -189,12 +159,6 @@
                             <Tablix Name="table1">
                               <TablixBody>
                                 <TablixColumns>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
@@ -225,86 +189,6 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox2</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="textbox3">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>ESTADO</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Color>#666666</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>textbox3</rd:DefaultName>
-                                            <Height>0.22in</Height>
-                                            <Width>1in</Width>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="textbox4">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>MONTO</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Color>#666666</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>textbox4</rd:DefaultName>
                                             <Height>0.22in</Height>
                                             <Width>1in</Width>
                                             <Style>
@@ -366,90 +250,12 @@
                                           </Textbox>
                                         </CellContents>
                                       </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="ESTADO">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!ESTADO.Value</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <Color>#333333</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>ESTADO</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="MONTO">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!MONTO.Value</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <Color>#333333</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>MONTO</rd:DefaultName>
-                                            <Height>0.21in</Height>
-                                            <Width>1in</Width>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
                                     </TablixCells>
                                   </TablixRow>
                                 </TablixRows>
                               </TablixBody>
                               <TablixColumnHierarchy>
                                 <TablixMembers>
-                                  <TablixMember />
-                                  <TablixMember />
                                   <TablixMember />
                                 </TablixMembers>
                               </TablixColumnHierarchy>
@@ -497,9 +303,9 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="list1_H_INGRESOS_Count">
+                  <Group Name="list1_H_EMPLEADO_Count">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!H_INGRESOS_Count.Value</GroupExpression>
+                      <GroupExpression>=Fields!H_EMPLEADO_Count.Value</GroupExpression>
                     </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
@@ -507,7 +313,7 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!H_INGRESOS_Count.Value</Value>
+                      <Value>=Fields!H_EMPLEADO_Count.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <DataElementOutput>Output</DataElementOutput>
@@ -547,5 +353,5 @@
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Invalid</rd:ReportUnitType>
-  <rd:ReportID>c452ba99-1816-4441-9ab8-cb059cc98d5d</rd:ReportID>
+  <rd:ReportID>b6168c14-7ddd-4307-92db-1fa4b44782d7</rd:ReportID>
 </Report>

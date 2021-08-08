@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3255231c-3aed-4a8c-b9a8-edf282829435" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d8767b85-a8f4-420b-a42c-386c26c93e50" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>OLAPAPI</ID>
   <Name>OLAPAPI</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,14 +42,14 @@
   <DataSourceID>OLAPAPI</DataSourceID>
   <Schema>
     <xs:schema id="OLAPAPI" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="OLAPAPI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="17bb7ca6-4b5e-46b1-8969-77eef839cd67">
+      <xs:element name="OLAPAPI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2bc2b769-01f4-49af-968c-136fe25d5b31">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_D_CANAL" msprop:design-time-name="ddda78f2-155c-4dd3-9bb0-602870ccb458" msprop:DbTableName="D_CANAL" msprop:FriendlyName="D_CANAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_CANAL" msprop:design-time-name="b8a2f024-8919-4264-8286-1dec5b594a3a" msprop:DbTableName="D_CANAL" msprop:FriendlyName="D_CANAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_CANAL" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b7862d43-4eaf-47db-b63d-0c26b5d3b670" msprop:DbColumnName="ID_CANAL" msprop:FriendlyName="ID_CANAL" type="xs:int" />
-                  <xs:element name="NOMBRE" msprop:design-time-name="468cb83f-b310-4f0f-a4e4-c5c374adcd39" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                  <xs:element name="ID_CANAL" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b88678c7-5c59-4fb1-8070-ea120b269299" msprop:DbColumnName="ID_CANAL" msprop:FriendlyName="ID_CANAL" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="c9d1db8f-d3e9-486a-85ec-0f75f74be3b0" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -59,39 +59,39 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_ESTADISTICAS" msprop:design-time-name="5f40a905-670b-4614-aef9-12f39a5e29b4" msprop:DbTableName="D_ESTADISTICAS" msprop:FriendlyName="D_ESTADISTICAS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_ESTADISTICAS" msprop:design-time-name="59520306-1e9b-4707-a2ea-b3421f324439" msprop:DbTableName="D_ESTADISTICAS" msprop:FriendlyName="D_ESTADISTICAS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_ESTADISTICA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="84be2d21-b39d-4474-8428-b0112f422cec" msprop:DbColumnName="ID_ESTADISTICA" msprop:FriendlyName="ID_ESTADISTICA" type="xs:int" />
-                  <xs:element name="VISTAS" msprop:design-time-name="a7a63283-3959-4e46-aecd-d67aca12ac72" msprop:DbColumnName="VISTAS" msprop:FriendlyName="VISTAS" minOccurs="0">
+                  <xs:element name="ID_ESTADISTICA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2c6f3e7a-dae3-4748-ac3c-6dc842f8468b" msprop:DbColumnName="ID_ESTADISTICA" msprop:FriendlyName="ID_ESTADISTICA" type="xs:int" />
+                  <xs:element name="VISTAS" msprop:design-time-name="7c8efa1b-5f2b-4db3-92d6-12411cfd569a" msprop:DbColumnName="VISTAS" msprop:FriendlyName="VISTAS" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="LIKES" msprop:design-time-name="cafc6746-e02a-4e18-818e-4d4c67be4d5b" msprop:DbColumnName="LIKES" msprop:FriendlyName="LIKES" minOccurs="0">
+                  <xs:element name="LIKES" msprop:design-time-name="46ac276d-00e3-4519-aa05-5588b82b1a55" msprop:DbColumnName="LIKES" msprop:FriendlyName="LIKES" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="DISLIKES" msprop:design-time-name="a6dd4623-9043-48da-9532-37d62163e5b4" msprop:DbColumnName="DISLIKES" msprop:FriendlyName="DISLIKES" minOccurs="0">
+                  <xs:element name="DISLIKES" msprop:design-time-name="b2017072-423d-4c7a-b7a1-859d7fcce56f" msprop:DbColumnName="DISLIKES" msprop:FriendlyName="DISLIKES" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="COMENTARIOS" msprop:design-time-name="6ce63ac4-35a8-40c7-9496-778ba439625e" msprop:DbColumnName="COMENTARIOS" msprop:FriendlyName="COMENTARIOS" minOccurs="0">
+                  <xs:element name="COMENTARIOS" msprop:design-time-name="409fbac2-80ca-4eec-a8c8-63cfdc5b0333" msprop:DbColumnName="COMENTARIOS" msprop:FriendlyName="COMENTARIOS" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="PUBLISHED" msprop:design-time-name="637c2cb5-53cb-47e3-83d6-d9c47a68b184" msprop:DbColumnName="PUBLISHED" msprop:FriendlyName="PUBLISHED" minOccurs="0">
+                  <xs:element name="PUBLISHED" msprop:design-time-name="1e0e1253-05fa-42ae-bc7c-580045b1dbe0" msprop:DbColumnName="PUBLISHED" msprop:FriendlyName="PUBLISHED" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -101,18 +101,18 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_VIDEOS" msprop:design-time-name="63938805-690f-4ae8-83eb-4537e562a639" msprop:DbTableName="D_VIDEOS" msprop:FriendlyName="D_VIDEOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_VIDEOS" msprop:design-time-name="ac0a27e8-0ecb-4d22-8f45-da90e88f8109" msprop:DbTableName="D_VIDEOS" msprop:FriendlyName="D_VIDEOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_VIDEO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2386e5e1-6a50-4bd4-bfb5-2981e5bb5c99" msprop:DbColumnName="ID_VIDEO" msprop:FriendlyName="ID_VIDEO" type="xs:int" />
-                  <xs:element name="TITULO" msprop:design-time-name="99b15e83-5a1f-466d-8a86-073efe6cedb4" msprop:DbColumnName="TITULO" msprop:FriendlyName="TITULO" minOccurs="0">
+                  <xs:element name="ID_VIDEO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fa7a9d5f-43b2-4fa7-bb90-f3538f449ee9" msprop:DbColumnName="ID_VIDEO" msprop:FriendlyName="ID_VIDEO" type="xs:int" />
+                  <xs:element name="TITULO" msprop:design-time-name="6dde5654-3004-4991-8b0f-4ee36aec917d" msprop:DbColumnName="TITULO" msprop:FriendlyName="TITULO" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="URL" msprop:design-time-name="442a55c6-5c15-4ffa-a349-7f41e98d6afe" msprop:DbColumnName="URL" msprop:FriendlyName="URL" minOccurs="0">
+                  <xs:element name="URL" msprop:design-time-name="9f026e09-1311-495e-8ba1-57b2b705aba3" msprop:DbColumnName="URL" msprop:FriendlyName="URL" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -122,13 +122,13 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_H_CANAL" msprop:design-time-name="478d454d-6ceb-4d76-bf5c-5288f4e5cf48" msprop:DbTableName="H_CANAL" msprop:FriendlyName="H_CANAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_H_CANAL" msprop:design-time-name="b17f8956-cdda-41ce-8f95-48b674fb328e" msprop:DbTableName="H_CANAL" msprop:FriendlyName="H_CANAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_CANAL" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="cb804deb-5909-4da0-8a55-d5fd1f762a62" msprop:DbColumnName="ID_CANAL" msprop:FriendlyName="ID_CANAL" type="xs:int" />
-                  <xs:element name="ID_ESTADISTICA" msprop:design-time-name="d7d89dc0-6360-4178-a191-1bb68869df25" msprop:DbColumnName="ID_ESTADISTICA" msprop:FriendlyName="ID_ESTADISTICA" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_VIDEO" msprop:design-time-name="fd2100b3-41e2-4422-acae-a06751f59191" msprop:DbColumnName="ID_VIDEO" msprop:FriendlyName="ID_VIDEO" type="xs:int" minOccurs="0" />
-                  <xs:element name="VIDEOID" msprop:design-time-name="ecec610a-0604-467f-b63a-709f950721f5" msprop:DbColumnName="VIDEOID" msprop:FriendlyName="VIDEOID" minOccurs="0">
+                  <xs:element name="ID_CANAL" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="38c03e4a-eb8a-463f-b75f-e97a65514703" msprop:DbColumnName="ID_CANAL" msprop:FriendlyName="ID_CANAL" type="xs:int" />
+                  <xs:element name="ID_ESTADISTICA" msprop:design-time-name="aedcfc9b-aa32-49b6-8fb0-4f15ca1582d0" msprop:DbColumnName="ID_ESTADISTICA" msprop:FriendlyName="ID_ESTADISTICA" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_VIDEO" msprop:design-time-name="63ab28b3-10a7-4de9-9b3f-7a90b58eaf5c" msprop:DbColumnName="ID_VIDEO" msprop:FriendlyName="ID_VIDEO" type="xs:int" minOccurs="0" />
+                  <xs:element name="VIDEOID" msprop:design-time-name="b364a8e2-f5e6-4213-bbc3-35544e66ca95" msprop:DbColumnName="VIDEOID" msprop:FriendlyName="VIDEOID" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />

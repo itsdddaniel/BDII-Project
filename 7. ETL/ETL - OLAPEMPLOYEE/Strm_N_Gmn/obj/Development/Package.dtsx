@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{AD461097-387C-411A-9B3F-0442D9B56774}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{7BB5BE0F-0A4C-4CDB-8CFD-7DEFF63DDD65}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAMkn8rz4Qt2d61Px3DVK/CSoEE37gNLHG+aYepyLIc8QAAAAAOgAAAAAIAACAAAACXrQSBiV1BmqUYqM5d7jW48tRXow2jFDGokrg/Z556qRAAAACKXcBE40bYp5I62YtLa7BOQAAAAFbv3eoTZMN0eBpBWD9FrVL4e82EbEaAiHIkSjrPg6wP0Dbnnl3S9CR0FaujnLxrKxqEA+WUe+fOXHkrNl6VfPM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACQBnTlq/v+Zu54OBpudPRpEyME3hsYRnSZas4aG82C+QAAAAAOgAAAAAIAACAAAAAIDTCukoaH89mCMbV5cBg+DrQ1l5sMDYPDwUnYXK/c0hAAAAA5gGLNRYImQVQbh0HKoTHAQAAAANzPB7wNfFrooFAGjD05bJPKBuQdiBgdI4/0fytd3v4SP2Q8BSMwRlLwUiZUryUbxaS+dx9/M6LBqAYn+Ar78PA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACj1ms7kEvxPowrMaAxn7QI1Wl2IO42nruoxVITg2dKRwAAAAAOgAAAAAIAACAAAACJlAobvnZ2rEMTkXFhxjBKh0W3vg41VWXLrdoc2zS5MRAAAABJJ0B6bkBKCVL0qlUlcUwTQAAAABjQ57hNgPUBMB1y505RSAdfWudq18leb7xLtoZLI4lhxSFMUl38beAVtt0RMHHzdgpWIAE1OAGy/2nG+2Ywpao</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABP/ge49Owbn6ITD25XXymxg/kpTuAxpxXTASV3PAc57QAAAAAOgAAAAAIAACAAAABRXgnzoEg2iF85lmf7m+ZShKuVOl+W802Vtejimhs8JhAAAADQnbnW9MDSqfOnb7IOwDIEQAAAAOhBb3ImTHWTkSNIzwq0RWJA+mLMb21xZPgOXmlRhzH4RF9Qhs2BWzJ1y+YflgKr/76NXe11/VeG0gqStPMFvC8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -4148,33 +4148,13 @@ FROM Viaje;</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="163,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Tiempo"
-          TopLeft="81,30" />
-        <NodeLayout
-          Size="167,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Tiempo"
-          TopLeft="74,167" />
-        <NodeLayout
-          Size="179,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Empleados"
-          TopLeft="403,302" />
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Empleados"
-          TopLeft="405,440" />
-        <NodeLayout
           Size="168,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Trabajo"
           TopLeft="690,296" />
         <NodeLayout
-          Size="221,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Viajes"
-          TopLeft="56,364" />
-        <NodeLayout
-          Size="229,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Trabajo"
-          TopLeft="654,224" />
+          Size="183,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Empleados"
+          TopLeft="405,440" />
         <NodeLayout
           Size="156,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Viajes"
@@ -4184,29 +4164,49 @@ FROM Viaje;</property>
           Id="Package\Carga Tablas de Dimensión\Origen de Sucursal"
           TopLeft="365,23" />
         <NodeLayout
+          Size="221,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Viajes"
+          TopLeft="56,364" />
+        <NodeLayout
+          Size="244,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Empleados"
+          TopLeft="369,368" />
+        <NodeLayout
+          Size="229,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Trabajo"
+          TopLeft="654,224" />
+        <NodeLayout
           Size="172,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Sucursal"
           TopLeft="370,179" />
-        <NodeLayout
-          Size="228,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Tiempo"
-          TopLeft="47,97" />
         <NodeLayout
           Size="160,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Viajes"
           TopLeft="92,436" />
         <NodeLayout
-          Size="232,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Sucursal"
-          TopLeft="336,98" />
+          Size="228,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Tiempo"
+          TopLeft="47,97" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Tiempo"
+          TopLeft="81,30" />
         <NodeLayout
           Size="164,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Trabajo"
           TopLeft="688,158" />
         <NodeLayout
-          Size="244,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Empleados"
-          TopLeft="369,368" />
+          Size="232,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Sucursal"
+          TopLeft="336,98" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Empleados"
+          TopLeft="403,302" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Tiempo"
+          TopLeft="74,167" />
         <EdgeLayout
           Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB4]"
           TopLeft="769.25,200">
@@ -4431,15 +4431,7 @@ FROM Viaje;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Tiempo">
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Trabajo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4448,32 +4440,11 @@ FROM Viaje;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Empleados">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Empleados">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Trabajo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4528,10 +4499,39 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Origen de Trabajo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Empleados">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Tiempo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4758,19 +4758,6 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Sucursal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Viajes">
     <Properties>
       <Property>
@@ -4798,6 +4785,19 @@ FROM Viaje;</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Tiempo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Sucursal">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

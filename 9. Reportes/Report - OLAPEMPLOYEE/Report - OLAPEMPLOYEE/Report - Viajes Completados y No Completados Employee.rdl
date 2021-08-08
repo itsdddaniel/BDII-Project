@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" MustUnderstand="df">
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>OLEDB-MD</DataProvider>
-        <ConnectString>Data Source=.;Initial Catalog="OLAPVEHICLE - Cube"</ConnectString>
+        <ConnectString>Data Source=.;Initial Catalog="OLAPEMPLOYEE - Cube"</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>32457f5b-9b1f-48f3-b64d-c22b6a891279</rd:DataSourceID>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>aefe2614-d3a8-4eb6-b6e9-becd8bbd431c</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT NON EMPTY { [Measures].[H VEHICULO Count] } ON COLUMNS, NON EMPTY { ([D MARCA].[NOMBRE].[NOMBRE].ALLMEMBERS * [D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO].ALLMEMBERS * [D VEHICULO].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPVEHICLE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText>SELECT NON EMPTY { [Measures].[H EMPLEADO Count] } ON COLUMNS, NON EMPTY { ([D EMPLEADOS].[NOMBRE].[NOMBRE].ALLMEMBERS * [D VIAJES].[ESTADO].[ESTADO].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPEMPLOYEE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -26,43 +26,32 @@
                 <Items>
                   <Item>
                     <ID xsi:type="Level">
-                      <DimensionName>D MARCA</DimensionName>
+                      <DimensionName>D EMPLEADOS</DimensionName>
                       <HierarchyName>NOMBRE</HierarchyName>
-                      <HierarchyUniqueName>[D MARCA].[NOMBRE]</HierarchyUniqueName>
+                      <HierarchyUniqueName>[D EMPLEADOS].[NOMBRE]</HierarchyUniqueName>
                       <LevelName>NOMBRE</LevelName>
-                      <UniqueName>[D MARCA].[NOMBRE].[NOMBRE]</UniqueName>
+                      <UniqueName>[D EMPLEADOS].[NOMBRE].[NOMBRE]</UniqueName>
                     </ID>
                     <ItemCaption>NOMBRE</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
                     <ID xsi:type="Level">
-                      <DimensionName>D MEDIO DE TRANSPORTE</DimensionName>
-                      <HierarchyName>TIPOMEDIO</HierarchyName>
-                      <HierarchyUniqueName>[D MEDIO DE TRANSPORTE].[TIPOMEDIO]</HierarchyUniqueName>
-                      <LevelName>TIPOMEDIO</LevelName>
-                      <UniqueName>[D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO]</UniqueName>
+                      <DimensionName>D VIAJES</DimensionName>
+                      <HierarchyName>ESTADO</HierarchyName>
+                      <HierarchyUniqueName>[D VIAJES].[ESTADO]</HierarchyUniqueName>
+                      <LevelName>ESTADO</LevelName>
+                      <UniqueName>[D VIAJES].[ESTADO].[ESTADO]</UniqueName>
                     </ID>
-                    <ItemCaption>TIPOMEDIO</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D VEHICULO</DimensionName>
-                      <HierarchyName>NOMBRE</HierarchyName>
-                      <HierarchyUniqueName>[D VEHICULO].[NOMBRE]</HierarchyUniqueName>
-                      <LevelName>NOMBRE</LevelName>
-                      <UniqueName>[D VEHICULO].[NOMBRE].[NOMBRE]</UniqueName>
-                    </ID>
-                    <ItemCaption>NOMBRE</ItemCaption>
+                    <ItemCaption>ESTADO</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
                     <ID xsi:type="Measure">
-                      <MeasureName>H VEHICULO Count</MeasureName>
-                      <UniqueName>[Measures].[H VEHICULO Count]</UniqueName>
+                      <MeasureName>H EMPLEADO Count</MeasureName>
+                      <UniqueName>[Measures].[H EMPLEADO Count]</UniqueName>
                     </ID>
-                    <ItemCaption>H VEHICULO Count</ItemCaption>
+                    <ItemCaption>H EMPLEADO Count</ItemCaption>
                     <BackColor>true</BackColor>
                     <ForeColor>true</ForeColor>
                     <FontFamily>true</FontFamily>
@@ -76,7 +65,7 @@
                 </Items>
               </Select>
               <AutoExecute>false</AutoExecute>
-              <From>OLAPVEHICLE</From>
+              <From>OLAPEMPLOYEE</From>
               <Filter>
                 <FilterItems />
               </Filter>
@@ -87,7 +76,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[H VEHICULO Count] } ON COLUMNS, NON EMPTY { ([D MARCA].[NOMBRE].[NOMBRE].ALLMEMBERS * [D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO].ALLMEMBERS * [D VEHICULO].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPVEHICLE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[H EMPLEADO Count] } ON COLUMNS, NON EMPTY { ([D EMPLEADOS].[NOMBRE].[NOMBRE].ALLMEMBERS * [D VIAJES].[ESTADO].[ESTADO].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPEMPLOYEE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
@@ -95,19 +84,15 @@
       </Query>
       <Fields>
         <Field Name="NOMBRE">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D MARCA].[NOMBRE].[NOMBRE]" /&gt;</DataField>
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D EMPLEADOS].[NOMBRE].[NOMBRE]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TIPOMEDIO">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO]" /&gt;</DataField>
+        <Field Name="ESTADO">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D VIAJES].[ESTADO].[ESTADO]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NOMBRE2">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D VEHICULO].[NOMBRE].[NOMBRE]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="H_VEHICULO_Count">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[H VEHICULO Count]" /&gt;</DataField>
+        <Field Name="H_EMPLEADO_Count">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[H EMPLEADO Count]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -124,7 +109,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Report - Vehicle</Value>
+                    <Value>Report - Viajes Completados y No Completados Employee</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -137,7 +122,6 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.43in</Height>
-            <Width>5in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -160,14 +144,14 @@
                       <CellContents>
                         <Rectangle Name="List1_Contents">
                           <ReportItems>
-                            <Textbox Name="H_VEHICULO_Count">
+                            <Textbox Name="H_EMPLEADO_Count">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!H_VEHICULO_Count.Value</Value>
+                                      <Value>=Fields!H_EMPLEADO_Count.Value</Value>
                                       <Style>
                                         <FontFamily />
                                         <FontSize>14pt</FontSize>
@@ -177,9 +161,8 @@
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>H_VEHICULO_Count</rd:DefaultName>
+                              <rd:DefaultName>H_EMPLEADO_Count</rd:DefaultName>
                               <Height>0.27in</Height>
-                              <Width>5in</Width>
                               <Style>
                                 <FontFamily />
                                 <PaddingLeft>2pt</PaddingLeft>
@@ -191,9 +174,6 @@
                             <Tablix Name="table1">
                               <TablixBody>
                                 <TablixColumns>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
@@ -214,7 +194,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>MODELO</Value>
+                                                    <Value>NOMBRE</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -227,6 +207,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox2</rd:DefaultName>
+                                            <Height>0.22in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -252,7 +234,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>TIPOMEDIO</Value>
+                                                    <Value>ESTADO</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -265,44 +247,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox3</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="textbox4">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>NOMBRE DE CARRO</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Color>#666666</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>textbox4</rd:DefaultName>
+                                            <Height>0.22in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -344,6 +290,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>NOMBRE</rd:DefaultName>
+                                            <Height>0.21in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -362,14 +310,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="TIPOMEDIO">
+                                          <Textbox Name="ESTADO">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!TIPOMEDIO.Value</Value>
+                                                    <Value>=Fields!ESTADO.Value</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -379,43 +327,9 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>TIPOMEDIO</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="NOMBRE2">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!NOMBRE2.Value</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <Color>#333333</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>NOMBRE2</rd:DefaultName>
+                                            <rd:DefaultName>ESTADO</rd:DefaultName>
+                                            <Height>0.21in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -438,7 +352,6 @@
                               </TablixBody>
                               <TablixColumnHierarchy>
                                 <TablixMembers>
-                                  <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
                                 </TablixMembers>
@@ -465,9 +378,6 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
-                              <Height>0.43in</Height>
-                              <Width>3in</Width>
-                              <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
                               </Style>
@@ -490,9 +400,9 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="list1_H_VEHICULO_Count">
+                  <Group Name="list1_H_EMPLEADO_Count">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!H_VEHICULO_Count.Value</GroupExpression>
+                      <GroupExpression>=Fields!H_EMPLEADO_Count.Value</GroupExpression>
                     </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
@@ -500,7 +410,7 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!H_VEHICULO_Count.Value</Value>
+                      <Value>=Fields!H_EMPLEADO_Count.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <DataElementOutput>Output</DataElementOutput>
@@ -513,9 +423,6 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Top>0.43in</Top>
-            <Height>0.93in</Height>
-            <Width>5in</Width>
-            <ZIndex>1</ZIndex>
             <Style>
               <FontSize>14pt</FontSize>
             </Style>
@@ -542,6 +449,6 @@
   </ReportParametersLayout>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>12d72e2f-1f55-4a5f-a4ae-51e7f1acf7b8</rd:ReportID>
+  <rd:ReportUnitType>Invalid</rd:ReportUnitType>
+  <rd:ReportID>f92fc3b2-4b4d-4199-b31a-4568a8582130</rd:ReportID>
 </Report>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{EA49F7FB-3366-4148-8925-3BC24B065BFE}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{840820B9-639D-42F0-AE79-E0002B64286B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC8uPJ6hnPMM8mcYuPSrwJV6VDj89CwBy4xAHDT+Z9ZAwAAAAAOgAAAAAIAACAAAADHf6+Uc8f8VYsfuv1HtCDGSHySiY5NRt6mKKathHW1PxAAAAAP4TO1gC+aPQ4uxzlJpGzIQAAAAF/f/zp1w4/wolRK1Di7gFLutLQ2Ba9V0Exin6III/3QoaJF40qu2y54/P0g/WRkii/SrN2NMlaWrSf9dKS0Juc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADtH0lJqTUALEZ01HPIfZbk7K9y9lTJlWLlxd2HRtHQ7gAAAAAOgAAAAAIAACAAAADD3IfvNhdPoQQkS0quVJiaMNpAR2ONuBU4qys4V/AHWxAAAADdlo/yiYAQRTdLcTuLIuXCQAAAAM78fNfWwGLL1PiZGXC7tWW6sXWB5spq08OzElnkqy2jyQe8F8kA3dMsjp+WPPJHgq6gXudZH/ts/rtFRw041SQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -78,7 +78,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADU1bvpwe9i8lgSNzy9YTE2CNwAAF+zrk7IN/3wkfx1GgAAAAAOgAAAAAIAACAAAADcshO6UxQJQrtZalnrFphqV36DvRgIGsR+6CJvSKFeYiAAAAAtohQvUBpNidTkXXbHevpr0uqaForlAvDaq1XYN2dwAUAAAAAKcAyiUF3y4hj5QBPTkSjWKaQlSFdFbGgnlBODAOWyemKHV4miV0wVgiPpEOcrY6nSxBL5mCRbe9YYZNetUGMW</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAa2sbuqWxUiYdGBLxYpSTPKy3wjAyxAt6F6qe/OdncVgAAAAAOgAAAAAIAACAAAAC/BKepluEKPg+MZA+YxX1D7DLAPsMFSiGuAhTHeuww+CAAAAAd+m9JyiLJqX0k61W2FKiR+VfYEcaBo6W2YPJeF4cFbUAAAAC58Pw/TxQLp1LCNW0zCHah1JxuiepWvGqY5PIjQ9wj/zq93Ryp2rJw+8p7UVEBOygRIgL0NhtwToEDNIXpgEo5</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -95,7 +95,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACBNab24ZhPig47utB+ECK4VuQwMlpUErtIyBHrWoIUmgAAAAAOgAAAAAIAACAAAAB+slKqi/TuiRe9rakfWyLb0y2lNxujv4yLE2xlq32S3CAAAADUsUXlB7M/d46+V7S70aY1XByO3S3tcq7IJebeMhZ/ykAAAADVtGYG2fg4RYU6kNa+cGdCXul5ByTgSw8KFWIXGbAM80VxtgBnGcdK7PwuO2nX1EBByMqfSArYMcTYLQV8DQyw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAHrqCUOeAIY/5Lf6Pi+K7397LJ6BWWPXyNU7O+P5x+ZAAAAAAOgAAAAAIAACAAAAA8DyCSumirvFiX21NYYXUCM8Yt/6wjVVc/ZjVfQT4aqiAAAAC8rO/w8VEJ34TOfjE3R6tFTvdIAxZBmipwLEwKVl0deUAAAADHSwJ+Mpmnrtw7kizykDxLR2zN933uYK6EQQ8EXtuHIM4zRI/ev3/SGNKVgSn2DrOSBhg5a1gA5NZYmlnI0iW9</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -112,7 +112,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADg5JSNkcpfWOIC/McIJfluZ3CShWPgham7xEqqwI6mAgAAAAAOgAAAAAIAACAAAACDiv82dZ+BGLF47LOHMmA6yUYSaItVyukz7FkQ60cQ3SAAAAC/4YKU+7ti8zUuQ9dWyRuaOheA3+TZOXHTOu7siejtLUAAAAAFJ+w7jKlVUAttgYshF3W0yXBcipcPT2Tlxp0drqdx3wqcqlN7LfFG5h/NGif41I87wRtdUtPR3N7I1Xx/GEyH</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC/Sotf8+CuJKxvVaBpESGaQriqR4VCkyDQWXNmEn6dKgAAAAAOgAAAAAIAACAAAAD4FBwSVR2CgRSKp2WeQYpAaqaMKS3OlQQ6se/WoCtNoyAAAAChKIwa/tAMFPBbFQKqXPnqt0loNzuUbRptiYaT6tsDf0AAAAATKE9eDG+JsFgBksWw3ULU0dOZ7GvYyJ/9hRr35QDbl7hKUqbKvKyUF839rFftIHrVzESOTxRJ//e8e1Pmm4Rc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -163,7 +163,7 @@
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT _id AS 'ID', video_id AS 'ID_VIDEO', channel_title AS 'CHANNEL', video_title AS 'VIDEO', url_video AS 'URL', date_video AS 'DATE', views AS 'VIEWS', likes AS 'LIKES', dislikes AS 'DISLIKES', comments AS 'COMMENTS'
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT video_id AS 'ID_VIDEO', channel_title AS 'CHANNEL', video_title AS 'VIDEO', url_video AS 'URL', date_video AS 'DATE', views AS 'VIEWS', likes AS 'LIKES', dislikes AS 'DISLIKES', comments AS 'COMMENTS'
 FROM apidata</property>
                 <property
                   dataType="System.Int32"
@@ -228,83 +228,80 @@ FROM apidata</property>
                   truncationRowDisposition="FailComponent">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[ID]"
-                      dataType="wstr"
-                      externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ID]"
-                      length="2000"
-                      lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[ID]"
-                      name="ID" />
-                    <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[ID_VIDEO]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ID_VIDEO]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[ID_VIDEO]"
                       name="ID_VIDEO" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[CHANNEL]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[CHANNEL]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[CHANNEL]"
                       name="CHANNEL" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[VIDEO]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[VIDEO]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[VIDEO]"
                       name="VIDEO" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[URL]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[URL]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[URL]"
                       name="URL" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[DATE]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DATE]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[DATE]"
                       name="DATE" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[VIEWS]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[VIEWS]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[VIEWS]"
                       name="VIEWS" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[LIKES]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[LIKES]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[LIKES]"
                       name="LIKES" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[DISLIKES]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[DISLIKES]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[DISLIKES]"
                       name="DISLIKES" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[COMMENTS]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[COMMENTS]"
-                      length="2000"
+                      length="50"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[COMMENTS]"
                       name="COMMENTS" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ID]"
-                      dataType="wstr"
-                      length="2000"
-                      name="ID" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ID_VIDEO]"
                       dataType="wstr"
@@ -357,13 +354,6 @@ FROM apidata</property>
                   isErrorOut="true"
                   name="ODBC Source Error Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Error Output].Columns[ID]"
-                      dataType="wstr"
-                      externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].ExternalColumns[ID]"
-                      length="2000"
-                      lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Error Output].Columns[ID]"
-                      name="ID" />
                     <outputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Error Output].Columns[ID_VIDEO]"
                       dataType="wstr"
@@ -518,71 +508,73 @@ FROM apidata</property>
                   <inputColumns>
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VIEWS]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="VIEWS"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[views]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[VIEWS]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LIKES]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="LIKES"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[likes]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[LIKES]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DISLIKES]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="DISLIKES"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dislikes]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[DISLIKES]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMMENTS]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="COMMENTS"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comments]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[COMMENTS]" />
                     <inputColumn
-                      refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
-                      cachedName="ID"
-                      externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_id]"
-                      lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[ID]" />
-                    <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID_VIDEO]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="ID_VIDEO"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[video_id]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[ID_VIDEO]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHANNEL]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="CHANNEL"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[channel_title]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[CHANNEL]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VIDEO]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="VIDEO"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[video_title]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[VIDEO]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[URL]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="URL"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[url_video]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[URL]" />
                     <inputColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DATE]"
-                      cachedDataType="wstr"
-                      cachedLength="2000"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="DATE"
                       externalMetadataColumnId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_video]"
                       lineageId="Package\Poblard OLTP - API desde MongoDB\ODBC Source.Outputs[ODBC Source Output].Columns[DATE]" />
@@ -590,55 +582,63 @@ FROM apidata</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[_id]"
-                      dataType="wstr"
-                      length="1000"
-                      name="_id" />
-                    <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[video_id]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="video_id" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[channel_title]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="channel_title" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[video_title]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="video_title" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[url_video]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="url_video" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_video]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="date_video" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[views]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="views" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[likes]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="likes" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dislikes]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="dislikes" />
                     <externalMetadataColumn
                       refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comments]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="1000"
                       name="comments" />
+                    <externalMetadataColumn
+                      refId="Package\Poblard OLTP - API desde MongoDB\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>

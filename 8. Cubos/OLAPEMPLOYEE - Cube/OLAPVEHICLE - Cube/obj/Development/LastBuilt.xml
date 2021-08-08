@@ -24,31 +24,6 @@
       <b>109</b>
     </Hash>
   </Item>
-  <Item name="OLAPEMPLOYEE.cube">
-    <Time>637639473364474516</Time>
-    <Hash length="20">
-      <b>245</b>
-      <b>202</b>
-      <b>164</b>
-      <b>215</b>
-      <b>128</b>
-      <b>146</b>
-      <b>223</b>
-      <b>69</b>
-      <b>108</b>
-      <b>230</b>
-      <b>73</b>
-      <b>122</b>
-      <b>138</b>
-      <b>88</b>
-      <b>4</b>
-      <b>68</b>
-      <b>13</b>
-      <b>206</b>
-      <b>220</b>
-      <b>49</b>
-    </Hash>
-  </Item>
   <Item name="H EMPLEADO.dim">
     <Time>637639473364174538</Time>
     <Hash length="20">
@@ -72,6 +47,31 @@
       <b>9</b>
       <b>174</b>
       <b>104</b>
+    </Hash>
+  </Item>
+  <Item name="OLAPEMPLOYEE.cube">
+    <Time>637639473364474516</Time>
+    <Hash length="20">
+      <b>245</b>
+      <b>202</b>
+      <b>164</b>
+      <b>215</b>
+      <b>128</b>
+      <b>146</b>
+      <b>223</b>
+      <b>69</b>
+      <b>108</b>
+      <b>230</b>
+      <b>73</b>
+      <b>122</b>
+      <b>138</b>
+      <b>88</b>
+      <b>4</b>
+      <b>68</b>
+      <b>13</b>
+      <b>206</b>
+      <b>220</b>
+      <b>49</b>
     </Hash>
   </Item>
   <Item name="D TRABAJO.dim">

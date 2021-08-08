@@ -19,49 +19,49 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>EhM9I0WXzAP+W/vn0d6dses22s4=8/7/2021 7:02:02 PM8/7/2021 7:02:02 PM</TimeStamp>
+        <TimeStamp>iddTSV1ODk2TUkLKB9cI7qptRro=8/8/2021 9:33:28 AM8/8/2021 9:33:28 AM</TimeStamp>
         <ID>
           <String>OLAPAPI</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>OG3XEmtXFU4WVB0Txdmqp7iLa3o=8/7/2021 7:02:07 PM8/7/2021 7:02:07 PM</TimeStamp>
+        <TimeStamp>TusPVU0J6oaA1kZbdAzoXzCQl9I=8/8/2021 9:33:33 AM8/8/2021 9:33:33 AM</TimeStamp>
         <ID>
           <String>OLAPAPI</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>fDFUwLiAAAN5lW1KIgU54dDdyrg=8/7/2021 7:15:31 PM8/7/2021 7:02:35 PM</TimeStamp>
+        <TimeStamp>seXyFKx+NqeUgYJdmp0AtrH3JYw=8/8/2021 9:34:07 AM8/8/2021 9:33:41 AM</TimeStamp>
         <ID>
           <String>D VIDEOS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>PBgrOgEt4AlAUs8ULxFZCJlvgjQ=8/7/2021 7:15:31 PM8/7/2021 7:02:13 PM</TimeStamp>
+        <TimeStamp>NB5Ux2HCVoNCBj6xK40SSJ5FQbw=8/8/2021 9:34:07 AM8/8/2021 9:33:41 AM</TimeStamp>
         <ID>
           <String>D CANAL</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>EZfG9WACLzsL+kC10NivdQPQ6v8=8/7/2021 7:15:31 PM8/7/2021 7:02:35 PM</TimeStamp>
+        <TimeStamp>aDJGGhMoKntC506qzFV4yqoIk9s=8/8/2021 9:34:07 AM8/8/2021 9:33:41 AM</TimeStamp>
         <ID>
           <String>D ESTADISTICAS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>quxCr8CzNmtqN8EJN2FO4qVqZhQ=8/7/2021 7:15:31 PM8/7/2021 7:02:35 PM</TimeStamp>
+        <TimeStamp>2g1yOwMtH8cX+JhKzSV/IY1+3+k=8/8/2021 9:34:07 AM8/8/2021 9:33:41 AM</TimeStamp>
         <ID>
           <String>H CANAL</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>qQgInfA9e1lZ3ni/y8tQar2Ua1g=8/7/2021 7:15:31 PM8/7/2021 7:02:13 PMgXhE6xI/Se5WFIr8HQPsoHbmV0c=8/7/2021 7:15:10 PM8/7/2021 7:02:13 PM</TimeStamp>
+        <TimeStamp>fwp1mRm+hzq5VqcHHPHl4ueTlEg=8/8/2021 9:34:07 AM8/8/2021 9:33:41 AMZqvpF853OJ2HmZXu2yrcDe6TZ9U=8/8/2021 9:33:41 AM8/8/2021 9:33:41 AM</TimeStamp>
         <ID>
           <String>OLAPAPI</String>
         </ID>
@@ -78,5 +78,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-08-08T01:15:39.123333Z</LastDeployed>
+  <LastDeployed>2021-08-08T15:34:50.893333Z</LastDeployed>
 </DeploymentSnapshot>
