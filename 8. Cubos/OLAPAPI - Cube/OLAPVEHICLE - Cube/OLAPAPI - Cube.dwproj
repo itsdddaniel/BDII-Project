@@ -20,16 +20,20 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>D CANAL.dim</Name>
-      <FullPath>D CANAL.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>D VIDEOS.dim</Name>
       <FullPath>D VIDEOS.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>D CANAL.dim</Name>
+      <FullPath>D CANAL.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>D ESTADISTICAS.dim</Name>
       <FullPath>D ESTADISTICAS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>H CANAL.dim</Name>
+      <FullPath>H CANAL.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

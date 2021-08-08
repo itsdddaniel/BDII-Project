@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cf123bcc-5922-4a56-bea7-c8ad42431d03" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bac47b07-0505-415e-aab6-70ad3a4a3075" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>H EMPLEADO</ID>
   <Name>H EMPLEADO</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3155" scrolltop="-5874" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15743" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="H_EMPLEADO" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4022" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60f00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_H_EMPLEADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-3155</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-5874</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -42,58 +68,66 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="99669418-ed20-4509-a7e4-c3a4460c3585">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="273a4bae-716f-47b4-a363-9e103dc06e60">
     <DataSourceViewID>OLAPEMPLOYEE</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="928b6df5-7520-4e4f-8928-d20ea4eb2864">
+  <ErrorConfiguration dwd:design-time-name="c6140c87-2ea8-46a8-bb51-5f406490cc4c">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="3bb542a2-8563-49dd-bda5-d75070cd08a5">
-      <ID>ID EMPLEADO</ID>
-      <Name>ID EMPLEADO</Name>
+    <Attribute dwd:design-time-name="ae60d016-1bc4-4f8e-8c67-59bc41ec7603">
+      <ID>ID H EMPLEADO</ID>
+      <Name>ID H EMPLEADO</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0538d44e-a776-4aae-9f24-6678ace71154">
+        <KeyColumn dwd:design-time-name="d3ff71c4-e505-4557-84a5-393154bc01fd">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ec399b6-3c9c-4c3c-ac4f-93a37ed011e9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="17f8fe9a-dba6-4cbf-ae85-8dc59e34e8c6">
             <TableID>dbo_H_EMPLEADO</TableID>
-            <ColumnID>ID_EMPLEADO</ColumnID>
+            <ColumnID>ID_H_EMPLEADO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="a7a6b758-8121-4845-8e1a-48a4b91812d7">
+        <AttributeRelationship dwd:design-time-name="07212345-fcc3-4f3b-a0fa-2af5d304df18">
           <AttributeID>ID TRABAJO</AttributeID>
           <Name>ID TRABAJO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c4cc180a-9c85-43cb-9aad-6bc5b938e027">
+        <AttributeRelationship dwd:design-time-name="8589126f-282b-4186-bcd7-b3f1886cddd7">
           <AttributeID>ID TIEMPO</AttributeID>
           <Name>ID TIEMPO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="aff2e3b3-add3-47b7-90c3-b9fcf36cb5c9">
+        <AttributeRelationship dwd:design-time-name="31671875-d9e8-4dda-8e84-a9205ebde1cd">
+          <AttributeID>ID EMPLEADO</AttributeID>
+          <Name>ID EMPLEADO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="abc751e2-de39-45fc-88a1-7443f7057c0d">
           <AttributeID>ID SUCURSAL</AttributeID>
           <Name>ID SUCURSAL</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8803ddaa-d095-4773-a165-fadb4274a035">
+        <AttributeRelationship dwd:design-time-name="83f7874a-5a20-4af7-b3a7-2415dca40c29">
           <AttributeID>ID VIAJE</AttributeID>
           <Name>ID VIAJE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2f248bf1-80c8-4aba-9552-432a6f9928c3">
+          <AttributeID>NOMBREEMPLEADO</AttributeID>
+          <Name>NOMBREEMPLEADO</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7a106374-46f9-447a-a485-14fc40f09961">
+    <Attribute dwd:design-time-name="fd9d53df-eeb0-4124-90a4-c61c3f8fb2b9">
       <ID>ID TRABAJO</ID>
       <Name>ID TRABAJO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d21aa968-1e9d-4d82-83b1-ead912fba7a9">
+        <KeyColumn dwd:design-time-name="bb048411-dfd7-49ba-8615-f0939fd615b2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="187804c3-1948-4c31-9d8a-5e64cc6fc48f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a06f329d-18bf-4d32-a39a-eecdec8a166a">
             <TableID>dbo_H_EMPLEADO</TableID>
             <ColumnID>ID_TRABAJO</ColumnID>
           </Source>
@@ -104,13 +138,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4472eacd-9dc7-40b1-91a5-255855db0fb1">
+    <Attribute dwd:design-time-name="0e0a1561-a099-4b8b-a727-17000deb7db3">
       <ID>ID TIEMPO</ID>
       <Name>ID TIEMPO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bec008a9-a1c7-41af-85ce-9474f234085a">
+        <KeyColumn dwd:design-time-name="98783349-ae1e-4cd7-9870-20c43c270291">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac9b074f-a968-4c94-9cdb-9049afcdde47">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="776e0ead-0ea8-4aa8-be0c-c652b02f988e">
             <TableID>dbo_H_EMPLEADO</TableID>
             <ColumnID>ID_TIEMPO</ColumnID>
           </Source>
@@ -121,13 +155,30 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="05eb6767-316a-4d50-b0c5-4922dbc7f7ec">
+    <Attribute dwd:design-time-name="45f7e8a0-df95-4428-9b95-790fb87c73f2">
+      <ID>ID EMPLEADO</ID>
+      <Name>ID EMPLEADO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed658832-4a6c-43b4-aab6-1f679c0a56ef">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90e06534-c218-424d-adfb-9424b0008e9d">
+            <TableID>dbo_H_EMPLEADO</TableID>
+            <ColumnID>ID_EMPLEADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="77680f50-cf23-4689-8c25-7554ae055dd8">
       <ID>ID SUCURSAL</ID>
       <Name>ID SUCURSAL</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7f22d031-e648-4c3c-8e31-544ed5658027">
+        <KeyColumn dwd:design-time-name="737778c9-5f5c-4ae1-8ae1-e292be1dc423">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0f5a969-8388-44a5-8795-0bee95163a9d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="232ac215-f403-409e-b44a-04ef2cb11c43">
             <TableID>dbo_H_EMPLEADO</TableID>
             <ColumnID>ID_SUCURSAL</ColumnID>
           </Source>
@@ -138,13 +189,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f7a7fb52-261f-457d-a9f1-462f0a5d4290">
+    <Attribute dwd:design-time-name="3bd3b2c6-f245-497c-84c8-507a4b86ea17">
       <ID>ID VIAJE</ID>
       <Name>ID VIAJE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="36356ae8-2d4a-4184-aa22-5a6c3c1fcc86">
+        <KeyColumn dwd:design-time-name="8e13883d-fd5e-4bc7-9ffb-f82b4a8c702c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="10bf34e5-6a68-4706-a9bc-5426d04fac81">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="da9cb9fe-da69-4c8c-b528-a4c628b0a6c1">
             <TableID>dbo_H_EMPLEADO</TableID>
             <ColumnID>ID_VIAJE</ColumnID>
           </Source>
@@ -152,6 +203,22 @@
       </KeyColumns>
       <OrderBy>Key</OrderBy>
       <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="487af949-6c85-4d08-9a77-b3a735649d28">
+      <ID>NOMBREEMPLEADO</ID>
+      <Name>NOMBREEMPLEADO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a627a33e-8163-4c2c-9c82-c7237ecda7ab">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84ee8538-6718-48cc-9fcf-1db979ed445a">
+            <TableID>dbo_H_EMPLEADO</TableID>
+            <ColumnID>NOMBREEMPLEADO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

@@ -1,6 +1,6 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
-    <Database>OLAPVEHICLE - Cube</Database>
+    <Database>OLAPAPI- Cube</Database>
     <Server>DESKTOP-E4HF9F0:2383</Server>
     <ConnectionString>Data Source=DESKTOP-E4HF9F0:2383;Timeout=0</ConnectionString>
   </Target>
@@ -19,42 +19,49 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>oOExPCqHQ+aJ5DFCfZuOL5pyrw8=8/5/2021 2:25:11 PM8/5/2021 2:23:57 PM</TimeStamp>
+        <TimeStamp>EhM9I0WXzAP+W/vn0d6dses22s4=8/7/2021 7:02:02 PM8/7/2021 7:02:02 PM</TimeStamp>
         <ID>
           <String>OLAPAPI</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>d1mbl7tc+oJRHbn81EAO1BJuHO0=8/5/2021 2:25:55 PM8/5/2021 2:25:29 PM</TimeStamp>
+        <TimeStamp>OG3XEmtXFU4WVB0Txdmqp7iLa3o=8/7/2021 7:02:07 PM8/7/2021 7:02:07 PM</TimeStamp>
         <ID>
           <String>OLAPAPI</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>CdhJy0amVaKblsfRPyZsqiVcGMo=8/5/2021 2:26:05 PM8/5/2021 2:26:05 PM</TimeStamp>
-        <ID>
-          <String>D CANAL</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>e83tIYPNHwSkR+qsERZlMi/dVTM=8/5/2021 2:26:05 PM8/5/2021 2:26:05 PM</TimeStamp>
+        <TimeStamp>fDFUwLiAAAN5lW1KIgU54dDdyrg=8/7/2021 7:15:31 PM8/7/2021 7:02:35 PM</TimeStamp>
         <ID>
           <String>D VIDEOS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>G1rn9+GLT8SMBXbBNSkNUP14GZg=8/5/2021 2:31:04 PM8/5/2021 2:26:05 PM</TimeStamp>
+        <TimeStamp>PBgrOgEt4AlAUs8ULxFZCJlvgjQ=8/7/2021 7:15:31 PM8/7/2021 7:02:13 PM</TimeStamp>
+        <ID>
+          <String>D CANAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EZfG9WACLzsL+kC10NivdQPQ6v8=8/7/2021 7:15:31 PM8/7/2021 7:02:35 PM</TimeStamp>
         <ID>
           <String>D ESTADISTICAS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>quxCr8CzNmtqN8EJN2FO4qVqZhQ=8/7/2021 7:15:31 PM8/7/2021 7:02:35 PM</TimeStamp>
+        <ID>
+          <String>H CANAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>OSSmXG1ceNJKc4eiZ5IZB3tB/Os=8/5/2021 2:26:05 PM8/5/2021 2:26:04 PMGQLxnT4PQkPPe0Fw6+IybRGkdRI=8/5/2021 2:26:05 PM8/5/2021 2:26:04 PM</TimeStamp>
+        <TimeStamp>qQgInfA9e1lZ3ni/y8tQar2Ua1g=8/7/2021 7:15:31 PM8/7/2021 7:02:13 PMgXhE6xI/Se5WFIr8HQPsoHbmV0c=8/7/2021 7:15:10 PM8/7/2021 7:02:13 PM</TimeStamp>
         <ID>
           <String>OLAPAPI</String>
         </ID>
@@ -64,12 +71,12 @@
       <Type>Microsoft.AnalysisServices.Database</Type>
       <TimeStamp>AWap2GsipjA/6n4y+pKWv/iVcpk=8/5/2021 2:23:38 PM8/5/2021 2:22:16 PM</TimeStamp>
       <ID>
-        <String>OLAPVEHICLE - Cube</String>
+        <String>OLAPAPI- Cube</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-08-05T20:45:25.293333Z</LastDeployed>
+  <LastDeployed>2021-08-08T01:15:39.123333Z</LastDeployed>
 </DeploymentSnapshot>

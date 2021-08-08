@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d2bc2adb-d659-40e8-a44d-a8d25673a631" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="52fcba13-eb11-4c64-9fe6-f950da915d9a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>D ESTADISTICAS</ID>
   <Name>D ESTADISTICAS</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3407" scrolltop="-5437" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="14446" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3407" scrolltop="-6085" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15743" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-5437</Value>
+      <Value>-6085</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,33 +68,134 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dd674765-0473-4c8a-9bd0-ea1ee54f0479">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="97ba1d3d-21ba-490b-8e02-5b54d3690927">
     <DataSourceViewID>OLAPAPI</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="7bd373d9-4083-4c56-81cb-6423873d1652">
+  <ErrorConfiguration dwd:design-time-name="b6a86175-24bb-4e61-9723-4f230f7384ab">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="2a76224d-498a-442c-b6ad-439bbd06871b">
+    <Attribute dwd:design-time-name="9580ad3a-1657-43e6-90b7-b3d10a6d4c17">
       <ID>ID ESTADISTICA</ID>
       <Name>ID ESTADISTICA</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1a26a1d6-e66d-4195-90f9-e6a565acaccc">
-          <DataType>WChar</DataType>
-          <DataSize>1000</DataSize>
+        <KeyColumn dwd:design-time-name="591032d7-328a-4b0c-84a7-0c12c7db826d">
+          <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="88e9bb15-d72c-486a-bb9c-13379fa6f698">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e97b8dc-f746-4662-8933-f6d40e1d094b">
             <TableID>dbo_D_ESTADISTICAS</TableID>
             <ColumnID>ID_ESTADISTICA</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="488420e6-aa3a-4558-938a-f2420ae79dda">
+          <AttributeID>VISTAS</AttributeID>
+          <Name>VISTAS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="669555ca-88bf-4a0a-a75c-43f2b057fd64">
+          <AttributeID>LIKES</AttributeID>
+          <Name>LIKES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="33042dd7-2f07-4d1b-be1d-8a05d0df1aa5">
+          <AttributeID>DISLIKES</AttributeID>
+          <Name>DISLIKES</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bd1674f3-e9a2-45d8-9169-a80dd817e684">
+          <AttributeID>COMENTARIOS</AttributeID>
+          <Name>COMENTARIOS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="14511090-3968-483c-9d0c-0f22aa1780f5">
+          <AttributeID>PUBLISHED</AttributeID>
+          <Name>PUBLISHED</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="80571ea2-80d0-4b00-a0da-f86fe5a9c096">
+      <ID>VISTAS</ID>
+      <Name>VISTAS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="626c78fb-0df1-465c-bdd7-2588414e70ce">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b53ce91-6e67-435b-ba84-6f29f36ab973">
+            <TableID>dbo_D_ESTADISTICAS</TableID>
+            <ColumnID>VISTAS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="20c7455e-675d-48ee-8b58-27635004791f">
+      <ID>LIKES</ID>
+      <Name>LIKES</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f12fcce4-0a71-4274-8d86-79c2797cfdfc">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6bb9c833-3a4f-4bc1-8a21-8857edd8fbc1">
+            <TableID>dbo_D_ESTADISTICAS</TableID>
+            <ColumnID>LIKES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="faf6c47d-89db-42cc-a292-4a60d68569f5">
+      <ID>DISLIKES</ID>
+      <Name>DISLIKES</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c728b6a-a2d5-480b-a5e2-948b78cd8015">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95d60971-0b51-466c-a14a-dd006e6b51e9">
+            <TableID>dbo_D_ESTADISTICAS</TableID>
+            <ColumnID>DISLIKES</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="30b411d6-265a-4274-a72c-777a01ff0b97">
+      <ID>COMENTARIOS</ID>
+      <Name>COMENTARIOS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c37247e4-347c-49ca-92b1-779b1b29e275">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f581adfc-5055-43d8-a593-26ded473f4e8">
+            <TableID>dbo_D_ESTADISTICAS</TableID>
+            <ColumnID>COMENTARIOS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0017b0ea-341d-426c-9d3f-86bf6b4fdefa">
+      <ID>PUBLISHED</ID>
+      <Name>PUBLISHED</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="52e037e6-a885-4f27-a774-13c23cb72e07">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1be05cf5-11b6-4ee6-a814-3661b5cc762f">
+            <TableID>dbo_D_ESTADISTICAS</TableID>
+            <ColumnID>PUBLISHED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{C846B241-3B2C-41C7-A7E0-20C51209D710}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{445E4BB1-8819-43F0-8809-F5A0DB651B78}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,12 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;User ID=admin;Initial Catalog=OLAPAPI;Provider=SQLNCLI11.1;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADFxHL3a4mMmlSDN6qyFEUQvtlmdFAO5tq5N8I/rqO6HwAAAAAOgAAAAAIAACAAAAA1R6wiiWaO06mhN3d4er+oEH1czWoLqtvvv2UAP3YWyRAAAAAABkA2omyEw01O6C8e/cM/QAAAAPaSQydnMBbYvqzFoaYCY5dNzDy+1lnE9+MZfanGrs0tJ4jwudYjrO2mlTGPoEYRReV2BItB2R2xe+gXwztv/hM</DTS:Password>
-        </DTS:ConnectionManager>
+          DTS:ConnectionString="Data Source=DESKTOP-E4HF9F0;Initial Catalog=OLAPAPI;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -46,7 +41,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACRkVe9lmDHTvuhC+U3RFofK9mFLDWJs3GwvtrOyahMKQAAAAAOgAAAAAIAACAAAACg/YWc1JILynCE0aXbhp1fdQxMfRBl6OYi1kHzh1UaeRAAAACfFgWGVCIH57RAvSa5tey5QAAAACT9QjN1kG5V4miy1p95pBMZM0Tt3v+tMC0NC0R79NunrHt/FvQAvnRlGHt8vioGrHPCIdsBjB7hoBDyVJb11gk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD8gmCTdaK1JlcoStBldrlpelVBeD2bgRM74DqGAPA6hgAAAAAOgAAAAAIAACAAAADQXbFDbBFBGdCSk7p6GdxfRaBKYM+YqHvfeVdus67z9hAAAACezQbQDjiCllTLpuA1DPFGQAAAAI05PrX8A1sitlIzCoynoD2im3uCx7z84r8D1xYH8LYRQaDhtNCb25vn9+0m/DcwOOtXjJRjIrJ8GIOJ6ecf7ZA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -186,42 +181,38 @@
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].Columns[ID_ESTADISTICAS]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ID_ESTADISTICAS"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]" />
-                    <inputColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].Columns[ID_VIDEOS]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ID_VIDEOS"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[VIDEOID]"
                       lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="ID_ESTADISTICAS" />
                     <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEOS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="ID_VIDEOS" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[H_ID_CANAL]"
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID]"
+                      dataType="i4"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_CANAL]"
+                      dataType="i4"
+                      name="ID_CANAL" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos.Inputs[Entrada de destino de OLE DB].ExternalColumns[VIDEOID]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="H_ID_CANAL" />
+                      name="VIDEOID" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -277,7 +268,7 @@
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'ID_CANAL',
 CAST([_id] AS VARCHAR(1000)) AS 'ID_ESTADISTICAS',
-CAST([video_id] AS VARCHAR(1000)) AS 'ID_VIDEOS'
+CAST([_id] AS VARCHAR(1000)) AS 'ID_VIDEOS'
 FROM apidata;</property>
                 <property
                   dataType="System.String"
@@ -315,17 +306,6 @@ FROM apidata;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
-                      length="50"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
-                      name="ID_CANAL"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
                       codePage="1252"
                       dataType="str"
@@ -347,15 +327,20 @@ FROM apidata;</property>
                       lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
                       name="ID_VIDEOS"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      length="1000"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="ID_CANAL" />
                     <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
                       codePage="1252"
@@ -368,6 +353,12 @@ FROM apidata;</property>
                       dataType="str"
                       length="1000"
                       name="ID_VIDEOS" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="ID_CANAL" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -490,44 +481,44 @@ FROM apidata;</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas"
+              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
               description="Conversión de datos"
-              name="Conversión de datos de Estadisticas"
+              name="Conversión de datos de Estadistica"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]"
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Inputs[Entrada de conversión de datos]"
                   name="Entrada de conversión de datos">
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de conversión de datos]"
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de conversión de datos]"
                   exclusionGroup="1"
                   name="Salida de conversión de datos"
-                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Inputs[Entrada de conversión de datos]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos]"
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de error de conversión de datos]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de conversión de datos"
-                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -536,44 +527,44 @@ FROM apidata;</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos"
+              refId="Package\Carga Tablas de Dimensión\Conversión de datos de Video"
               componentClassID="Microsoft.DataConvert"
               contactInfo="Conversión de datos;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
               description="Conversión de datos"
-              name="Conversión de datos de Videos"
+              name="Conversión de datos de Video"
               usesDispositions="true">
               <inputs>
                 <input
-                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]"
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Inputs[Entrada de conversión de datos]"
                   name="Entrada de conversión de datos">
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de conversión de datos]"
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de conversión de datos]"
                   exclusionGroup="1"
                   name="Salida de conversión de datos"
-                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Inputs[Entrada de conversión de datos]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos]"
+                  refId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de error de conversión de datos]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de conversión de datos"
-                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]">
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Inputs[Entrada de conversión de datos]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de error de conversión de datos].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      refId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de error de conversión de datos].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -623,15 +614,15 @@ FROM apidata;</property>
                 <property
                   dataType="System.Boolean"
                   description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadKeepIdentity">false</property>
+                  name="FastLoadKeepIdentity">true</property>
                 <property
                   dataType="System.Boolean"
                   description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadKeepNulls">false</property>
+                  name="FastLoadKeepNulls">true</property>
                 <property
                   dataType="System.String"
                   description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
@@ -661,14 +652,6 @@ FROM apidata;</property>
                       cachedName="channel"
                       externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRE]"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[channel]" />
-                    <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].Columns[id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1000"
-                      cachedName="id"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_CANAL]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -676,13 +659,11 @@ FROM apidata;</property>
                       refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRE]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1000"
                       name="NOMBRE" />
                     <externalMetadataColumn
                       refId="Package\Carga Tablas de Dimensión\Destino de Canal.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="ID_CANAL" />
                   </externalMetadataColumns>
                 </input>
@@ -713,11 +694,11 @@ FROM apidata;</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas"
+              refId="Package\Carga Tablas de Dimensión\Destino de Estadistica"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de Estadisticas"
+              name="Destino de Estadistica"
               usesDispositions="true"
               version="4">
               <properties>
@@ -754,15 +735,15 @@ FROM apidata;</property>
                 <property
                   dataType="System.Boolean"
                   description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadKeepIdentity">false</property>
+                  name="FastLoadKeepIdentity">true</property>
                 <property
                   dataType="System.Boolean"
                   description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadKeepNulls">false</property>
+                  name="FastLoadKeepNulls">true</property>
                 <property
                   dataType="System.String"
                   description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
@@ -770,7 +751,7 @@ FROM apidata;</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Connections[OleDbConnection]"
+                  refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[OLAP - API]"
                   connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -778,95 +759,85 @@ FROM apidata;</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[likes]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].Columns[likes]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="likes"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[LIKES]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[likes]" />
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[LIKES]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[likes]" />
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[dislikes]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].Columns[dislikes]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="dislikes"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[DISLIKES]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[dislikes]" />
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[DISLIKES]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[dislikes]" />
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1000"
-                      cachedName="id"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[id]" />
-                    <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[views]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].Columns[views]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="views"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[VISTAS]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[views]" />
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[VISTAS]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[views]" />
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[comments]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].Columns[comments]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="comments"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[COMENTARIOS]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[comments]" />
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[COMENTARIOS]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[comments]" />
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].Columns[published]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].Columns[date]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
-                      cachedName="published"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[PUBLISHED]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[published]" />
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[PUBLISHED]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[date]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      dataType="i4"
                       name="ID_ESTADISTICA" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[VISTAS]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[VISTAS]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="VISTAS" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[LIKES]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[LIKES]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="LIKES" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[DISLIKES]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[DISLIKES]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="DISLIKES" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[COMENTARIOS]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[COMENTARIOS]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="COMENTARIOS" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB].ExternalColumns[PUBLISHED]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB].ExternalColumns[PUBLISHED]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
@@ -876,22 +847,22 @@ FROM apidata;</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -900,11 +871,11 @@ FROM apidata;</property>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Tablas de Dimensión\Destino de Videos"
+              refId="Package\Carga Tablas de Dimensión\Destino de Video"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
               description="Destino de OLE DB"
-              name="Destino de Videos"
+              name="Destino de Video"
               usesDispositions="true"
               version="4">
               <properties>
@@ -941,15 +912,15 @@ FROM apidata;</property>
                 <property
                   dataType="System.Boolean"
                   description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadKeepIdentity">false</property>
+                  name="FastLoadKeepIdentity">true</property>
                 <property
                   dataType="System.Boolean"
                   description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadKeepNulls">false</property>
+                  name="FastLoadKeepNulls">true</property>
                 <property
                   dataType="System.String"
                   description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
@@ -957,7 +928,7 @@ FROM apidata;</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Tablas de Dimensión\Destino de Videos.Connections[OleDbConnection]"
+                  refId="Package\Carga Tablas de Dimensión\Destino de Video.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[OLAP - API]"
                   connectionManagerRefId="Package.ConnectionManagers[OLAP - API]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -965,53 +936,43 @@ FROM apidata;</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB]"
                   errorOrTruncationOperation="Insertar"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="Entrada de destino de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].Columns[url]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].Columns[url]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="url"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[URL]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[url]" />
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].ExternalColumns[URL]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[url]" />
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].Columns[id]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1000"
-                      cachedName="id"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[id]" />
-                    <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].Columns[title]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].Columns[title]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="title"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[TITULO]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[title]" />
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].ExternalColumns[TITULO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[title]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIDEO]"
+                      dataType="i4"
                       name="ID_VIDEO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[TITULO]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].ExternalColumns[TITULO]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="TITULO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB].ExternalColumns[URL]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB].ExternalColumns[URL]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
@@ -1021,22 +982,22 @@ FROM apidata;</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Destino de Video.Outputs[Salida de error de destino de OLE DB]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de OLE DB"
-                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB]">
+                  synchronousInputId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Video.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Video.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Destino de Videos.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Tablas de Dimensión\Destino de Video.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1069,8 +1030,7 @@ FROM apidata;</property>
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
-CAST([channel_title] AS VARCHAR(1000)) AS 'channel'
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT  CAST([channel_title] AS VARCHAR(1000)) AS 'channel'
 FROM apidata;</property>
                 <property
                   dataType="System.String"
@@ -1108,17 +1068,6 @@ FROM apidata;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[id]"
-                      name="id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[channel]"
                       codePage="1252"
                       dataType="str"
@@ -1133,12 +1082,6 @@ FROM apidata;</property>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="id" />
-                    <externalMetadataColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[channel]"
                       codePage="1252"
                       dataType="str"
@@ -1152,20 +1095,6 @@ FROM apidata;</property>
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      name="id" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[channel]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[channel]"
-                      name="channel" />
-                    <outputColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
@@ -1177,17 +1106,24 @@ FROM apidata;</property>
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[channel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[channel]"
+                      name="channel" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas"
+              refId="Package\Carga Tablas de Dimensión\Origen de Estadistica"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
               description="Origen de OLE DB"
-              name="Origen de Estadisticas"
+              name="Origen de Estadistica"
               usesDispositions="true"
               version="7">
               <properties>
@@ -1208,11 +1144,11 @@ FROM apidata;</property>
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT CAST([_id] AS VARCHAR(1000)) AS 'id',
-CAST([views] AS VARCHAR(1000)) AS 'views',
-CAST([likes] AS VARCHAR(1000)) AS 'likes',
-CAST([dislikes] AS VARCHAR(1000)) AS 'dislikes',
-CAST([comments] AS VARCHAR(1000)) AS 'comments',
-CAST([date_video] AS VARCHAR(1000)) AS 'published'
+CAST([views] AS INT) AS 'views',
+CAST([likes] AS INT) AS 'likes',
+CAST([dislikes] AS INT) AS 'dislikes',
+CAST([comments] AS INT) AS 'comments',
+CAST([date_video] AS VARCHAR(1000)) AS 'date'
 FROM apidata;</property>
                 <property
                   dataType="System.String"
@@ -1238,7 +1174,7 @@ FROM apidata;</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Connections[OleDbConnection]"
+                  refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[OLTP]"
                   connectionManagerRefId="Package.ConnectionManagers[OLTP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -1246,186 +1182,170 @@ FROM apidata;</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[id]"
                       name="id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[views]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[views]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[views]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[views]"
                       name="views"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[likes]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[likes]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[likes]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[likes]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[likes]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[likes]"
                       name="likes"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[dislikes]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[dislikes]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[dislikes]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[dislikes]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[dislikes]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[dislikes]"
                       name="dislikes"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[comments]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[comments]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[comments]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[comments]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[comments]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[comments]"
                       name="comments"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[published]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[date]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[published]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[date]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[published]"
-                      name="published"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].Columns[date]"
+                      name="date"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[views]"
+                      dataType="i4"
                       name="views" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[likes]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[likes]"
+                      dataType="i4"
                       name="likes" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[dislikes]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[dislikes]"
+                      dataType="i4"
                       name="dislikes" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[comments]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[comments]"
+                      dataType="i4"
                       name="comments" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[published]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB].ExternalColumns[date]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="published" />
+                      name="date" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB]"
                   isErrorOut="true"
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      name="id" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[views]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[views]"
-                      name="views" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[likes]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[likes]"
-                      name="likes" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[dislikes]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[dislikes]"
-                      name="dislikes" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[comments]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[comments]"
-                      name="comments" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[published]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[published]"
-                      name="published" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[views]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[views]"
+                      name="views" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[likes]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[likes]"
+                      name="likes" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[dislikes]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[dislikes]"
+                      name="dislikes" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[comments]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[comments]"
+                      name="comments" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[date]"
+                      name="date" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      name="id" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
               </outputs>
             </component>
             <component
-              refId="Package\Carga Tablas de Dimensión\Origen de Videos"
+              refId="Package\Carga Tablas de Dimensión\Origen de Video"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
               description="Origen de OLE DB"
-              name="Origen de Videos"
+              name="Origen de Video"
               usesDispositions="true"
               version="7">
               <properties>
@@ -1473,7 +1393,7 @@ FROM apidata;</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga Tablas de Dimensión\Origen de Videos.Connections[OleDbConnection]"
+                  refId="Package\Carga Tablas de Dimensión\Origen de Video.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[OLTP]"
                   connectionManagerRefId="Package.ConnectionManagers[OLTP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
@@ -1481,59 +1401,59 @@ FROM apidata;</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[id]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[id]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[id]"
                       name="id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[title]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[title]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[title]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[title]"
                       name="title"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[url]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[url]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[url]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[url]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[url]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].Columns[url]"
                       name="url"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[id]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[title]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="title" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[url]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB].ExternalColumns[url]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
@@ -1541,43 +1461,43 @@ FROM apidata;</property>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB]"
+                  refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB]"
                   isErrorOut="true"
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[id]"
-                      name="id" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[title]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[title]"
-                      name="title" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[url]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[url]"
-                      name="url" />
-                    <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[title]"
+                      name="title" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[url]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[url]"
+                      name="url" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de error de origen de OLE DB].Columns[id]"
+                      name="id" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1592,14 +1512,14 @@ FROM apidata;</property>
               startId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Outputs[Salida de conversión de datos]" />
             <path
               refId="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
-              endId="Package\Carga Tablas de Dimensión\Destino de Videos.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Carga Tablas de Dimensión\Destino de Estadistica.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
-              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Outputs[Salida de conversión de datos]" />
+              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Outputs[Salida de conversión de datos]" />
             <path
               refId="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos2]"
-              endId="Package\Carga Tablas de Dimensión\Destino de Estadisticas.Inputs[Entrada de destino de OLE DB]"
+              endId="Package\Carga Tablas de Dimensión\Destino de Video.Inputs[Entrada de destino de OLE DB]"
               name="Salida de conversión de datos"
-              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Outputs[Salida de conversión de datos]" />
+              startId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Outputs[Salida de conversión de datos]" />
             <path
               refId="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
               endId="Package\Carga Tablas de Dimensión\Conversión de datos de Canal.Inputs[Entrada de conversión de datos]"
@@ -1607,14 +1527,14 @@ FROM apidata;</property>
               startId="Package\Carga Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB]" />
             <path
               refId="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
-              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Videos.Inputs[Entrada de conversión de datos]"
+              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de OLE DB"
-              startId="Package\Carga Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB]" />
+              startId="Package\Carga Tablas de Dimensión\Origen de Estadistica.Outputs[Salida de origen de OLE DB]" />
             <path
               refId="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
-              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas.Inputs[Entrada de conversión de datos]"
+              endId="Package\Carga Tablas de Dimensión\Conversión de datos de Video.Inputs[Entrada de conversión de datos]"
               name="Salida de origen de OLE DB"
-              startId="Package\Carga Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB]" />
+              startId="Package\Carga Tablas de Dimensión\Origen de Video.Outputs[Salida de origen de OLE DB]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1651,7 +1571,7 @@ FROM apidata;</property>
                   description="Comando SQL para ejecutar."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM H_CANAL WHERE H_ID_CANAL = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM H_CANAL WHERE ID_CANAL = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
@@ -1674,21 +1594,17 @@ FROM apidata;</property>
                   name="Entrada de comando de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].Columns[H_ID_CANAL]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1000"
-                      cachedName="H_ID_CANAL"
+                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].Columns[ID_CANAL]"
+                      cachedDataType="i4"
+                      cachedName="ID_CANAL"
                       externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[H_ID_CANAL]" />
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="Param_0">
                       <properties>
                         <property
@@ -1794,55 +1710,64 @@ FROM apidata;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICAS]"
-                      name="ID_ESTADISTICAS"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEOS]"
-                      name="ID_VIDEOS"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[H_ID_CANAL]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[VIDEOID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[H_ID_CANAL]"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[VIDEOID]"
                       length="1000"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[H_ID_CANAL]"
-                      name="H_ID_CANAL"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[VIDEOID]"
+                      name="VIDEOID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      name="ID_ESTADISTICA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEO]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]"
+                      name="ID_VIDEO"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICAS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="ID_ESTADISTICAS" />
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      dataType="i4"
+                      name="ID_CANAL" />
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEOS]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[VIDEOID]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="ID_VIDEOS" />
+                      name="VIDEOID" />
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[H_ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      name="H_ID_CANAL" />
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICA]"
+                      dataType="i4"
+                      name="ID_ESTADISTICA" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEO]"
+                      dataType="i4"
+                      name="ID_VIDEO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1851,26 +1776,27 @@ FROM apidata;</property>
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[H_ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[H_ID_CANAL]"
-                      name="H_ID_CANAL" />
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      name="ID_CANAL" />
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICAS]"
-                      name="ID_ESTADISTICAS" />
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICA]"
+                      name="ID_ESTADISTICA" />
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEO]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEO]"
+                      name="ID_VIDEO" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[VIDEOID]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEOS]"
-                      name="ID_VIDEOS" />
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[VIDEOID]"
+                      name="VIDEOID" />
                     <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -1966,9 +1892,7 @@ FROM apidata;</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="Param_0">
                       <properties>
                         <property
@@ -2065,9 +1989,7 @@ FROM apidata;</property>
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="Param_0">
                       <properties>
                         <property
@@ -2152,13 +2074,11 @@ FROM apidata;</property>
                   name="Entrada de comando de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB].Columns[ID_CANAL]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1000"
-                      cachedName="ID_CANAL"
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB].Columns[ID_VIDEO]"
+                      cachedDataType="i4"
+                      cachedName="ID_VIDEO"
                       externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]" />
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2276,7 +2196,7 @@ FROM apidata;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
-                      length="1000"
+                      length="50"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
                       name="NOMBRE"
                       truncationRowDisposition="FailComponent" />
@@ -2298,13 +2218,11 @@ FROM apidata;</property>
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1000"
                       name="NOMBRE" />
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="ID_CANAL" />
                   </externalMetadataColumns>
                 </output>
@@ -2315,16 +2233,14 @@ FROM apidata;</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
                       name="ID_CANAL" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="1000"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Canal.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
                       name="NOMBRE" />
                     <outputColumn
@@ -2460,14 +2376,23 @@ FROM apidata;</property>
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[COMENTARIOS]"
                       name="COMENTARIOS"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[PUBLISHED]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[PUBLISHED]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].Columns[PUBLISHED]"
+                      name="PUBLISHED"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_ESTADISTICA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       name="ID_ESTADISTICA" />
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[VISTAS]"
@@ -2493,6 +2418,12 @@ FROM apidata;</property>
                       dataType="str"
                       length="1000"
                       name="COMENTARIOS" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de origen de OLE DB].ExternalColumns[PUBLISHED]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="PUBLISHED" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2502,9 +2433,7 @@ FROM apidata;</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICA]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1000"
+                      dataType="i4"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ID_ESTADISTICA]"
                       name="ID_ESTADISTICA" />
                     <outputColumn
@@ -2535,6 +2464,13 @@ FROM apidata;</property>
                       length="1000"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[COMENTARIOS]"
                       name="COMENTARIOS" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[PUBLISHED]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[PUBLISHED]"
+                      name="PUBLISHED" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -2568,7 +2504,7 @@ FROM apidata;</property>
                 <property
                   dataType="System.String"
                   description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                  name="OpenRowset">[dbo].[D_CANAL]</property>
+                  name="OpenRowset">[dbo].[D_VIDEOS]</property>
                 <property
                   dataType="System.String"
                   description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
@@ -2614,42 +2550,55 @@ FROM apidata;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]"
+                      dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
-                      length="1000"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_CANAL]"
-                      name="ID_CANAL"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[ID_VIDEO]"
+                      name="ID_VIDEO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[TITULO]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
-                      length="50"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[NOMBRE]"
-                      name="NOMBRE"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[TITULO]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[TITULO]"
+                      name="TITULO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[URL]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[URL]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].Columns[URL]"
+                      name="URL"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_CANAL]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIDEO]"
+                      dataType="i4"
+                      name="ID_VIDEO" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[TITULO]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="ID_CANAL" />
+                      name="TITULO" />
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRE]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de origen de OLE DB].ExternalColumns[URL]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
-                      name="NOMBRE" />
+                      length="1000"
+                      name="URL" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2658,19 +2607,24 @@ FROM apidata;</property>
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEO]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIDEO]"
+                      name="ID_VIDEO" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[TITULO]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ID_CANAL]"
-                      name="ID_CANAL" />
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[TITULO]"
+                      name="TITULO" />
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[URL]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRE]"
-                      name="NOMBRE" />
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[URL]"
+                      name="URL" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Videos.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -2753,7 +2707,7 @@ FROM apidata;</property>
           Id="Package\Carga Tabla de Hechos"
           TopLeft="217,338" />
         <NodeLayout
-          Size="210,42"
+          Size="208,42"
           Id="Package\Carga Tablas de Dimensión"
           TopLeft="210,249" />
         <NodeLayout
@@ -2766,7 +2720,7 @@ FROM apidata;</property>
           TopLeft="199,164" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="315.5,206">
+          TopLeft="315,206">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2788,7 +2742,7 @@ FROM apidata;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="313.5,291">
+          TopLeft="313,291">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2851,28 +2805,6 @@ FROM apidata;</property>
           Id="Package\Carga Tabla de Hechos\Destino de Hechos"
           TopLeft="280,279" />
         <EdgeLayout
-          Id="Package\Carga Tabla de Hechos.Paths[Salida de origen de OLE DB]"
-          TopLeft="359.5,183">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,25"
-              Start="0,0"
-              End="0,17.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
           TopLeft="360.5,250">
           <EdgeLayout.Curve>
@@ -2886,6 +2818,28 @@ FROM apidata;</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tabla de Hechos.Paths[Salida de origen de OLE DB]"
+          TopLeft="359.5,183">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2924,51 +2878,17 @@ FROM apidata;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="159,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Canal"
-          TopLeft="74,167" />
-        <NodeLayout
           Size="154,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Canal"
           TopLeft="81,30" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Videos"
-          TopLeft="370,179" />
-        <NodeLayout
           Size="159,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Videos"
-          TopLeft="365,23" />
-        <NodeLayout
-          Size="224,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Videos"
-          TopLeft="336,98" />
+          Id="Package\Carga Tablas de Dimensión\Destino de Canal"
+          TopLeft="74,167" />
         <NodeLayout
           Size="219,42"
           Id="Package\Carga Tablas de Dimensión\Conversión de datos de Canal"
           TopLeft="47,97" />
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
-          TopLeft="446.25,65">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
           TopLeft="157.25,72">
@@ -2983,28 +2903,6 @@ FROM apidata;</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,17.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
-          TopLeft="449.75,140">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3036,31 +2934,87 @@ FROM apidata;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="183,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Estadisticas"
-          TopLeft="90,298" />
+          Size="178,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Estadistica"
+          TopLeft="81,269" />
         <NodeLayout
-          Size="247,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Estadisticas"
-          TopLeft="56,364" />
+          Size="182,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Estadistica"
+          TopLeft="74,406" />
         <NodeLayout
-          Size="187,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Estadisticas"
-          TopLeft="92,436" />
+          Size="242,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Estadistica"
+          TopLeft="47,336" />
         <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
-          TopLeft="180.5,340">
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
+          TopLeft="169,311">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,24"
+              EndConnector="0,25"
               Start="0,0"
-              End="0,16.5">
+              End="0,17.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,16.5" />
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
+          TopLeft="166.5,378">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Video"
+          TopLeft="424,160" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Video"
+          TopLeft="417,297" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Video"
+          TopLeft="390,227" />
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+          TopLeft="500.5,202">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3071,18 +3025,18 @@ FROM apidata;</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos2]"
-          TopLeft="182.5,406">
+          TopLeft="498,269">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,30"
+              EndConnector="0,28"
               Start="0,0"
-              End="0,22.5">
+              End="0,20.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.5" />
+                    End="0,20.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3095,6 +3049,14 @@ FROM apidata;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Canal">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Canal">
     <Properties>
       <Property>
@@ -3104,35 +3066,6 @@ FROM apidata;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Canal">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Videos">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Videos">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -3151,7 +3084,7 @@ FROM apidata;</property>
           TopLeft="229,110" />
         <EdgeLayout
           Id="Package\Vaciado de Tabla de Hechos.Paths[Salida de origen de OLE DB]"
-          TopLeft="311.25,152">
+          TopLeft="313.25,152">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3193,17 +3126,13 @@ FROM apidata;</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="181,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos"
-          TopLeft="355,167" />
-        <NodeLayout
-          Size="183,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas"
-          TopLeft="66,349" />
-        <NodeLayout
           Size="204,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Estadisticas"
           TopLeft="54,451" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Videos"
+          TopLeft="359,167" />
         <NodeLayout
           Size="159,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Videos"
@@ -3216,6 +3145,32 @@ FROM apidata;</property>
           Size="176,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Canal"
           TopLeft="64,155" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas"
+          TopLeft="66,349" />
+        <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
+          TopLeft="448.5,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
           TopLeft="156.75,391">
@@ -3260,44 +3215,9 @@ FROM apidata;</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
-          TopLeft="446.5,129">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Videos">
     <Properties>
@@ -3325,7 +3245,20 @@ FROM apidata;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Estadisticas">
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Estadisticas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Estadistica">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3333,7 +3266,28 @@ FROM apidata;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Destino de Estadisticas">
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Estadistica">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Video">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Destino de Video">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

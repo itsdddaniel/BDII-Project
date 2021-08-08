@@ -12,7 +12,7 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>D VEHÍCULO</ID>
+        <ID>D VEHICULO</ID>
       </Dimension>
       <Dimension>
         <ID>D MARCA</ID>

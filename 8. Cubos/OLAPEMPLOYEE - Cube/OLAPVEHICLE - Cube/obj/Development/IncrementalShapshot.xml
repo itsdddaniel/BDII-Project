@@ -1,6 +1,6 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
-    <Database>OLAPVEHICLE - Cube</Database>
+    <Database>OLAPEMPLOYEE - Cube</Database>
     <Server>DESKTOP-E4HF9F0:2383</Server>
     <ConnectionString>Data Source=DESKTOP-E4HF9F0:2383;Timeout=0</ConnectionString>
   </Target>
@@ -19,63 +19,63 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>gIOOOuZros9+nFPPnvF7lNaLbQ0=8/5/2021 4:15:47 PM8/5/2021 4:15:47 PM</TimeStamp>
+        <TimeStamp>sAebeDzN+Xon1Ux407Upmc52cIM=8/7/2021 3:34:51 PM8/7/2021 3:34:51 PM</TimeStamp>
         <ID>
           <String>OLAPEMPLOYEE</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>b/XO5ZYjDW8BldypK2hluOGWSgI=8/5/2021 4:15:55 PM8/5/2021 4:15:55 PM</TimeStamp>
+        <TimeStamp>YcJNVVdF57CNeIQe38WE8oWw17U=8/7/2021 3:34:57 PM8/7/2021 3:34:57 PM</TimeStamp>
         <ID>
           <String>OLAPEMPLOYEE</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>5V6vYMM723b/p8Dm63nJ54XijfE=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>4m1XuU2p7CGSAdZolESYX5jjJxQ=8/7/2021 3:35:11 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>D TRABAJO</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>AFUUKJtp6xM2Bk5LZN3WnsONXEY=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>zNvH1eLlEsxFyk8Lu8gltKekeG0=8/7/2021 3:35:17 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>D TIEMPO</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OdgWJj5xrjjFrvuw8S2iEQeICdM=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>mW4EUd/+lmKaNKn6C8rIZtWrtbM=8/7/2021 3:35:23 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>D EMPLEADOS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Dc4kv8zCH/cpOGnSlxtqUMsnaKM=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>wJYmZ55UjUuAMS0a3vQfxplKUNw=8/7/2021 3:35:27 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>D SUCURSAL</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>NevMXT6QhEDaaIr6Hkc+/RJBW+U=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>hSvqNOyLzM1JwgBnU5mKk1qOSkE=8/7/2021 3:35:32 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>D VIAJES</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>/A3jFgpqJdN0d3e24eHp1g0aGPw=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>xDwicJhJCSq+qhsNp/ckbaQJrmg=8/7/2021 3:35:36 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>H EMPLEADO</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>ze4PIq84uqLl7suLCIXsjGLCdeo=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PMGXebz2mct3J9285FNeQ//Z8YF8Q=8/5/2021 4:16:25 PM8/5/2021 4:16:25 PM</TimeStamp>
+        <TimeStamp>9cqk14CS30Vs5kl6ilgERA3O3DE=8/7/2021 3:35:36 PM8/7/2021 3:35:05 PMZvMUXgo+iLweNMb0n7RCIvP5/mc=8/7/2021 3:35:05 PM8/7/2021 3:35:05 PM</TimeStamp>
         <ID>
           <String>OLAPEMPLOYEE</String>
         </ID>
@@ -85,12 +85,12 @@
       <Type>Microsoft.AnalysisServices.Database</Type>
       <TimeStamp>c64IKt+eFK9bNfsDE1ufXUuW3KE=8/5/2021 4:06:26 PM8/5/2021 4:05:52 PM</TimeStamp>
       <ID>
-        <String>OLAPVEHICLE - Cube</String>
+        <String>OLAPEMPLOYEE - Cube</String>
       </ID>
     </DatabaseSnapshot>
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-08-05T22:16:49.633333Z</LastDeployed>
+  <LastDeployed>2021-08-07T21:35:42.603333Z</LastDeployed>
 </DeploymentSnapshot>

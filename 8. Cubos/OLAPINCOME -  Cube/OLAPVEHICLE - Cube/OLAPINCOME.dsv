@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4a74347e-8cab-4e47-81c4-247ff8b537aa" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="25a26de9-a4d8-4b9d-acbc-703566c1277c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>OLAPINCOME</ID>
   <Name>OLAPINCOME</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,38 +42,14 @@
   <DataSourceID>OLAPINCOME</DataSourceID>
   <Schema>
     <xs:schema id="OLAPINCOME" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="OLAPINCOME" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1356f80b-37fb-471d-a533-d95d341a9af7">
+      <xs:element name="OLAPINCOME" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="32acf84d-d83a-4951-b5ab-8b1bd2e66271">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_H_INGRESOS" msprop:design-time-name="9f27e5a7-0915-40ad-82ab-46d59eb3f509" msprop:DbTableName="H_INGRESOS" msprop:FriendlyName="H_INGRESOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_EMPLEADOS" msprop:design-time-name="e44f6ee3-1bef-442a-83bd-0d52e4bde54a" msprop:DbTableName="D_EMPLEADOS" msprop:FriendlyName="D_EMPLEADOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_INGRESOS" msprop:design-time-name="6c60d2a6-0557-4402-b1fc-d718a8c7b0c5" msprop:DbColumnName="ID_INGRESOS" msprop:FriendlyName="ID_INGRESOS" type="xs:int" />
-                  <xs:element name="ID_SUCURSAL" msprop:design-time-name="0a944fdc-a3df-4bd8-8725-67f5aa343fb2" msprop:DbColumnName="ID_SUCURSAL" msprop:FriendlyName="ID_SUCURSAL" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_EMPLEADOS" msprop:design-time-name="1231fe2e-4556-4289-ae73-a5a2488d53e3" msprop:DbColumnName="ID_EMPLEADOS" msprop:FriendlyName="ID_EMPLEADOS" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_MEDIO" msprop:design-time-name="49c57973-e913-4cbe-8c18-2d22cac31378" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_VIAJES" msprop:design-time-name="ce4fc2b4-6038-4a14-89e5-5177ba695161" msprop:DbColumnName="ID_VIAJES" msprop:FriendlyName="ID_VIAJES" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_TIEMPO" msprop:design-time-name="9aa2d9ea-2204-4032-bee2-6f8fb34fb58d" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="INGRESO" msprop:design-time-name="dd8e034d-61db-4f9e-a982-19e775377b23" msprop:DbColumnName="INGRESO" msprop:FriendlyName="INGRESO" type="xs:int" minOccurs="0" />
-                </xs:sequence>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="dbo_D_TIEMPO" msprop:design-time-name="2e684da3-3dad-46bc-969c-a0d618a09dd3" msprop:DbTableName="D_TIEMPO" msprop:FriendlyName="D_TIEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="ID_TIEMPO" msprop:design-time-name="bccf3670-1c93-422a-8970-d0ce937ff8a7" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" />
-                  <xs:element name="DIA" msprop:design-time-name="552a06b3-d511-4704-acdd-033c87cf5e3b" msprop:DbColumnName="DIA" msprop:FriendlyName="DIA" minOccurs="0">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="1000" />
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                  <xs:element name="MES" msprop:design-time-name="9f6d166a-f5af-4dab-b6fe-c724bcf87d70" msprop:DbColumnName="MES" msprop:FriendlyName="MES" type="xs:int" minOccurs="0" />
-                  <xs:element name="AÑO" msprop:design-time-name="63530861-e35b-4b00-a3b1-68cd4a05fff9" msprop:DbColumnName="AÑO" msprop:FriendlyName="AÑO" type="xs:int" minOccurs="0" />
-                  <xs:element name="TRIMESTRE" msprop:design-time-name="8a1a38f6-44b1-4773-917e-51bddf9d8cad" msprop:DbColumnName="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" type="xs:int" minOccurs="0" />
-                  <xs:element name="SEMESTRE" msprop:design-time-name="e442a64c-c47a-4916-a649-276cb9543f60" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" type="xs:int" minOccurs="0" />
-                  <xs:element name="DIADESEMANA" msprop:design-time-name="512fa732-874f-47c9-8c1f-bea5ace84bd1" msprop:DbColumnName="DIADESEMANA" msprop:FriendlyName="DIADESEMANA" minOccurs="0">
+                  <xs:element name="ID_EMPLEADO" msprop:design-time-name="6290ca67-edca-45cb-b011-237eb1fdf6d2" msprop:DbColumnName="ID_EMPLEADO" msprop:FriendlyName="ID_EMPLEADO" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="68b5133c-3e35-473a-ab40-c3caa97eedbc" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -83,32 +59,18 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_SUCURSAL" msprop:design-time-name="ba396be2-b8fa-4e01-b4f4-32eb599ea37e" msprop:DbTableName="D_SUCURSAL" msprop:FriendlyName="D_SUCURSAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_MEDIO_DE_TRANSPORTE" msprop:design-time-name="4c60bac3-7b54-4c55-84c7-37d276360acf" msprop:DbTableName="D_MEDIO_DE_TRANSPORTE" msprop:FriendlyName="D_MEDIO_DE_TRANSPORTE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_SUCURSAL" msprop:design-time-name="6a9b6dfb-e190-4f62-aafc-542125bf33ed" msprop:DbColumnName="ID_SUCURSAL" msprop:FriendlyName="ID_SUCURSAL" type="xs:int" />
-                </xs:sequence>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="dbo_D_EMPLEADOS" msprop:design-time-name="0829b77f-063d-426c-b913-dfa7ece67f78" msprop:DbTableName="D_EMPLEADOS" msprop:FriendlyName="D_EMPLEADOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="ID_EMPLEADO" msprop:design-time-name="4e98e25b-1be3-42fb-9c8f-57986edd47fe" msprop:DbColumnName="ID_EMPLEADO" msprop:FriendlyName="ID_EMPLEADO" type="xs:int" />
-                  <xs:element name="NOMBRE" msprop:design-time-name="66658fed-12de-49aa-913a-892153b4eaa6" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                  <xs:element name="ID_MEDIO" msprop:design-time-name="0157d5f4-78c3-4c4d-8b3d-35c128f0382b" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" />
+                  <xs:element name="CARGA" msprop:design-time-name="c2f3effc-47b8-4a08-a218-b0bdbf543f8d" msprop:DbColumnName="CARGA" msprop:FriendlyName="CARGA" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
-                        <xs:maxLength value="50" />
+                        <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                </xs:sequence>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="dbo_D_VIAJES" msprop:design-time-name="0d7af2c4-b1a4-485a-bee0-3b9ed94ac9d4" msprop:DbTableName="D_VIAJES" msprop:FriendlyName="D_VIAJES" msprop:DbSchemaName="dbo" msprop:TableType="Table">
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="ID_VIAJE" msprop:design-time-name="b044ff33-63ae-40b9-b938-2928c66d34c7" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" />
-                  <xs:element name="DIRECCION" msprop:design-time-name="aade0f60-fa38-4de7-aa0a-bbdd5bba87a8" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
+                  <xs:element name="TIPO" msprop:design-time-name="fa4c8415-e2d9-4b39-a03e-c19408d6331d" msprop:DbColumnName="TIPO" msprop:FriendlyName="TIPO" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -118,58 +80,105 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_MEDIO_DE_TRANSPORTE" msprop:design-time-name="8a473483-1c81-421e-bcb1-ca55f430d868" msprop:DbTableName="D_MEDIO_DE_TRANSPORTE" msprop:FriendlyName="D_MEDIO_DE_TRANSPORTE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_SUCURSAL" msprop:design-time-name="cdff7d7a-a9e3-426d-8667-0fc6da703377" msprop:DbTableName="D_SUCURSAL" msprop:FriendlyName="D_SUCURSAL" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_MEDIO" msprop:design-time-name="dfb5fdee-8022-44c7-abf9-cad30e37e407" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" />
-                  <xs:element name="CARGA" msprop:design-time-name="c99a8af5-2653-49c1-bf77-d8ff9b75469b" msprop:DbColumnName="CARGA" msprop:FriendlyName="CARGA" minOccurs="0">
+                  <xs:element name="ID_SUCURSAL" msprop:design-time-name="96020bf3-320b-4703-8da3-b57a161e8e95" msprop:DbColumnName="ID_SUCURSAL" msprop:FriendlyName="ID_SUCURSAL" type="xs:int" />
+                  <xs:element name="DIRECCION" msprop:design-time-name="5860b5f5-3649-4a24-a363-d4c8e7b585cc" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="TIPO" msprop:design-time-name="09376444-7bef-4aa1-9151-a77c65ba876c" msprop:DbColumnName="TIPO" msprop:FriendlyName="TIPO" minOccurs="0">
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_TIEMPO" msprop:design-time-name="f19436b9-927c-44b4-922e-182c76e9bc96" msprop:DbTableName="D_TIEMPO" msprop:FriendlyName="D_TIEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="cb3ca4d1-e71e-406c-9791-1e499b8c5ee1" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" />
+                  <xs:element name="DIA" msprop:design-time-name="4bb48d7a-abd0-4ad2-ba2c-09341c16cb70" msprop:DbColumnName="DIA" msprop:FriendlyName="DIA" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="MES" msprop:design-time-name="8ca0ddd5-982e-45f1-aacf-27765c3e6e07" msprop:DbColumnName="MES" msprop:FriendlyName="MES" type="xs:int" minOccurs="0" />
+                  <xs:element name="AÑO" msprop:design-time-name="6505e367-5a26-47b6-b148-08e01c20f6dd" msprop:DbColumnName="AÑO" msprop:FriendlyName="AÑO" type="xs:int" minOccurs="0" />
+                  <xs:element name="TRIMESTRE" msprop:design-time-name="0ba43059-f79b-4937-8518-5a4fc6322244" msprop:DbColumnName="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEMESTRE" msprop:design-time-name="2ad027ed-4c5f-4db0-a8f8-1296179ce73d" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIADESEMANA" msprop:design-time-name="18a4c112-cba4-478d-8c66-cd1e54e31801" msprop:DbColumnName="DIADESEMANA" msprop:FriendlyName="DIADESEMANA" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_D_VIAJES" msprop:design-time-name="ec3b4871-74af-4484-a6ba-867e7ea83684" msprop:DbTableName="D_VIAJES" msprop:FriendlyName="D_VIAJES" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_VIAJE" msprop:design-time-name="ef6a645e-fe58-43bb-8f2c-6b60a9394ffd" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" />
+                  <xs:element name="DIRECCION" msprop:design-time-name="f77b81d9-73f2-4ff7-a0e8-df3d022f1c74" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MONTO" msprop:design-time-name="197f5c18-d9df-449b-b73e-9cd846d67dd9" msprop:DbColumnName="MONTO" msprop:FriendlyName="MONTO" type="xs:int" minOccurs="0" />
+                  <xs:element name="ESTADO" msprop:design-time-name="fb254428-e96c-4949-a90a-d68ee0a60302" msprop:DbColumnName="ESTADO" msprop:FriendlyName="ESTADO" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_H_INGRESOS" msprop:design-time-name="aef3d5f4-3489-484b-be91-43a2743821a5" msprop:DbTableName="H_INGRESOS" msprop:FriendlyName="H_INGRESOS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_INGRESOS" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="31696026-8762-49e1-93cb-692520a219c5" msprop:DbColumnName="ID_INGRESOS" msprop:FriendlyName="ID_INGRESOS" type="xs:int" />
+                  <xs:element name="ID_SUCURSAL" msprop:design-time-name="25a21ec9-0107-4882-8dd3-bdcb555e3c2d" msprop:DbColumnName="ID_SUCURSAL" msprop:FriendlyName="ID_SUCURSAL" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_EMPLEADOS" msprop:design-time-name="b73669a4-d740-4015-abbf-57fbbd426829" msprop:DbColumnName="ID_EMPLEADOS" msprop:FriendlyName="ID_EMPLEADOS" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_MEDIO" msprop:design-time-name="998d0729-9160-4646-9813-2403efd4d295" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_VIAJES" msprop:design-time-name="cc75d2de-d58f-4391-bcce-0fbf442660fe" msprop:DbColumnName="ID_VIAJES" msprop:FriendlyName="ID_VIAJES" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="34badf16-0d15-4adf-a878-df9ca2860a77" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="INGRESO" msprop:design-time-name="748d169e-9e81-46e5-abdc-8e03d3f46f95" msprop:DbColumnName="INGRESO" msprop:FriendlyName="INGRESO" type="xs:int" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
           </xs:choice>
         </xs:complexType>
         <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-          <xs:selector xpath=".//dbo_H_INGRESOS" />
-          <xs:field xpath="ID_INGRESOS" />
-        </xs:unique>
-        <xs:unique name="dbo_D_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-          <xs:selector xpath=".//dbo_D_TIEMPO" />
-          <xs:field xpath="ID_TIEMPO" />
-        </xs:unique>
-        <xs:unique name="dbo_D_SUCURSAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-          <xs:selector xpath=".//dbo_D_SUCURSAL" />
-          <xs:field xpath="ID_SUCURSAL" />
-        </xs:unique>
-        <xs:unique name="dbo_D_EMPLEADOS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
           <xs:selector xpath=".//dbo_D_EMPLEADOS" />
           <xs:field xpath="ID_EMPLEADO" />
-        </xs:unique>
-        <xs:unique name="dbo_D_VIAJES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-          <xs:selector xpath=".//dbo_D_VIAJES" />
-          <xs:field xpath="ID_VIAJE" />
         </xs:unique>
         <xs:unique name="dbo_D_MEDIO_DE_TRANSPORTE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
           <xs:selector xpath=".//dbo_D_MEDIO_DE_TRANSPORTE" />
           <xs:field xpath="ID_MEDIO" />
         </xs:unique>
+        <xs:unique name="dbo_D_SUCURSAL_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_SUCURSAL" />
+          <xs:field xpath="ID_SUCURSAL" />
+        </xs:unique>
+        <xs:unique name="dbo_D_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_TIEMPO" />
+          <xs:field xpath="ID_TIEMPO" />
+        </xs:unique>
+        <xs:unique name="dbo_D_VIAJES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_D_VIAJES" />
+          <xs:field xpath="ID_VIAJE" />
+        </xs:unique>
+        <xs:unique name="dbo_H_INGRESOS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_H_INGRESOS" />
+          <xs:field xpath="ID_INGRESOS" />
+        </xs:unique>
         <xs:keyref name="FK__H_INGRESO__ID_SU__31EC6D26" refer="dbo_D_SUCURSAL_Constraint1">
           <xs:selector xpath=".//dbo_H_INGRESOS" />
           <xs:field xpath="ID_SUCURSAL" />
         </xs:keyref>
-        <xs:keyref name="FK__H_INGRESO__ID_EM__300424B4" refer="dbo_D_EMPLEADOS_Constraint1">
+        <xs:keyref name="FK__H_INGRESO__ID_EM__300424B4" refer="Constraint1">
           <xs:selector xpath=".//dbo_H_INGRESOS" />
           <xs:field xpath="ID_EMPLEADOS" />
         </xs:keyref>

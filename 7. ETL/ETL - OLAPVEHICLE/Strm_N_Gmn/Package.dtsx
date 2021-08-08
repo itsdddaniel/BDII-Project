@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{C32F661E-359F-4CB9-B4AF-9CD3CA52F342}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{D405122B-2DE0-4EA1-9AB3-26AFEC2EE1AA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAP88wSzpa3HBv/vPwvlZrAXKbWBCCa17DR1ClsIXLBUgAAAAAOgAAAAAIAACAAAACQC6nLpnEO7UiONE55zpsCJYAbHeMCBuEKZQcLNZ+lexAAAABLZQseksAKHipACOI6pbn+QAAAAH5wCUTWFAOiUbcVFIbYBJZZ670/foqS7GYFTiBQYt50Z7Trs6jvgnEao4SLgYmk2hP4buqvh+PClywDL8DP6HE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADCYwVv8ICx5j5JUzcld6pcPgXYloYa/yGNPdzxjwPPzQAAAAAOgAAAAAIAACAAAAD4jhYURyF8zq3GFUmYyhs9tRIzjM/JHDxn3+bhGXfM2RAAAABbqXbVohUnBUPvhy2K4QYDQAAAAJb1tBp7pSBq8RTpUqozfZxxA6V8+PjOCb6pL4ckf2+MxnDCD2eLw0rvqFL/A5ohK2Jdrnr0lcIvo74s3p/sJGU</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAH9dpPsF4H/kmy2D3+KCbmxXMSbWlcRB2PJmLAOUa4GwAAAAAOgAAAAAIAACAAAABZhkmfQO1u9XrDlebe2PMB2D255rGCGjE/QTvP62RezBAAAACuTRzwmUntIB1L9Dng61WzQAAAACMcZhPsf7/gq2F/A8Xd7PR1vFXZwNMt8h2U9wSlakcKi+t/QSZilEPcG9M8JIWnVSERps3PwyAoFe9oS5GqFHE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD76TsOaeQN5uWbJ73G3alJtjfKlb3osS/YfZtFAPp62gAAAAAOgAAAAAIAACAAAAB+LIANd5NAPrUR3YdSkQbRWEhKpk5Kjl+ipV9LEZK4ThAAAAD/EXeUspxxgjp5/A6DJ9X2QAAAAKsp4guaZOE+tnV+JzAsnhuUUSOKMaJCvgXxpIO3VGJmToH3ucbsTX7olycYdiRmRNsvebrx97SyTNC7F6Opp6A</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -206,18 +206,6 @@
                       externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_MEDIO]"
                       lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_MEDIO]" />
                     <inputColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[ID_VIAJES]"
-                      cachedDataType="i4"
-                      cachedName="ID_VIAJES"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIAJES]"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIAJES]" />
-                    <inputColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[ID_H_VEHICULO]"
-                      cachedDataType="i4"
-                      cachedName="ID_H_VEHICULO"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VEHÍCULO]"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHICULO]" />
-                    <inputColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[NOMBRECLIENTE]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -226,10 +214,16 @@
                       externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRECLIENTE]"
                       lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[NOMBRECLIENTE]" />
                     <inputColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[ID_VIAJES]"
+                      cachedDataType="i4"
+                      cachedName="ID_VIAJES"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIAJE]"
+                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIAJES]" />
+                    <inputColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].Columns[ID_VEHICULO]"
                       cachedDataType="i4"
                       cachedName="ID_VEHICULO"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_H_VEHÍCULO]"
+                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VEHICULO]"
                       lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VEHICULO]" />
                   </inputColumns>
                   <externalMetadataColumns
@@ -239,10 +233,6 @@
                       dataType="dbDate"
                       name="ID_TIEMPO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_H_VEHÍCULO]"
-                      dataType="i4"
-                      name="ID_H_VEHÍCULO" />
-                    <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_MARCA]"
                       dataType="i4"
                       name="ID_MARCA" />
@@ -251,19 +241,23 @@
                       dataType="i4"
                       name="ID_MEDIO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIAJES]"
-                      dataType="i4"
-                      name="ID_VIAJES" />
-                    <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VEHÍCULO]"
-                      dataType="i4"
-                      name="ID_VEHÍCULO" />
-                    <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[NOMBRECLIENTE]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="NOMBRECLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VIAJE]"
+                      dataType="i4"
+                      name="ID_VIAJE" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_VEHICULO]"
+                      dataType="i4"
+                      name="ID_VEHICULO" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tabla de Hechos\Destino de Hechos 1.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_H_VEHICULO]"
+                      dataType="i4"
+                      name="ID_H_VEHICULO" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -317,7 +311,7 @@
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT Vehiculo.id AS 'ID_H_VEHICULO', MarcaDeVehiculo.id AS 'ID_MARCA', MedioDeTransporte.id AS 'ID_MEDIO', Viaje.id AS 'ID_VIAJES', CONVERT(varchar, Viaje.Fecha) AS [ID_TIEMPO], Vehiculo.id AS 'ID_VEHICULO', Cliente.Nombre AS 'NOMBRECLIENTE' FROM dbo.Vehiculo JOIN Viaje ON Vehiculo = Vehiculo.id JOIN MarcaDeVehiculo ON MarcaDeVehiculo.id = Marca JOIN MedioDeTransporte ON MedioDeTransporte.id = MedioDeTransporte JOIN Cliente ON Viaje.Cliente = Cliente.id;</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT MarcaDeVehiculo.id AS 'ID_MARCA', MedioDeTransporte.id AS 'ID_MEDIO', Viaje.id AS 'ID_VIAJES', CONVERT(varchar, Viaje.Fecha) AS [ID_TIEMPO], Vehiculo.id AS 'ID_VEHICULO', Cliente.Nombre AS 'NOMBRECLIENTE' FROM dbo.Vehiculo JOIN Viaje ON Vehiculo = Vehiculo.id JOIN MarcaDeVehiculo ON MarcaDeVehiculo.id = Marca JOIN MedioDeTransporte ON MedioDeTransporte.id = MedioDeTransporte JOIN Cliente ON Viaje.Cliente = Cliente.id;</property>
                 <property
                   dataType="System.String"
                   description="Variable que contiene el comando SQL para ejecutar."
@@ -353,15 +347,6 @@
                   refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB]"
                   name="Salida de origen de OLE DB">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHICULO]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_H_VEHICULO]"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHICULO]"
-                      name="ID_H_VEHICULO"
-                      truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_MARCA]"
                       dataType="i4"
@@ -424,10 +409,6 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_H_VEHICULO]"
-                      dataType="i4"
-                      name="ID_H_VEHICULO" />
-                    <externalMetadataColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_MARCA]"
                       dataType="i4"
                       name="ID_MARCA" />
@@ -462,11 +443,6 @@
                   isErrorOut="true"
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_H_VEHICULO]"
-                      dataType="i4"
-                      lineageId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_H_VEHICULO]"
-                      name="ID_H_VEHICULO" />
                     <outputColumn
                       refId="Package\Carga Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_MARCA]"
                       dataType="i4"
@@ -981,29 +957,29 @@
                       refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].Columns[id]"
                       cachedDataType="i4"
                       cachedName="id"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_TRABAJO]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_MEDIO]"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[id]" />
                     <inputColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].Columns[Carga]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].Columns[Medio]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="1000"
-                      cachedName="Carga"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cargo]"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Carga]" />
+                      cachedName="Medio"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[TIPOMEDIO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Medio]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_TRABAJO]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_MEDIO]"
                       dataType="i4"
-                      name="ID_TRABAJO" />
+                      name="ID_MEDIO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cargo]"
+                      refId="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte.Inputs[Entrada de destino de OLE DB].ExternalColumns[TIPOMEDIO]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="Cargo" />
+                      name="TIPOMEDIO" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1110,6 +1086,12 @@
                       cachedName="ID_TIEMPO"
                       externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_TIEMPO]"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[ID_TIEMPO]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[Dia_Semana]"
+                      cachedDataType="i4"
+                      cachedName="Dia_Semana"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHA]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[Dia_Semana]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1165,7 +1147,7 @@
                 <property
                   dataType="System.String"
                   description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
-                  name="OpenRowset">[dbo].[D_VEHÍCULO]</property>
+                  name="OpenRowset">[dbo].[D_VEHICULO]</property>
                 <property
                   dataType="System.String"
                   description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
@@ -1559,7 +1541,7 @@ FROM MarcaDeVehiculo;</property>
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT id,Carga 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT id,Medio
 FROM MedioDeTransporte;</property>
                 <property
                   dataType="System.String"
@@ -1606,15 +1588,15 @@ FROM MedioDeTransporte;</property>
                       name="id"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Carga]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Medio]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[Carga]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[Medio]"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Carga]"
-                      name="Carga"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Medio]"
+                      name="Medio"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -1624,11 +1606,11 @@ FROM MedioDeTransporte;</property>
                       dataType="i4"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[Carga]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[Medio]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="Carga" />
+                      name="Medio" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1642,12 +1624,12 @@ FROM MedioDeTransporte;</property>
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[id]"
                       name="id" />
                     <outputColumn
-                      refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[Carga]"
+                      refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[Medio]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[Carga]"
-                      name="Carga" />
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[Medio]"
+                      name="Medio" />
                     <outputColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -2233,7 +2215,7 @@ FROM Viaje;</property>
                   description="Comando SQL para ejecutar."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM H_VEHICULO WHERE ID_H_VEHÍCULO = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM H_VEHICULO WHERE ID_H_VEHICULO = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
@@ -2256,11 +2238,11 @@ FROM Viaje;</property>
                   name="Entrada de comando de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].Columns[ID_H_VEHÍCULO]"
+                      refId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].Columns[ID_H_VEHICULO]"
                       cachedDataType="i4"
-                      cachedName="ID_H_VEHÍCULO"
+                      cachedName="ID_H_VEHICULO"
                       externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHÍCULO]" />
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHICULO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2372,15 +2354,6 @@ FROM Viaje;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHÍCULO]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_H_VEHÍCULO]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHÍCULO]"
-                      name="ID_H_VEHÍCULO"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_MARCA]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
@@ -2399,15 +2372,6 @@ FROM Viaje;</property>
                       name="ID_MEDIO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIAJES]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIAJES]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIAJES]"
-                      name="ID_VIAJES"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_TIEMPO]"
                       dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
@@ -2415,15 +2379,6 @@ FROM Viaje;</property>
                       externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_TIEMPO]"
                       lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_TIEMPO]"
                       name="ID_TIEMPO"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VEHÍCULO]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VEHÍCULO]"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VEHÍCULO]"
-                      name="ID_VEHÍCULO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[NOMBRECLIENTE]"
@@ -2436,13 +2391,36 @@ FROM Viaje;</property>
                       lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[NOMBRECLIENTE]"
                       name="NOMBRECLIENTE"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIAJE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIAJE]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VIAJE]"
+                      name="ID_VIAJE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VEHICULO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VEHICULO]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_VEHICULO]"
+                      name="ID_VEHICULO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHICULO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_H_VEHICULO]"
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].Columns[ID_H_VEHICULO]"
+                      name="ID_H_VEHICULO"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_H_VEHÍCULO]"
-                      dataType="i4"
-                      name="ID_H_VEHÍCULO" />
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_MARCA]"
                       dataType="i4"
@@ -2452,23 +2430,27 @@ FROM Viaje;</property>
                       dataType="i4"
                       name="ID_MEDIO" />
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIAJES]"
-                      dataType="i4"
-                      name="ID_VIAJES" />
-                    <externalMetadataColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_TIEMPO]"
                       dataType="dbDate"
                       name="ID_TIEMPO" />
-                    <externalMetadataColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VEHÍCULO]"
-                      dataType="i4"
-                      name="ID_VEHÍCULO" />
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[NOMBRECLIENTE]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
                       name="NOMBRECLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VIAJE]"
+                      dataType="i4"
+                      name="ID_VIAJE" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_VEHICULO]"
+                      dataType="i4"
+                      name="ID_VEHICULO" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_H_VEHICULO]"
+                      dataType="i4"
+                      name="ID_H_VEHICULO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2477,10 +2459,10 @@ FROM Viaje;</property>
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_H_VEHÍCULO]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_H_VEHICULO]"
                       dataType="i4"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_H_VEHÍCULO]"
-                      name="ID_H_VEHÍCULO" />
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_H_VEHICULO]"
+                      name="ID_H_VEHICULO" />
                     <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_MARCA]"
                       dataType="i4"
@@ -2492,20 +2474,20 @@ FROM Viaje;</property>
                       lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_MEDIO]"
                       name="ID_MEDIO" />
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIAJES]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIAJE]"
                       dataType="i4"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIAJES]"
-                      name="ID_VIAJES" />
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VIAJE]"
+                      name="ID_VIAJE" />
                     <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_TIEMPO]"
                       dataType="dbDate"
                       lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_TIEMPO]"
                       name="ID_TIEMPO" />
                     <outputColumn
-                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VEHÍCULO]"
+                      refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VEHICULO]"
                       dataType="i4"
-                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VEHÍCULO]"
-                      name="ID_VEHÍCULO" />
+                      lineageId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[ID_VEHICULO]"
+                      name="ID_VEHICULO" />
                     <outputColumn
                       refId="Package\Vaciado de Tabla de Hechos\Origen de Hechos.Outputs[Salida de error de origen de OLE DB].Columns[NOMBRECLIENTE]"
                       codePage="1252"
@@ -2668,7 +2650,7 @@ FROM Viaje;</property>
                   description="Comando SQL para ejecutar."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM D_MEDIO_DE_TRANSPORTE WHERE ID_TRABAJO = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DELETE FROM D_MEDIO_DE_TRANSPORTE WHERE ID_MEDIO = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
@@ -2691,11 +2673,11 @@ FROM Viaje;</property>
                   name="Entrada de comando de OLE DB">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Medio de Transporte.Inputs[Entrada de comando de OLE DB].Columns[ID_TRABAJO]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Eliminación de Medio de Transporte.Inputs[Entrada de comando de OLE DB].Columns[ID_MEDIO]"
                       cachedDataType="i4"
-                      cachedName="ID_TRABAJO"
+                      cachedName="ID_MEDIO"
                       externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Eliminación de Medio de Transporte.Inputs[Entrada de comando de OLE DB].ExternalColumns[Param_0]"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[ID_TRABAJO]" />
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[ID_MEDIO]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3127,38 +3109,38 @@ FROM Viaje;</property>
                   name="Salida de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[ID_TRABAJO]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[ID_MEDIO]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_TRABAJO]"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[ID_TRABAJO]"
-                      name="ID_TRABAJO"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_MEDIO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[ID_MEDIO]"
+                      name="ID_MEDIO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Cargo]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[TIPOMEDIO]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[Cargo]"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[TIPOMEDIO]"
                       length="1000"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[Cargo]"
-                      name="Cargo"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].Columns[TIPOMEDIO]"
+                      name="TIPOMEDIO"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_TRABAJO]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[ID_MEDIO]"
                       dataType="i4"
-                      name="ID_TRABAJO" />
+                      name="ID_MEDIO" />
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[Cargo]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de origen de OLE DB].ExternalColumns[TIPOMEDIO]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      name="Cargo" />
+                      name="TIPOMEDIO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3167,17 +3149,17 @@ FROM Viaje;</property>
                   name="Salida de error de origen de OLE DB">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[ID_TRABAJO]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[ID_MEDIO]"
                       dataType="i4"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[ID_TRABAJO]"
-                      name="ID_TRABAJO" />
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[ID_MEDIO]"
+                      name="ID_MEDIO" />
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[Cargo]"
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[TIPOMEDIO]"
                       codePage="1252"
                       dataType="str"
                       length="1000"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[Cargo]"
-                      name="Cargo" />
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[TIPOMEDIO]"
+                      name="TIPOMEDIO" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -3603,7 +3585,7 @@ FROM Viaje;</property>
     design-time-name="Package\Carga Tabla de Hechos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="167,42"
           Id="Package\Carga Tabla de Hechos\Origen de Hechos"
@@ -3635,9 +3617,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3659,63 +3639,42 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tabla de Hechos\Origen de Hechos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tabla de Hechos\Destino de Hechos 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Carga Tablas de Dimensión">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Marca"
-          TopLeft="81,30" />
-        <NodeLayout
-          Size="231,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte"
-          TopLeft="365,23" />
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Marcas"
           TopLeft="74,167" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Vehiculo"
-          TopLeft="774,375" />
-        <NodeLayout
-          Size="222,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Viaje"
-          TopLeft="45,477" />
-        <NodeLayout
-          Size="155,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Viaje"
-          TopLeft="75,405" />
-        <NodeLayout
-          Size="240,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Vehiculo"
-          TopLeft="744,283" />
-        <NodeLayout
-          Size="236,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte"
-          TopLeft="370,179" />
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Viaje"
-          TopLeft="70,549" />
-        <NodeLayout
-          Size="230,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Tiempo"
-          TopLeft="421,459" />
-        <NodeLayout
-          Size="299,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Medio de Transporte"
-          TopLeft="336,98" />
         <NodeLayout
           Size="165,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Tiempo"
@@ -3725,133 +3684,53 @@ FROM Viaje;</property>
           Id="Package\Carga Tablas de Dimensión\Origen de Vehiculo"
           TopLeft="778,217" />
         <NodeLayout
+          Size="161,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Marca"
+          TopLeft="81,30" />
+        <NodeLayout
+          Size="222,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Viaje"
+          TopLeft="45,477" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Vehiculo"
+          TopLeft="774,375" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Vehiculo"
+          TopLeft="744,283" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Viaje"
+          TopLeft="75,405" />
+        <NodeLayout
+          Size="236,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte"
+          TopLeft="370,179" />
+        <NodeLayout
+          Size="230,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Tiempo"
+          TopLeft="421,459" />
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte"
+          TopLeft="365,23" />
+        <NodeLayout
+          Size="299,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Medio de Transporte"
+          TopLeft="336,98" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Viaje"
+          TopLeft="70,549" />
+        <NodeLayout
           Size="234,42"
           Id="Package\Carga Tablas de Dimensión\Conversión de datos de Marcas"
           TopLeft="47,97" />
         <NodeLayout
           Size="169,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Tiempo"
-          TopLeft="457,531" />
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos4]"
-          TopLeft="863.25,325">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50"
-              Start="0,0"
-              End="0,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos3]"
-          TopLeft="538.75,501">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos2]"
-          TopLeft="486.75,140">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
-          TopLeft="152.75,519">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos]"
-          TopLeft="161.5,139">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28"
-              Start="0,0"
-              End="0,20.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="459,529" />
         <EdgeLayout
           Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB4]"
           TopLeft="864,259">
@@ -3871,9 +3750,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3895,14 +3772,12 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Carga Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
-          TopLeft="483,65">
+          TopLeft="481.75,65">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3919,9 +3794,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3943,9 +3816,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3967,30 +3838,122 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos4]"
+          TopLeft="863.25,325">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos3]"
+          TopLeft="539.75,501">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos2]"
+          TopLeft="486.75,140">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos1]"
+          TopLeft="152.75,519">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tablas de Dimensión.Paths[Salida de conversión de datos]"
+          TopLeft="161.5,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28"
+              Start="0,0"
+              End="0,20.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Marca">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Marcas">
     <Properties>
@@ -4001,6 +3964,30 @@ FROM Viaje;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Vehiculo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Marca">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4039,6 +4026,14 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Viaje">
     <Properties>
       <Property>
@@ -4048,22 +4043,6 @@ FROM Viaje;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Vehiculo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4135,7 +4114,7 @@ FROM Viaje;</property>
     design-time-name="Package\Vaciado de Tablas de Dimensión">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="255,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Medio de Transporte"
@@ -4169,6 +4148,28 @@ FROM Viaje;</property>
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Marcas"
           TopLeft="64,155" />
         <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
+          TopLeft="144.75,391">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB]"
           TopLeft="158.75,115">
           <EdgeLayout.Curve>
@@ -4187,9 +4188,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4211,9 +4210,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -4235,33 +4232,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB1]"
-          TopLeft="144.75,391">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

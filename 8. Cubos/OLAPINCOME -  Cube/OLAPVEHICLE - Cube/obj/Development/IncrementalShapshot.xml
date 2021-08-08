@@ -19,56 +19,56 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>24XkrUan20fYet42wR4c8sZ7Wfc=8/5/2021 4:40:11 PM8/5/2021 4:40:11 PM</TimeStamp>
+        <TimeStamp>7LDHwtJXtofNqrRgNy6LJ96ENY4=8/7/2021 2:35:31 PM8/5/2021 4:40:11 PM</TimeStamp>
         <ID>
           <String>OLAPINCOME</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>ZAiW130/kRHOr/GtODncYf0SX7Q=8/5/2021 4:40:18 PM8/5/2021 4:40:18 PM</TimeStamp>
+        <TimeStamp>jdI3oy/sKpMgPouoGHvjJP5yNSs=8/7/2021 2:35:40 PM8/7/2021 2:35:40 PM</TimeStamp>
         <ID>
           <String>OLAPINCOME</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>kbZCQoZr2aqMeeJ3p3fFcic4jIU=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <TimeStamp>wIZVeDC7716wROscTPv6KjZT0I4=8/7/2021 2:35:57 PM8/7/2021 2:35:48 PM</TimeStamp>
         <ID>
           <String>D TIEMPO</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>+qJ5W9168Q7Z7PDzlDLDmiS26Rk=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <TimeStamp>RlcHriP9anqmbmBjx4kJu4ys1I4=8/7/2021 2:36:02 PM8/7/2021 2:35:48 PM</TimeStamp>
         <ID>
           <String>D VIAJES</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>9g8p7idStufS21VL5ccyI4KwPGI=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <TimeStamp>+8Lpyy75hqdNp5UseYkvaZI3Cr0=8/7/2021 2:36:07 PM8/7/2021 2:35:48 PM</TimeStamp>
         <ID>
           <String>D MEDIO DE TRANSPORTE</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>A6UYSTMe3/lMZY4HDkjkvnUfBFU=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <TimeStamp>U8NrUTFxUTay6t0gxiVcMh7Gs88=8/7/2021 2:36:11 PM8/7/2021 2:35:48 PM</TimeStamp>
         <ID>
           <String>D EMPLEADOS</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>b2BBFGiqRgaolmKoXNcNoZN4FeE=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <TimeStamp>n1as3NuYtM4KAJsQ2TotFHMwNL0=8/7/2021 2:36:16 PM8/7/2021 2:35:48 PM</TimeStamp>
         <ID>
           <String>D SUCURSAL</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>4DiUpfspO8qojPwzbC300er+fGU=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PMMa9b3yATB8XqazMkrsLZBkbxWpk=8/5/2021 4:40:25 PM8/5/2021 4:40:25 PM</TimeStamp>
+        <TimeStamp>V7BauRj1+baock5RNMKLgWLK6DE=8/7/2021 2:36:16 PM8/7/2021 2:35:48 PMIvKt4qFIunkz8ot5sMF+0efBhzk=8/7/2021 2:35:48 PM8/7/2021 2:35:48 PM</TimeStamp>
         <ID>
           <String>OLAPINCOME</String>
         </ID>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-08-05T22:40:32.776667Z</LastDeployed>
+  <LastDeployed>2021-08-07T20:36:40.773333Z</LastDeployed>
 </DeploymentSnapshot>

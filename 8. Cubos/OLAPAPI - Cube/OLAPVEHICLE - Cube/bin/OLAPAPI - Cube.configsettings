@@ -12,13 +12,16 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>D CANAL</ID>
-      </Dimension>
-      <Dimension>
         <ID>D VIDEOS</ID>
       </Dimension>
       <Dimension>
+        <ID>D CANAL</ID>
+      </Dimension>
+      <Dimension>
         <ID>D ESTADISTICAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>H CANAL</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
