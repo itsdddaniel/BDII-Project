@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="33"
-  DTS:VersionGUID="{D405122B-2DE0-4EA1-9AB3-26AFEC2EE1AA}">
+  DTS:VersionBuild="37"
+  DTS:VersionGUID="{6DB607AD-7AB3-4033-B00C-496AB61599F3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADCYwVv8ICx5j5JUzcld6pcPgXYloYa/yGNPdzxjwPPzQAAAAAOgAAAAAIAACAAAAD4jhYURyF8zq3GFUmYyhs9tRIzjM/JHDxn3+bhGXfM2RAAAABbqXbVohUnBUPvhy2K4QYDQAAAAJb1tBp7pSBq8RTpUqozfZxxA6V8+PjOCb6pL4ckf2+MxnDCD2eLw0rvqFL/A5ohK2Jdrnr0lcIvo74s3p/sJGU</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADt/q1YUrauiGNsup87kzy9azAUkhT9e6VPSoqgO8Q9/QAAAAAOgAAAAAIAACAAAAAMnWXoDbTmPEHuIbpDfKkNrOluMvKmqGq8Grx5DbWVyBAAAABXdp8w2Ee+Y4WjnLxrVW+bQAAAAJBx4+1GatW8MIPjGyBljMa+d0JV/nUg5nR7XzJodE+OS8oZSCrHbyibMfr6bHrBlJlA735eFOLt2gwntmGW7BE</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD76TsOaeQN5uWbJ73G3alJtjfKlb3osS/YfZtFAPp62gAAAAAOgAAAAAIAACAAAAB+LIANd5NAPrUR3YdSkQbRWEhKpk5Kjl+ipV9LEZK4ThAAAAD/EXeUspxxgjp5/A6DJ9X2QAAAAKsp4guaZOE+tnV+JzAsnhuUUSOKMaJCvgXxpIO3VGJmToH3ucbsTX7olycYdiRmRNsvebrx97SyTNC7F6Opp6A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACh1cIXXpkYdCPTaL8RdcgnaBKO8QGJMO0GdqBiBEPF/gAAAAAOgAAAAAIAACAAAACfwkyECug/OwNecy3hJXAl7bP6NRQ7EuiXr+5C6eogXxAAAACTbokrRULqiSYlWISU5hl7QAAAAMz7uo8cSuZjz0uo0HSckyg/iFscbxAp/QacqVJL/pkPNoNTZh8Prz8w6z5wmOeV6ZQvk/xsQcYzQpRWMRaoBlg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1087,11 +1087,41 @@
                       externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[ID_TIEMPO]"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[ID_TIEMPO]" />
                     <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[año]"
+                      cachedDataType="i4"
+                      cachedName="año"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[AÑO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[año]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[mes]"
+                      cachedDataType="i4"
+                      cachedName="mes"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[MES]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[mes]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[trimestre]"
+                      cachedDataType="i4"
+                      cachedName="trimestre"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[TRIMESTRE]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[trimestre]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[semestre]"
+                      cachedDataType="i4"
+                      cachedName="semestre"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[SEMESTRE]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[semestre]" />
+                    <inputColumn
                       refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[Dia_Semana]"
                       cachedDataType="i4"
                       cachedName="Dia_Semana"
-                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHA]"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[DIADESEMANA]"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[Dia_Semana]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].Columns[semana]"
+                      cachedDataType="i4"
+                      cachedName="semana"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[DIA]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[semana]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1100,9 +1130,33 @@
                       dataType="dbDate"
                       name="ID_TIEMPO" />
                     <externalMetadataColumn
-                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[FECHA]"
-                      dataType="dbDate"
-                      name="FECHA" />
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[DIA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="DIA" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[MES]"
+                      dataType="i4"
+                      name="MES" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[AÑO]"
+                      dataType="i4"
+                      name="AÑO" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[TRIMESTRE]"
+                      dataType="i4"
+                      name="TRIMESTRE" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[SEMESTRE]"
+                      dataType="i4"
+                      name="SEMESTRE" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Tiempo.Inputs[Entrada de destino de OLE DB].ExternalColumns[DIADESEMANA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="DIADESEMANA" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1344,6 +1398,18 @@
                       cachedName="DireccionDeDestino"
                       externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].ExternalColumns[DIRECCION]"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[DireccionDeDestino]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].Columns[Monto]"
+                      cachedDataType="r8"
+                      cachedName="Monto"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].ExternalColumns[MONTO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[Monto]" />
+                    <inputColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].Columns[Estado]"
+                      cachedDataType="i4"
+                      cachedName="Estado"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].ExternalColumns[ESTADO]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[Estado]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1357,6 +1423,14 @@
                       dataType="str"
                       length="1000"
                       name="DIRECCION" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].ExternalColumns[MONTO]"
+                      dataType="i4"
+                      name="MONTO" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Destino de Viaje.Inputs[Entrada de destino de OLE DB].ExternalColumns[ESTADO]"
+                      dataType="bool"
+                      name="ESTADO" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2021,7 +2095,7 @@ FROM Vehiculo;</property>
                   dataType="System.String"
                   description="Comando SQL para ejecutar."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT id,DireccionDeDestino 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT id,DireccionDeDestino,Monto,Estado
 FROM Viaje;</property>
                 <property
                   dataType="System.String"
@@ -2078,6 +2152,24 @@ FROM Viaje;</property>
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[DireccionDeDestino]"
                       name="DireccionDeDestino"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[Monto]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[Monto]"
+                      name="Monto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[Estado]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[Estado]"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[Estado]"
+                      name="Estado"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2091,6 +2183,14 @@ FROM Viaje;</property>
                       dataType="str"
                       length="1000"
                       name="DireccionDeDestino" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[Monto]"
+                      dataType="r8"
+                      name="Monto" />
+                    <externalMetadataColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[Estado]"
+                      dataType="i4"
+                      name="Estado" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2110,6 +2210,16 @@ FROM Viaje;</property>
                       length="1000"
                       lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[DireccionDeDestino]"
                       name="DireccionDeDestino" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[Monto]"
+                      dataType="r8"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[Monto]"
+                      name="Monto" />
+                    <outputColumn
+                      refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[Estado]"
+                      dataType="i4"
+                      lineageId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[Estado]"
+                      name="Estado" />
                     <outputColumn
                       refId="Package\Carga Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -3258,6 +3368,24 @@ FROM Viaje;</property>
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[DIRECCION]"
                       name="DIRECCION"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[MONTO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[MONTO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[MONTO]"
+                      name="MONTO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[ESTADO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[ESTADO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].Columns[ESTADO]"
+                      name="ESTADO"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3271,6 +3399,14 @@ FROM Viaje;</property>
                       dataType="str"
                       length="1000"
                       name="DIRECCION" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[MONTO]"
+                      dataType="i4"
+                      name="MONTO" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de origen de OLE DB].ExternalColumns[ESTADO]"
+                      dataType="bool"
+                      name="ESTADO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3290,6 +3426,16 @@ FROM Viaje;</property>
                       length="1000"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[DIRECCION]"
                       name="DIRECCION" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[MONTO]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[MONTO]"
+                      name="MONTO" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[ESTADO]"
+                      dataType="bool"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[ESTADO]"
+                      name="ESTADO" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Viaje.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -3378,13 +3524,62 @@ FROM Viaje;</property>
                       name="ID_TIEMPO"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[FECHA]"
-                      dataType="dbDate"
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[DIA]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[FECHA]"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[FECHA]"
-                      name="FECHA"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[DIA]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[DIA]"
+                      name="DIA"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[MES]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[MES]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[MES]"
+                      name="MES"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[AÑO]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[AÑO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[AÑO]"
+                      name="AÑO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[TRIMESTRE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[TRIMESTRE]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[TRIMESTRE]"
+                      name="TRIMESTRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[SEMESTRE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[SEMESTRE]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[SEMESTRE]"
+                      name="SEMESTRE"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[DIADESEMANA]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[DIADESEMANA]"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].Columns[DIADESEMANA]"
+                      name="DIADESEMANA"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -3394,9 +3589,33 @@ FROM Viaje;</property>
                       dataType="dbDate"
                       name="ID_TIEMPO" />
                     <externalMetadataColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[FECHA]"
-                      dataType="dbDate"
-                      name="FECHA" />
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[DIA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="DIA" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[MES]"
+                      dataType="i4"
+                      name="MES" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[AÑO]"
+                      dataType="i4"
+                      name="AÑO" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[TRIMESTRE]"
+                      dataType="i4"
+                      name="TRIMESTRE" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[SEMESTRE]"
+                      dataType="i4"
+                      name="SEMESTRE" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de origen de OLE DB].ExternalColumns[DIADESEMANA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      name="DIADESEMANA" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3410,10 +3629,39 @@ FROM Viaje;</property>
                       lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[ID_TIEMPO]"
                       name="ID_TIEMPO" />
                     <outputColumn
-                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[FECHA]"
-                      dataType="dbDate"
-                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[FECHA]"
-                      name="FECHA" />
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[DIA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[DIA]"
+                      name="DIA" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[MES]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[MES]"
+                      name="MES" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[AÑO]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[AÑO]"
+                      name="AÑO" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[TRIMESTRE]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[TRIMESTRE]"
+                      name="TRIMESTRE" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[SEMESTRE]"
+                      dataType="i4"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[SEMESTRE]"
+                      name="SEMESTRE" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[DIADESEMANA]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[DIADESEMANA]"
+                      name="DIADESEMANA" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -3585,7 +3833,7 @@ FROM Viaje;</property>
     design-time-name="Package\Carga Tabla de Hechos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="167,42"
           Id="Package\Carga Tabla de Hechos\Origen de Hechos"
@@ -3617,7 +3865,9 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3639,7 +3889,9 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4063,7 +4315,7 @@ FROM Viaje;</property>
     design-time-name="Package\Vaciado de Tabla de Hechos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="186,42"
           Id="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos"
@@ -4091,7 +4343,9 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -66,11 +66,21 @@
             <Name>OLAPEMPLOYEE</Name>
             <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-E4HF9F0;Integrated Security=SSPI;Initial Catalog=OLAPEMPLOYEE</Value>
           </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>OLAPEMPLOYEE 1</Id>
+            <Name>OLAPEMPLOYEE 1</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-E4HF9F0;Integrated Security=SSPI;Initial Catalog=OLAPEMPLOYEE</Value>
+          </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>OLAPEMPLOYEE</Id>
             <Name>OLAPEMPLOYEE</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>OLAPEMPLOYEE 1</Id>
+            <Name>OLAPEMPLOYEE 1</Name>
             <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>

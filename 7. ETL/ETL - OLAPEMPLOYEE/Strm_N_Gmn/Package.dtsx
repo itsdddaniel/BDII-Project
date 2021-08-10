@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{7BB5BE0F-0A4C-4CDB-8CFD-7DEFF63DDD65}">
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{A3F7347D-A60A-46B0-A53F-A225EF189DAC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD6slObY4JZOKudD7GHsP66AV4uLusTDgS3G7EcB6EBmgAAAAAOgAAAAAIAACAAAAB/uqrow4ca+0RXf6OCE7UnICVjgCwD4zwulW9l3vaxmRAAAABaop7GErEJwKRDf1z8wz3TQAAAAG4m4rkg3QS+H57WDqJv9i+u6xiOQaG3SiMpuuuws3D+jdk1ucRCzmes9Zg5RlcMRmdlmGp8Za4CGqhpvVSY9EY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACq6gopToahvI0CDLr+yq/JaQYS+96c3CqfRgC5/zylqwAAAAAOgAAAAAIAACAAAAAyM46r4cFEKxERxsQnQ1NMs8wh8oLd94mXuW+KWYgGfxAAAAAeDqiZeTn+jUnIxdMgjp+gQAAAABWU7w+kbI62YopdgT6pz6XCYvLk57kmuYXYR3oLf3VVG5y9FpaZ1/g6P4vSJhkj44iZ1nIwcKfqO/AB7jD7cMc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABXKf+K8tW0LxxBr0WYWKLiYzQuIQMan+eqx9MJB1DcAgAAAAAOgAAAAAIAACAAAACFsAjwAKjxa/0ATociU9NNNIStuaRNh/TjBholDjIgKBAAAADihVujd5O267qheia8VoEdQAAAADRk9uA/kKHQIIF9ls6qYdh5nEWXzAH3lIj2tymy7uFBPDShsruFhcnuHBlgmabLIJnhU1TLOMXFXMDqClGvKtg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAj0Uc/WvDlIlCVsSlejFrPjCwUIVnDx2zTHNstpK6MxAAAAAAOgAAAAAIAACAAAAAseQ7ghrxShx5ewJZ4ukzZjRFF7mJRBJtoKlAmRRQZJxAAAACu6oDTRFSsP70RT7wFMJ6DQAAAALcJToaRvllKoT9yhyKFRcXDvaVpa9zPu9Z+L2JjIJRwKUHxV0WVXfzkpU3AgcX1rgOxfDBawHuYfOrU5vjzc+o</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -863,7 +863,9 @@
                       name="NOMBRE" />
                     <externalMetadataColumn
                       refId="Package\Carga Tablas de Dimensión\Destino de Empleados.Inputs[Entrada de destino de OLE DB].ExternalColumns[RATING]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
                       name="RATING" />
                   </externalMetadataColumns>
                 </input>
@@ -3221,10 +3223,12 @@ FROM Viaje;</property>
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Empleados.Outputs[Salida de origen de OLE DB].Columns[RATING]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Empleados.Outputs[Salida de origen de OLE DB].ExternalColumns[RATING]"
+                      length="1000"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Empleados.Outputs[Salida de origen de OLE DB].Columns[RATING]"
                       name="RATING"
                       truncationRowDisposition="FailComponent" />
@@ -3243,7 +3247,9 @@ FROM Viaje;</property>
                       name="ID_EMPLEADO" />
                     <externalMetadataColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Empleados.Outputs[Salida de origen de OLE DB].ExternalColumns[RATING]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
                       name="RATING" />
                   </externalMetadataColumns>
                 </output>
@@ -3266,7 +3272,9 @@ FROM Viaje;</property>
                       name="NOMBRE" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Empleados.Outputs[Salida de error de origen de OLE DB].Columns[RATING]"
-                      dataType="i4"
+                      codePage="1252"
+                      dataType="str"
+                      length="1000"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Empleados.Outputs[Salida de error de origen de OLE DB].Columns[RATING]"
                       name="RATING" />
                     <outputColumn
@@ -3853,6 +3861,15 @@ FROM Viaje;</property>
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].Columns[DIRECCION]"
                       name="DIRECCION"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].Columns[ESTADO]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].ExternalColumns[ESTADO]"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].Columns[ESTADO]"
+                      name="ESTADO"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -3866,6 +3883,10 @@ FROM Viaje;</property>
                       dataType="str"
                       length="1000"
                       name="DIRECCION" />
+                    <externalMetadataColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de origen de OLE DB].ExternalColumns[ESTADO]"
+                      dataType="bool"
+                      name="ESTADO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -3885,6 +3906,11 @@ FROM Viaje;</property>
                       length="1000"
                       lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[DIRECCION]"
                       name="DIRECCION" />
+                    <outputColumn
+                      refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[ESTADO]"
+                      dataType="bool"
+                      lineageId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[ESTADO]"
+                      name="ESTADO" />
                     <outputColumn
                       refId="Package\Vaciado de Tablas de Dimensión\Origen de Viajes.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
                       dataType="i4"
@@ -4075,28 +4101,6 @@ FROM Viaje;</property>
           Id="Package\Carga Tabla de Hechos\Destino de Hechos"
           TopLeft="280,279" />
         <EdgeLayout
-          Id="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
-          TopLeft="360.5,250">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,29"
-              Start="0,0"
-              End="0,21.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Carga Tabla de Hechos.Paths[Salida de origen de OLE DB]"
           TopLeft="359.5,183">
           <EdgeLayout.Curve>
@@ -4110,6 +4114,28 @@ FROM Viaje;</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
+          TopLeft="360.5,250">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4600,29 +4626,29 @@ FROM Viaje;</property>
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Sucursal"
           TopLeft="386,397" />
         <NodeLayout
-          Size="168,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Origen de Sucursal"
-          TopLeft="398,295" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Tiempo"
-          TopLeft="64,155" />
-        <NodeLayout
           Size="156,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Viajes"
           TopLeft="688,197" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Trabajo"
-          TopLeft="57,372" />
         <NodeLayout
           Size="164,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Trabajo"
           TopLeft="69,270" />
         <NodeLayout
+          Size="185,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Tiempo"
+          TopLeft="64,155" />
+        <NodeLayout
           Size="163,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Tiempo"
           TopLeft="78,73" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Trabajo"
+          TopLeft="57,372" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Origen de Sucursal"
+          TopLeft="398,295" />
         <NodeLayout
           Size="178,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Viajes"
@@ -4631,6 +4657,50 @@ FROM Viaje;</property>
           Size="201,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Empleados"
           TopLeft="355,167" />
+        <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB4]"
+          TopLeft="765.5,239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB3]"
+          TopLeft="481.25,337">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB2]"
           TopLeft="456.5,129">
@@ -4689,50 +4759,6 @@ FROM Viaje;</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB4]"
-          TopLeft="765.5,239">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Vaciado de Tablas de Dimensión.Paths[Salida de origen de OLE DB3]"
-          TopLeft="481.25,337">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

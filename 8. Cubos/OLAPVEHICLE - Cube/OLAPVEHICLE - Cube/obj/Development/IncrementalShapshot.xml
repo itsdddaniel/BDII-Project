@@ -19,63 +19,63 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>PtF/oEH7PhDo8P510IDHNAq8g/U=8/7/2021 1:57:36 PM8/7/2021 1:57:36 PM</TimeStamp>
+        <TimeStamp>gLgXbTkZOY4z0e6XrYxSZ1hjNFU=8/10/2021 1:09:32 PM8/10/2021 10:15:47 AM</TimeStamp>
         <ID>
           <String>OLAPVEHICLE</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>rRaD3eOK6aKsWm9g/QWaw12rZi0=8/7/2021 1:57:42 PM8/7/2021 1:57:42 PM</TimeStamp>
+        <TimeStamp>ht5zwa21KhM2tSPnQqosKDdhS+8=8/10/2021 1:10:01 PM8/10/2021 1:10:01 PM</TimeStamp>
         <ID>
           <String>OLAPVEHICLE</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>BZ1VO5gkm9p0cHUjkdsqKwXoE5o=8/7/2021 1:57:58 PM8/7/2021 1:57:49 PM</TimeStamp>
-        <ID>
-          <String>D VEHICULO</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>VV/qxgOmIF5dV519EJED/WTQRpI=8/7/2021 1:58:03 PM8/7/2021 1:57:49 PM</TimeStamp>
-        <ID>
-          <String>D MARCA</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Lc9ldBJDoaNwSeKgw9LI1IbxlSs=8/7/2021 2:04:12 PM8/7/2021 1:57:49 PM</TimeStamp>
-        <ID>
-          <String>D TIEMPO</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>iiQX+P6irnzg0TGxhrsesPtNUM8=8/7/2021 1:58:14 PM8/7/2021 1:57:49 PM</TimeStamp>
-        <ID>
-          <String>D VIAJES</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>p8t74iyRu1hAsOASRbSFqYZLp1s=8/7/2021 1:58:18 PM8/7/2021 1:57:50 PM</TimeStamp>
+        <TimeStamp>qku18zppWNa1Oor3W26eSw24KVk=8/10/2021 1:12:34 PM8/10/2021 1:11:31 PM</TimeStamp>
         <ID>
           <String>D MEDIO DE TRANSPORTE</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>IIOKf8GwFKizRV4MMUKIcY5PJhk=8/7/2021 1:58:23 PM8/7/2021 1:57:50 PM</TimeStamp>
+        <TimeStamp>fY8LnO8L98tPF2ttbJPIqq2KeIU=8/10/2021 1:12:34 PM8/10/2021 1:11:31 PM</TimeStamp>
+        <ID>
+          <String>D VIAJES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4zRzidcKisw0tKWtLuUqfaXLaXA=8/10/2021 1:12:34 PM8/10/2021 1:11:31 PM</TimeStamp>
+        <ID>
+          <String>D TIEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+SmZduDGVRec1iUuv/bP8nzzG9g=8/10/2021 1:12:34 PM8/10/2021 1:11:31 PM</TimeStamp>
+        <ID>
+          <String>D MARCA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RnPjdkcYLTmTlQufw76kJfn32CY=8/10/2021 1:12:34 PM8/10/2021 1:11:31 PM</TimeStamp>
+        <ID>
+          <String>D VEHICULO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BSYWlWOPUpYJeYpmS9+lfAjgPng=8/10/2021 1:12:34 PM8/10/2021 1:11:31 PM</TimeStamp>
         <ID>
           <String>H VEHICULO</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>hZWGbzQxvDXlXtl6enJAiCRa/Ow=8/7/2021 1:58:23 PM8/7/2021 1:57:49 PM8w1oJboypAXbpy5j7MCP62TpvX4=8/7/2021 1:57:50 PM8/7/2021 1:57:49 PM</TimeStamp>
+        <TimeStamp>WV5BSv+fxvwJZbundsWXhT5p6BM=8/10/2021 1:12:34 PM8/10/2021 1:11:30 PMcJmESpGtxnezGQerta9ybla4fi8=8/10/2021 1:11:31 PM8/10/2021 1:11:30 PM</TimeStamp>
         <ID>
           <String>OLAPVEHICLE</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-08-08T16:27:34.9Z</LastDeployed>
+  <LastDeployed>2021-08-10T19:13:43.683333Z</LastDeployed>
 </DeploymentSnapshot>

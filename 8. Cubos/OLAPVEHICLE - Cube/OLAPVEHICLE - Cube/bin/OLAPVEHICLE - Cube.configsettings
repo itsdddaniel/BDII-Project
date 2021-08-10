@@ -12,19 +12,19 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>D VEHICULO</ID>
-      </Dimension>
-      <Dimension>
-        <ID>D MARCA</ID>
-      </Dimension>
-      <Dimension>
-        <ID>D TIEMPO</ID>
+        <ID>D MEDIO DE TRANSPORTE</ID>
       </Dimension>
       <Dimension>
         <ID>D VIAJES</ID>
       </Dimension>
       <Dimension>
-        <ID>D MEDIO DE TRANSPORTE</ID>
+        <ID>D TIEMPO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>D MARCA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>D VEHICULO</ID>
       </Dimension>
       <Dimension>
         <ID>H VEHICULO</ID>

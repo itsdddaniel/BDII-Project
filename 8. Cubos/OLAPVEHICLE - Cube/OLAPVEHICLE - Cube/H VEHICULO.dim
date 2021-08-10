@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="23960265-7093-495f-aa1f-fc9ee8c6adaf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c5831660-51cc-45db-af7d-97ff4f5a1c9d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>H VEHICULO</ID>
   <Name>H VEHICULO</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,51 +68,51 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="34cc6f24-4208-4bd4-93ea-098029ab0ac6">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="52668dfb-48e2-4c4d-8f72-2edc2248dc89">
     <DataSourceViewID>OLAPVEHICLE</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="5bbf8251-1f86-4472-b6c3-d6b247055d63">
+  <ErrorConfiguration dwd:design-time-name="22a775e6-329b-49d4-b853-06bf17e4e312">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="02d15c2c-c460-49ee-8073-86ebd2974c0d">
+    <Attribute dwd:design-time-name="b952c43d-8cad-4665-b146-36c555b9074e">
       <ID>ID H VEHICULO</ID>
       <Name>ID H VEHICULO</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4ac8a6e8-c923-40e9-a29a-28080b706c97">
+        <KeyColumn dwd:design-time-name="e4ef56a9-5b7c-4c7a-9f81-615107c2e467">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="897c4085-3832-4bf8-94d6-9c10512276bf">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98234efc-b394-4ef2-aac6-b1087f5e82e2">
             <TableID>dbo_H_VEHICULO</TableID>
             <ColumnID>ID_H_VEHICULO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="22432bb9-c67f-4a30-8569-452c4924366b">
-          <AttributeID>ID VEHICULO</AttributeID>
-          <Name>ID VEHICULO</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b349fcdb-1f02-4a74-bf1e-af2930c5af5b">
-          <AttributeID>ID MARCA</AttributeID>
-          <Name>ID MARCA</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4861a3dd-f848-49c6-86a5-3e84d3275dc7">
-          <AttributeID>ID TIEMPO</AttributeID>
-          <Name>ID TIEMPO</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="46215f4f-cbb7-4b7e-93c1-f6fda5800979">
-          <AttributeID>ID VIAJE</AttributeID>
-          <Name>ID VIAJE</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="71417e67-e8ad-40ac-8f4f-aef5fd458159">
+        <AttributeRelationship dwd:design-time-name="4aa17dc9-ebdc-4dff-9ada-4d4205d21c6c">
           <AttributeID>ID MEDIO</AttributeID>
           <Name>ID MEDIO</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5fec8470-3299-4a26-9326-9a8410ea0cc0">
+        <AttributeRelationship dwd:design-time-name="edc997ed-6e22-4c1c-8a3f-c4d250b024d2">
+          <AttributeID>ID VIAJE</AttributeID>
+          <Name>ID VIAJE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1e02309c-938c-453e-899d-86d0973d1cf8">
+          <AttributeID>ID TIEMPO</AttributeID>
+          <Name>ID TIEMPO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b356215b-eddb-42e9-808a-7aa2c8037d67">
+          <AttributeID>ID MARCA</AttributeID>
+          <Name>ID MARCA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8e6e7f0a-2d9d-4031-992a-a9681c47dbc5">
+          <AttributeID>ID VEHICULO</AttributeID>
+          <Name>ID VEHICULO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="96ee8748-5cbe-46e1-80f7-67c7c02dfb7e">
           <AttributeID>NOMBRECLIENTE</AttributeID>
           <Name>NOMBRECLIENTE</Name>
         </AttributeRelationship>
@@ -121,81 +121,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c4e5335d-4533-4af0-aa0f-326209fccad4">
-      <ID>ID VEHICULO</ID>
-      <Name>ID VEHICULO</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="71eaeba4-0ca4-48f6-be93-33e1a8ef486f">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4282a49f-8f47-4556-8e2f-cf66873b7b02">
-            <TableID>dbo_H_VEHICULO</TableID>
-            <ColumnID>ID_VEHICULO</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="a4739863-29b4-429d-bc3c-e6afaacc9007">
-      <ID>ID MARCA</ID>
-      <Name>ID MARCA</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="252d4507-bd93-401b-970a-3273f69462ba">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fbc43d29-7290-4f20-ab3e-1abe69264c1a">
-            <TableID>dbo_H_VEHICULO</TableID>
-            <ColumnID>ID_MARCA</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="66b44f82-ed68-46b4-958f-ffec103884a5">
-      <ID>ID TIEMPO</ID>
-      <Name>ID TIEMPO</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="3766fdfa-11d9-4eca-a747-b0fabb09cac7">
-          <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab879daf-4020-47f6-ae0a-adecbcf44588">
-            <TableID>dbo_H_VEHICULO</TableID>
-            <ColumnID>ID_TIEMPO</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="a1ebeff2-c4ca-4a22-a9a7-7ee8de14a88f">
-      <ID>ID VIAJE</ID>
-      <Name>ID VIAJE</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="4ceecc6d-811b-4ef1-bfc9-51b1761b7fff">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f8962e7b-d7c7-4c1b-8688-b4c9e63d57c4">
-            <TableID>dbo_H_VEHICULO</TableID>
-            <ColumnID>ID_VIAJE</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="034c1acf-5f2f-49de-a1c8-0e35327d8093">
+    <Attribute dwd:design-time-name="91c1a771-4e05-48cf-aff3-3bd304afaa4e">
       <ID>ID MEDIO</ID>
       <Name>ID MEDIO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="109668d4-45f7-47ce-8afb-83b40f58f21a">
+        <KeyColumn dwd:design-time-name="d1913b4c-e372-4b07-a1e6-04014823b126">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e601e49-ccb2-404b-a033-412f1d750bde">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="25e62ab5-250b-4adc-9067-3ca575ad3177">
             <TableID>dbo_H_VEHICULO</TableID>
             <ColumnID>ID_MEDIO</ColumnID>
           </Source>
@@ -206,14 +138,82 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ce402c30-0a3f-41ce-a54d-a836c60e8599">
+    <Attribute dwd:design-time-name="f9e8f178-b71f-4971-97cd-1e1512b3b86e">
+      <ID>ID VIAJE</ID>
+      <Name>ID VIAJE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0a2dc6a3-b867-41d2-b24d-9c8726bf74bf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6193cdfb-3240-4d7c-a22e-f58f72e3c087">
+            <TableID>dbo_H_VEHICULO</TableID>
+            <ColumnID>ID_VIAJE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="38a4e149-a720-4c18-b6fa-52f442e3cbf9">
+      <ID>ID TIEMPO</ID>
+      <Name>ID TIEMPO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d7d946e-8c5d-4690-b63e-0c63e6b15b34">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f677eca6-0068-41cd-a5b3-4a521dd27871">
+            <TableID>dbo_H_VEHICULO</TableID>
+            <ColumnID>ID_TIEMPO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16381c8b-16bf-496f-bc9e-d9a3b339f63c">
+      <ID>ID MARCA</ID>
+      <Name>ID MARCA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f81482f-9e72-4d02-9987-192162c0c4e4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42b51567-9f19-410c-8a24-bc195b8d1c71">
+            <TableID>dbo_H_VEHICULO</TableID>
+            <ColumnID>ID_MARCA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d45f87a1-788a-4c14-ba01-c8d5a4c88a79">
+      <ID>ID VEHICULO</ID>
+      <Name>ID VEHICULO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0195d969-e48b-4034-8fec-1cde9d651dd6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7caaf1f8-1fcc-4182-bad4-4e76f7c0e634">
+            <TableID>dbo_H_VEHICULO</TableID>
+            <ColumnID>ID_VEHICULO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d63e3aa5-f02b-45d0-9444-1ab588d6e274">
       <ID>NOMBRECLIENTE</ID>
       <Name>NOMBRECLIENTE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="221df993-344b-432b-a6ea-349ff80c4467">
+        <KeyColumn dwd:design-time-name="9d714cf5-a4cb-40d4-a7c3-8da8d469447f">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4cbdf428-6f86-4f46-b539-b6020d34478e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ed7d907-7482-40e7-b2d8-e9800e5bb512">
             <TableID>dbo_H_VEHICULO</TableID>
             <ColumnID>NOMBRECLIENTE</ColumnID>
           </Source>

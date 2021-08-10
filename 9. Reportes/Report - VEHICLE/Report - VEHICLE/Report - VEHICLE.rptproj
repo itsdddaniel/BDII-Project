@@ -51,6 +51,7 @@
   <ItemGroup>
     <Report Include="Report - Marca Vehiculo - Vehicle.rdl" />
     <Report Include="Report - Medio De Vehiculo - Vehicle.rdl" />
+    <Report Include="Report Test.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

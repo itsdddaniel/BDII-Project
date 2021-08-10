@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="79"
-  DTS:VersionGUID="{88B8B6E9-5647-4832-BA60-F3817CD7D5C3}">
+  DTS:VersionBuild="80"
+  DTS:VersionGUID="{8FD69215-E06B-439D-ABB0-1AFC0F92FDFB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -41,7 +41,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACGR0aE2MBLu1KnO1RQwmbZ7VbL+SdPpIl0R7wIzCxwqgAAAAAOgAAAAAIAACAAAAAROApM06K+geGBqykVFq0o18yshZuHoD9JuwpiWNB2HRAAAABwinfX+6fGnif1Ow0gQg4JQAAAAAcuRESwG7hR4kJ/Jg+Ld/3a0msQfFIwWvRNP1YboWUyp0WkAL1NXvZkenJsI+eazo+HXyzBoj7WJcybTVJdozk</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADRqQdx4eQTHNT4l3kUoSYnxxwPWiNDz39MW+urkZJ0jAAAAAAOgAAAAAIAACAAAAABOCw3JsBNwxwnmGcGLpAWtNtheGuLR4EiBwYyzRHV3RAAAABD+ixY9B3T3SjcKYjM3eNVQAAAAEs47y/N2WFzapeZwQX2OxKp/2EV80Ra1wZkjhNWOxGUej/iZTZT93aHOz4/rCf/z7oyV1qwxHCLjQ12BEZKfXg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2749,28 +2749,6 @@ FROM apidata;</property>
           Id="Package\Carga Tabla de Hechos\Destino de Hechos"
           TopLeft="280,279" />
         <EdgeLayout
-          Id="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
-          TopLeft="360.5,250">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,29"
-              Start="0,0"
-              End="0,21.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Carga Tabla de Hechos.Paths[Salida de origen de OLE DB]"
           TopLeft="359.5,183">
           <EdgeLayout.Curve>
@@ -2784,6 +2762,28 @@ FROM apidata;</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Carga Tabla de Hechos.Paths[Salida de conversión de datos]"
+          TopLeft="360.5,250">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29"
+              Start="0,0"
+              End="0,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

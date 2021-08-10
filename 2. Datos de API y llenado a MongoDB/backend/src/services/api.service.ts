@@ -1,5 +1,4 @@
 const { google } = require('googleapis');
-import axios from "axios";
 import { apiData } from "../model/api-schema";
 
 export class APIService

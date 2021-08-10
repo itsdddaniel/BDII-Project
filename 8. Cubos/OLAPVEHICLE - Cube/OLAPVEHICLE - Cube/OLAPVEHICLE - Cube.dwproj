@@ -20,24 +20,24 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>D VEHICULO.dim</Name>
-      <FullPath>D VEHICULO.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>D MARCA.dim</Name>
-      <FullPath>D MARCA.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>D TIEMPO.dim</Name>
-      <FullPath>D TIEMPO.dim</FullPath>
+      <Name>D MEDIO DE TRANSPORTE 1.dim</Name>
+      <FullPath>D MEDIO DE TRANSPORTE 1.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>D VIAJES.dim</Name>
       <FullPath>D VIAJES.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>D MEDIO DE TRANSPORTE.dim</Name>
-      <FullPath>D MEDIO DE TRANSPORTE.dim</FullPath>
+      <Name>D TIEMPO.dim</Name>
+      <FullPath>D TIEMPO.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D MARCA 1.dim</Name>
+      <FullPath>D MARCA 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D VEHICULO.dim</Name>
+      <FullPath>D VEHICULO.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>H VEHICULO.dim</Name>
