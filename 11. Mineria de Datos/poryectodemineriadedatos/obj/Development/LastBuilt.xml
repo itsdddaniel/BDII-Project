@@ -1,6 +1,6 @@
 ﻿<Infos>
   <Item name="Mineria_Viaje.dmm">
-    <Time>637642796223492653</Time>
+    <Time>637642812070099831</Time>
     <Hash length="20">
       <b>82</b>
       <b>35</b>
@@ -25,7 +25,7 @@
     </Hash>
   </Item>
   <Item name="poryectodemineriadedatos.database">
-    <Time>637642792083057253</Time>
+    <Time>637642812070169782</Time>
     <Hash length="20">
       <b>142</b>
       <b>40</b>
@@ -50,32 +50,32 @@
     </Hash>
   </Item>
   <Item name="OLTP.ds">
-    <Time>637642793406101735</Time>
+    <Time>637642813397337403</Time>
     <Hash length="20">
-      <b>92</b>
-      <b>90</b>
-      <b>92</b>
-      <b>207</b>
-      <b>134</b>
-      <b>250</b>
-      <b>107</b>
-      <b>52</b>
-      <b>39</b>
-      <b>49</b>
-      <b>227</b>
-      <b>85</b>
-      <b>251</b>
-      <b>242</b>
-      <b>81</b>
-      <b>102</b>
-      <b>30</b>
-      <b>101</b>
-      <b>107</b>
-      <b>47</b>
+      <b>1</b>
+      <b>168</b>
+      <b>16</b>
+      <b>177</b>
+      <b>93</b>
+      <b>82</b>
+      <b>201</b>
+      <b>182</b>
+      <b>58</b>
+      <b>233</b>
+      <b>172</b>
+      <b>182</b>
+      <b>80</b>
+      <b>10</b>
+      <b>136</b>
+      <b>143</b>
+      <b>122</b>
+      <b>16</b>
+      <b>88</b>
+      <b>12</b>
     </Hash>
   </Item>
   <Item name="vista_OLTP.dsv">
-    <Time>637642793954774179</Time>
+    <Time>637642812070199788</Time>
     <Hash length="20">
       <b>107</b>
       <b>194</b>

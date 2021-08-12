@@ -32,7 +32,7 @@
           <ConfigurationSetting>
             <Id>OLTP</Id>
             <Name>OLTP</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-N0VI4N3;Integrated Security=SSPI;Initial Catalog=OLTP</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-E4HF9F0;Integrated Security=SSPI;Initial Catalog=OLTP</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

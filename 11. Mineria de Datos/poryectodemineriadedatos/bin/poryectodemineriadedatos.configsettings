@@ -3,11 +3,10 @@
     <DataSources>
       <DataSource>
         <ID>OLTP</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-N0VI4N3;Integrated Security=SSPI;Initial Catalog=OLTP</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-E4HF9F0;Integrated Security=SSPI;Initial Catalog=OLTP</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">andre</Account>
-          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>

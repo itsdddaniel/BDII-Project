@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="37"
-  DTS:VersionGUID="{6DB607AD-7AB3-4033-B00C-496AB61599F3}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{3F7FFA6F-E3E9-4F93-8702-14FDB89E8362}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAALg8nJpi1F0evMPCKEiJLmCM1Lc5W7LVdstRqBRGd/wAAAAAAOgAAAAAIAACAAAAClWHlr5wE032yDhEs27WE7IVJNd6I234TMiO9jW9TLFBAAAAA4qxHmBDzfCRMxkmmkf+iIQAAAAHUoi5OSDfOHcXQZkSQwVpAhrXfzm6xzodwbj1BOH+7DnUq0jK3x8AXCgO/3IuBEgOE1176vucF3YckpStLwNkw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAtsmhmOFfIUeeKrkdWtYw4NMxn/beeZB1rhdeztwx7AwAAAAAOgAAAAAIAACAAAAAwRenJNpXR+SetUReAdfGdC8LoTGHTeNO8dOSyLQPiVxAAAADQFjdFOKIGJyt2nrtBHeL1QAAAAEldy3WFt0sepZ//5dXfqPSujAKtlAAjH5F1ZldihVfJ2xR/ZMIIxEenSvfTNAM152OR4z5bRpipuuEMnYP49FM</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB14bxm45F/ZB79PWdln89Dt4/bvAyUgAnTrV0hBguEcAAAAAAOgAAAAAIAACAAAABkMyQeW3KKGBqMgKJpKChbuNh+UcYsUulwm4/0IRSebBAAAAAm8zU7rKHElUAzMWetkquwQAAAANw2AkTxOYWX51VKhYmToZfryz0eqIjyCv3kRyy59Wrp4XtBRccSnbdJjgMhaGzYUHddQh0CR7RUHkn7ncb5Lro</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMVvxkRI8i0qd5yTht/g2UgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAs6+mL29tH+3m0GdI5yibJhtS7x8JcHBA/Iaf5Zu82YwAAAAAOgAAAAAIAACAAAAA9pKYQLLRjO8ju+vBJgEngEz65MHtaDJiNgqlvLpSQ3hAAAAB2AZL2TpIUZ378ehfSY4cXQAAAAJyC3GJDlsJSCorfSUN9hORqI4w105ISfgb2mRXWheXjwJgLdgnmHoYiLFPhlCzY7P5OXfDXWBrquPweF7TItb8</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3833,7 +3833,7 @@ FROM Viaje;</property>
     design-time-name="Package\Carga Tabla de Hechos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="167,42"
           Id="Package\Carga Tabla de Hechos\Origen de Hechos"
@@ -3865,9 +3865,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3889,9 +3887,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3928,53 +3924,53 @@ FROM Viaje;</property>
           Id="Package\Carga Tablas de Dimensión\Destino de Marcas"
           TopLeft="74,167" />
         <NodeLayout
-          Size="165,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Tiempo"
-          TopLeft="455,393" />
-        <NodeLayout
-          Size="172,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Vehiculo"
-          TopLeft="778,217" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Carga Tablas de Dimensión\Origen de Marca"
-          TopLeft="81,30" />
-        <NodeLayout
-          Size="222,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Viaje"
-          TopLeft="45,477" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Vehiculo"
           TopLeft="774,375" />
-        <NodeLayout
-          Size="240,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Vehiculo"
-          TopLeft="744,283" />
         <NodeLayout
           Size="155,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Viaje"
           TopLeft="75,405" />
         <NodeLayout
-          Size="236,42"
-          Id="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte"
-          TopLeft="370,179" />
+          Size="222,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Viaje"
+          TopLeft="45,477" />
         <NodeLayout
-          Size="230,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Tiempo"
-          TopLeft="421,459" />
+          Size="172,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Vehiculo"
+          TopLeft="778,217" />
         <NodeLayout
           Size="226,42"
           Id="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte"
           TopLeft="365,23" />
         <NodeLayout
-          Size="299,42"
-          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Medio de Transporte"
-          TopLeft="336,98" />
+          Size="240,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Vehiculo"
+          TopLeft="744,283" />
+        <NodeLayout
+          Size="236,42"
+          Id="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte"
+          TopLeft="370,179" />
         <NodeLayout
           Size="159,42"
           Id="Package\Carga Tablas de Dimensión\Destino de Viaje"
           TopLeft="70,549" />
+        <NodeLayout
+          Size="230,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Tiempo"
+          TopLeft="421,459" />
+        <NodeLayout
+          Size="299,42"
+          Id="Package\Carga Tablas de Dimensión\Conversión de datos de Medio de Transporte"
+          TopLeft="336,98" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Tiempo"
+          TopLeft="455,393" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Carga Tablas de Dimensión\Origen de Marca"
+          TopLeft="81,30" />
         <NodeLayout
           Size="234,42"
           Id="Package\Carga Tablas de Dimensión\Conversión de datos de Marcas"
@@ -4220,30 +4216,6 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Vehiculo">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Marca">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Vehiculo">
     <Properties>
       <Property>
@@ -4265,6 +4237,22 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Vehiculo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Medio de Transporte">
     <Properties>
       <Property>
@@ -4278,14 +4266,6 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga Tablas de Dimensión\Origen de Medio de Transporte">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Carga Tablas de Dimensión\Destino de Viaje">
     <Properties>
       <Property>
@@ -4295,6 +4275,22 @@ FROM Viaje;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Tiempo">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Carga Tablas de Dimensión\Origen de Marca">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -4315,7 +4311,7 @@ FROM Viaje;</property>
     design-time-name="Package\Vaciado de Tabla de Hechos">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="186,42"
           Id="Package\Vaciado de Tabla de Hechos\Eliminación de Hechos"
@@ -4343,9 +4339,7 @@ FROM Viaje;</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -4382,10 +4376,6 @@ FROM Viaje;</property>
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Tiempos"
           TopLeft="387,427" />
         <NodeLayout
-          Size="165,42"
-          Id="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo"
-          TopLeft="397,334" />
-        <NodeLayout
           Size="184,42"
           Id="Package\Vaciado de Tablas de Dimensión\Eliminación de Viajes"
           TopLeft="54,451" />
@@ -4393,6 +4383,10 @@ FROM Viaje;</property>
           Size="231,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte"
           TopLeft="368,87" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo"
+          TopLeft="397,334" />
         <NodeLayout
           Size="161,42"
           Id="Package\Vaciado de Tablas de Dimensión\Origen de Marca"
@@ -4506,7 +4500,7 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo">
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4519,7 +4513,7 @@ FROM Viaje;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Vaciado de Tablas de Dimensión\Origen de Medio de Transporte">
+    design-time-name="Package\Vaciado de Tablas de Dimensión\Orígen de Tiempo">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

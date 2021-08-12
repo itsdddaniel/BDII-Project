@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" MustUnderstand="df">
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -9,32 +9,21 @@
         <ConnectString>Data Source=.;Initial Catalog="OLAPVEHICLE - Cube"</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>32457f5b-9b1f-48f3-b64d-c22b6a891279</rd:DataSourceID>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>050c085e-e43b-4624-89a7-93971c579fd7</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT NON EMPTY { [Measures].[H VEHICULO Count] } ON COLUMNS, NON EMPTY { ([D MARCA].[NOMBRE].[NOMBRE].ALLMEMBERS * [D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO].ALLMEMBERS * [D VEHICULO].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPVEHICLE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText>SELECT NON EMPTY { [Measures].[H VEHICULO Count] } ON COLUMNS, NON EMPTY { ([D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO].ALLMEMBERS * [D VEHICULO].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPVEHICLE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
             <QuerySpecification xsi:type="MDXQuerySpecification">
               <Select>
                 <Items>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>D MARCA</DimensionName>
-                      <HierarchyName>NOMBRE</HierarchyName>
-                      <HierarchyUniqueName>[D MARCA].[NOMBRE]</HierarchyUniqueName>
-                      <LevelName>NOMBRE</LevelName>
-                      <UniqueName>[D MARCA].[NOMBRE].[NOMBRE]</UniqueName>
-                    </ID>
-                    <ItemCaption>NOMBRE</ItemCaption>
-                    <UniqueName>true</UniqueName>
-                  </Item>
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>D MEDIO DE TRANSPORTE</DimensionName>
@@ -87,22 +76,18 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[H VEHICULO Count] } ON COLUMNS, NON EMPTY { ([D MARCA].[NOMBRE].[NOMBRE].ALLMEMBERS * [D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO].ALLMEMBERS * [D VEHICULO].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPVEHICLE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[H VEHICULO Count] } ON COLUMNS, NON EMPTY { ([D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO].ALLMEMBERS * [D VEHICULO].[NOMBRE].[NOMBRE].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [OLAPVEHICLE] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
         </rd:DesignerState>
       </Query>
       <Fields>
-        <Field Name="NOMBRE">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D MARCA].[NOMBRE].[NOMBRE]" /&gt;</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="TIPOMEDIO">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D MEDIO DE TRANSPORTE].[TIPOMEDIO].[TIPOMEDIO]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NOMBRE2">
+        <Field Name="NOMBRE">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[D VEHICULO].[NOMBRE].[NOMBRE]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
@@ -137,7 +122,6 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.43in</Height>
-            <Width>5in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -179,7 +163,6 @@
                               </Paragraphs>
                               <rd:DefaultName>H_VEHICULO_Count</rd:DefaultName>
                               <Height>0.27in</Height>
-                              <Width>5in</Width>
                               <Style>
                                 <FontFamily />
                                 <PaddingLeft>2pt</PaddingLeft>
@@ -191,9 +174,6 @@
                             <Tablix Name="table1">
                               <TablixBody>
                                 <TablixColumns>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
@@ -214,7 +194,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>MODELO</Value>
+                                                    <Value>TIPOMEDIO</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -227,6 +207,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox2</rd:DefaultName>
+                                            <Height>0.22in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -252,7 +234,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>TIPOMEDIO</Value>
+                                                    <Value>NOMBRE</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <FontSize>11pt</FontSize>
@@ -265,44 +247,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox3</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="textbox4">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>NOMBRE DE CARRO</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                      <Color>#666666</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>textbox4</rd:DefaultName>
+                                            <Height>0.22in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -326,42 +272,6 @@
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="NOMBRE">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Fields!NOMBRE.Value</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <Color>#333333</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>NOMBRE</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                      </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
                                           <Textbox Name="TIPOMEDIO">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
@@ -380,6 +290,8 @@
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>TIPOMEDIO</rd:DefaultName>
+                                            <Height>0.21in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -398,14 +310,14 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="NOMBRE2">
+                                          <Textbox Name="NOMBRE">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!NOMBRE2.Value</Value>
+                                                    <Value>=Fields!NOMBRE.Value</Value>
                                                     <Style>
                                                       <FontFamily />
                                                       <Color>#333333</Color>
@@ -415,7 +327,9 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>NOMBRE2</rd:DefaultName>
+                                            <rd:DefaultName>NOMBRE</rd:DefaultName>
+                                            <Height>0.21in</Height>
+                                            <Width>1in</Width>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -438,7 +352,6 @@
                               </TablixBody>
                               <TablixColumnHierarchy>
                                 <TablixMembers>
-                                  <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
                                 </TablixMembers>
@@ -465,9 +378,6 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
-                              <Height>0.43in</Height>
-                              <Width>3in</Width>
-                              <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
                               </Style>
@@ -513,9 +423,6 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Top>0.43in</Top>
-            <Height>0.93in</Height>
-            <Width>5in</Width>
-            <ZIndex>1</ZIndex>
             <Style>
               <FontSize>14pt</FontSize>
             </Style>
@@ -542,6 +449,6 @@
   </ReportParametersLayout>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>12d72e2f-1f55-4a5f-a4ae-51e7f1acf7b8</rd:ReportID>
+  <rd:ReportUnitType>Invalid</rd:ReportUnitType>
+  <rd:ReportID>72a67f85-2b5d-41f3-a4cf-dc35679ae7f3</rd:ReportID>
 </Report>

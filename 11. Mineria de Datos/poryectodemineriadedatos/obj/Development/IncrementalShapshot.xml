@@ -8,7 +8,7 @@
     <TransactionalDeployment>false</TransactionalDeployment>
     <PartitionDeployment>DeployPartitions</PartitionDeployment>
     <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
-    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <ProcessingOption>Default</ProcessingOption>
     <OutputScript></OutputScript>
     <ImpactAnalysisFile></ImpactAnalysisFile>
     <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
@@ -19,21 +19,21 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>XFpcz4b6azQnMeNV+/JRZh5lay8=8/11/2021 11:49:00 AM8/11/2021 11:49:00 AM</TimeStamp>
+        <TimeStamp>AagQsV1SybY66ay2UAqIj3oQWAw=8/11/2021 12:22:19 PM8/11/2021 12:20:07 PM</TimeStamp>
         <ID>
           <String>OLTP</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>a8Jm6lDEohEgf0PmiwB7pQAfD/A=8/11/2021 11:49:55 AM8/11/2021 11:49:55 AM</TimeStamp>
+        <TimeStamp>a8Jm6lDEohEgf0PmiwB7pQAfD/A=8/11/2021 12:20:07 PM8/11/2021 12:20:07 PM</TimeStamp>
         <ID>
           <String>vista_OLTP</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.MiningStructure</Type>
-        <TimeStamp>UiM+9w7EInniDFZB+xvaRBQPqjE=8/11/2021 11:53:42 AM8/11/2021 11:53:42 AM</TimeStamp>
+        <TimeStamp>UiM+9w7EInniDFZB+xvaRBQPqjE=8/11/2021 12:20:07 PM8/11/2021 12:20:07 PM</TimeStamp>
         <ID>
           <String>Mineria_Viaje</String>
         </ID>
@@ -41,7 +41,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>jijqmGO1FAXlvSxMCwppK6/w5N0=8/11/2021 11:46:48 AM8/11/2021 11:46:48 AM</TimeStamp>
+      <TimeStamp>jijqmGO1FAXlvSxMCwppK6/w5N0=8/11/2021 12:20:07 PM8/11/2021 12:20:07 PM</TimeStamp>
       <ID>
         <String>poryectodemineriadedatos</String>
       </ID>
@@ -50,5 +50,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-08-11T17:54:57.393333Z</LastDeployed>
+  <LastDeployed>2021-08-11T18:23:10.07Z</LastDeployed>
 </DeploymentSnapshot>

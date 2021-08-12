@@ -7,12 +7,12 @@ export class APIService
     {
         try
         {
-            let key_api = 'AIzaSyAd8fRnuY68Wg8EF5MPo-QvP1tAD9Pgtcc';
-            google.youtube('v3').search.list
+            let key_api = 'AIzaSyDi7YlnA4K_wvEXCJiNfLcwUE1Wc-O88R4';
+            await google.youtube('v3').search.list
             ({
                     key: key_api,
                     part: 'snippet',
-                    channelId: 'UC-lHJZR3Gqxm24_Vd_AJ5Yw',
+                    channelId: 'UCvwgF_0NOZe2vN4Q3g1bY-A',
                     maxResults: 50,
                     pageToken: token,
             }).then((response: { data: any; }) => 
@@ -62,6 +62,7 @@ export class APIService
                     
                         if(data.nextPageToken != null || data.nextPageToken != undefined)
                         {
+                            console.log('Getting API Info...');
                             return APIService.apiCall(data.nextPageToken);
                         }
                         else

@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="948d25ab-6211-4f19-aa0d-0f952b50a5f7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c4c8a4a6-af41-4cf7-95b6-27ad86b6c378" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>D MEDIO DE TRANSPORTE</ID>
   <Name>D MEDIO DE TRANSPORTE</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,33 +68,33 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="beb3f726-9bf9-4ee3-be8c-255c86f92b2b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e7905802-2985-41c9-84dd-fdaa31e6bdc8">
     <DataSourceViewID>OLAPVEHICLE</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="40cfe3b7-649c-47f5-bb61-74c7db7eb085">
+  <ErrorConfiguration dwd:design-time-name="b1ead187-078e-4825-a741-4656d98e3cc6">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="a98ba62a-54d5-472d-9487-343c352ebd9c">
+    <Attribute dwd:design-time-name="01520588-ae09-4647-be72-fba234e92120">
       <ID>ID MEDIO</ID>
       <Name>ID MEDIO</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cefe1b75-362e-4398-ad96-706eccbedeb8">
+        <KeyColumn dwd:design-time-name="e40b1439-fc01-490d-91f2-bd47568e82ce">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0e7e661-015b-434d-ab74-91fe468da2fa">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f599c62e-8794-42d8-89fe-9b579c9102c4">
             <TableID>dbo_D_MEDIO_DE_TRANSPORTE</TableID>
             <ColumnID>ID_MEDIO</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1dec30a0-afe4-478f-ac37-6a3a3968dda4">
+        <AttributeRelationship dwd:design-time-name="96ca4644-e71b-47a8-a013-72ea5a929bdd">
           <AttributeID>TIPOMEDIO</AttributeID>
           <Name>TIPOMEDIO</Name>
         </AttributeRelationship>
@@ -103,14 +103,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e5d7ff6b-e3a4-4cb5-9c8f-150683d7a4b0">
+    <Attribute dwd:design-time-name="8b40a3e8-1de1-45f4-a192-b9b2dc4d6f44">
       <ID>TIPOMEDIO</ID>
       <Name>TIPOMEDIO</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1fcfa65e-6e05-4679-9b6e-ba6975f6154d">
+        <KeyColumn dwd:design-time-name="e522598b-b28f-490a-a6d4-35e09a2d4901">
           <DataType>WChar</DataType>
           <DataSize>1000</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab0608be-697c-42ad-bf73-5df4a683794f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46b0eac0-e2e8-4b16-aded-ee59979ec985">
             <TableID>dbo_D_MEDIO_DE_TRANSPORTE</TableID>
             <ColumnID>TIPOMEDIO</ColumnID>
           </Source>

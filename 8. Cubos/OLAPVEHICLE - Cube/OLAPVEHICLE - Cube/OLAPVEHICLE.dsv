@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9802fed3-75c5-44e8-b56f-22244313cdca" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="21d605ce-06c8-4d71-b0e1-2f2beb7fb6a2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>OLAPVEHICLE</ID>
   <Name>OLAPVEHICLE</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,14 +42,14 @@
   <DataSourceID>OLAPVEHICLE</DataSourceID>
   <Schema>
     <xs:schema id="OLAPVEHICLE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-      <xs:element name="OLAPVEHICLE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="eb514fc2-d872-4dc6-99a2-739ff4d40bdf">
+      <xs:element name="OLAPVEHICLE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="60a0db79-90de-40ed-8f6c-aae28d959489">
         <xs:complexType>
           <xs:choice minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="dbo_D_MARCA" msprop:design-time-name="63ebee5e-55a3-4402-8aca-892f3284f654" msprop:DbTableName="D_MARCA" msprop:FriendlyName="D_MARCA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_MARCA" msprop:design-time-name="49ce30ee-ebf9-4b82-b989-175a6d9f66d4" msprop:DbTableName="D_MARCA" msprop:FriendlyName="D_MARCA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_MARCA" msprop:design-time-name="fa3c2e5e-74b9-41cd-9c10-93c3f23bfde0" msprop:DbColumnName="ID_MARCA" msprop:FriendlyName="ID_MARCA" type="xs:int" />
-                  <xs:element name="NOMBRE" msprop:design-time-name="52918472-5c8a-4554-a0b3-c4a6f877ba64" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                  <xs:element name="ID_MARCA" msprop:design-time-name="80da55a6-fd9f-431e-96e2-b302985761b7" msprop:DbColumnName="ID_MARCA" msprop:FriendlyName="ID_MARCA" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="e86a2b94-dde4-45c2-bd50-7614df6f5c82" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -59,11 +59,11 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_MEDIO_DE_TRANSPORTE" msprop:design-time-name="e8a1f837-b3b9-4764-887f-855603e6564c" msprop:DbTableName="D_MEDIO_DE_TRANSPORTE" msprop:FriendlyName="D_MEDIO_DE_TRANSPORTE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_MEDIO_DE_TRANSPORTE" msprop:design-time-name="8a13c45e-10c4-4021-a8b7-5286ef4f5e5b" msprop:DbTableName="D_MEDIO_DE_TRANSPORTE" msprop:FriendlyName="D_MEDIO_DE_TRANSPORTE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_MEDIO" msprop:design-time-name="7cbd63b7-46ca-452c-986c-ef2cccfbd110" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" />
-                  <xs:element name="TIPOMEDIO" msprop:design-time-name="13325ae0-dcff-43a4-87a5-be6172052f9d" msprop:DbColumnName="TIPOMEDIO" msprop:FriendlyName="TIPOMEDIO" minOccurs="0">
+                  <xs:element name="ID_MEDIO" msprop:design-time-name="9dbf568c-4dac-4a1d-a5d6-84b6497a0cbd" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" />
+                  <xs:element name="TIPOMEDIO" msprop:design-time-name="28f0c66f-ef35-4e48-bf5d-6ccb4d675e4b" msprop:DbColumnName="TIPOMEDIO" msprop:FriendlyName="TIPOMEDIO" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -73,36 +73,22 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_TIEMPO" msprop:design-time-name="73f7b0a7-6504-45ac-9881-f0759bcd72b5" msprop:DbTableName="D_TIEMPO" msprop:FriendlyName="D_TIEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_TIEMPO" msprop:design-time-name="87a12350-46fc-452e-98dc-719652efbf05" msprop:DbTableName="D_TIEMPO" msprop:FriendlyName="D_TIEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_TIEMPO" msprop:design-time-name="7a9329d3-4478-481c-a3bd-bb2eb93c3e05" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" />
-                  <xs:element name="DIA" msprop:design-time-name="e544c624-e8bc-4284-845d-415e95efadc1" msprop:DbColumnName="DIA" msprop:FriendlyName="DIA" minOccurs="0">
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="ec327791-0c30-4822-8148-d8487f0a1bc0" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" />
+                  <xs:element name="DIA" msprop:design-time-name="98b62ce9-b26a-4725-8b3b-6b65c1b0410c" msprop:DbColumnName="DIA" msprop:FriendlyName="DIA" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="MES" msprop:design-time-name="60e06dc8-25cd-42a3-8543-8848cd0341bd" msprop:DbColumnName="MES" msprop:FriendlyName="MES" type="xs:int" minOccurs="0" />
-                  <xs:element name="AÑO" msprop:design-time-name="f1cc45a9-2944-4d5d-bb3b-73223aeaa3f3" msprop:DbColumnName="AÑO" msprop:FriendlyName="AÑO" type="xs:int" minOccurs="0" />
-                  <xs:element name="TRIMESTRE" msprop:design-time-name="e762afd7-56f7-4fb5-9fb2-00f5286d293b" msprop:DbColumnName="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" type="xs:int" minOccurs="0" />
-                  <xs:element name="SEMESTRE" msprop:design-time-name="c8655e4e-08e4-401b-91f3-7c7af6a2ff9a" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" type="xs:int" minOccurs="0" />
-                  <xs:element name="DIADESEMANA" msprop:design-time-name="40a7357e-c462-4efa-91f7-0da0dd6f1930" msprop:DbColumnName="DIADESEMANA" msprop:FriendlyName="DIADESEMANA" minOccurs="0">
-                    <xs:simpleType>
-                      <xs:restriction base="xs:string">
-                        <xs:maxLength value="1000" />
-                      </xs:restriction>
-                    </xs:simpleType>
-                  </xs:element>
-                </xs:sequence>
-              </xs:complexType>
-            </xs:element>
-            <xs:element name="dbo_D_VEHICULO" msprop:design-time-name="603f592e-9723-4a3f-846a-78f013007e6a" msprop:DbTableName="D_VEHICULO" msprop:FriendlyName="D_VEHICULO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
-              <xs:complexType>
-                <xs:sequence>
-                  <xs:element name="ID_VEHICULO" msprop:design-time-name="b8213090-b138-404a-a524-8ebd8572ac5b" msprop:DbColumnName="ID_VEHICULO" msprop:FriendlyName="ID_VEHICULO" type="xs:int" />
-                  <xs:element name="NOMBRE" msprop:design-time-name="0bdb12de-ffe5-4a57-8aec-8d0731d988cf" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
+                  <xs:element name="MES" msprop:design-time-name="f3a04247-46a2-4018-b323-142ec9e40fdf" msprop:DbColumnName="MES" msprop:FriendlyName="MES" type="xs:int" minOccurs="0" />
+                  <xs:element name="AÑO" msprop:design-time-name="bc0c5fb3-4041-4b30-b20f-d1efe1c57a72" msprop:DbColumnName="AÑO" msprop:FriendlyName="AÑO" type="xs:int" minOccurs="0" />
+                  <xs:element name="TRIMESTRE" msprop:design-time-name="fb400f66-84ab-4bce-8ffb-f3c7a2835eeb" msprop:DbColumnName="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEMESTRE" msprop:design-time-name="a3365297-12a0-4015-b811-234a7e4de85f" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIADESEMANA" msprop:design-time-name="cbc4721e-4115-450b-93a9-0253b71b224f" msprop:DbColumnName="DIADESEMANA" msprop:FriendlyName="DIADESEMANA" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
@@ -112,32 +98,46 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_D_VIAJES" msprop:design-time-name="d11e67e4-7a4c-49d1-96bb-ae034cefa09c" msprop:DbTableName="D_VIAJES" msprop:FriendlyName="D_VIAJES" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_VEHICULO" msprop:design-time-name="0378314f-47f6-4fc0-be76-f42c0fb2e52a" msprop:DbTableName="D_VEHICULO" msprop:FriendlyName="D_VEHICULO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_VIAJE" msprop:design-time-name="9e213e2f-db84-461f-b258-7c2ae60f648e" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" />
-                  <xs:element name="DIRECCION" msprop:design-time-name="5787b892-78f5-43c6-8942-a812f4727102" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
+                  <xs:element name="ID_VEHICULO" msprop:design-time-name="6a3a1f81-19c4-4abe-8726-981391de84e3" msprop:DbColumnName="ID_VEHICULO" msprop:FriendlyName="ID_VEHICULO" type="xs:int" />
+                  <xs:element name="NOMBRE" msprop:design-time-name="7d020cf2-ae90-4684-bf4b-f4b1a53ef246" msprop:DbColumnName="NOMBRE" msprop:FriendlyName="NOMBRE" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="MONTO" msprop:design-time-name="96476193-9240-46a7-93cf-539018b8da52" msprop:DbColumnName="MONTO" msprop:FriendlyName="MONTO" type="xs:int" minOccurs="0" />
-                  <xs:element name="ESTADO" msprop:design-time-name="3cb31db6-aa46-43ec-928b-aec101242edb" msprop:DbColumnName="ESTADO" msprop:FriendlyName="ESTADO" type="xs:boolean" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="dbo_H_VEHICULO" msprop:design-time-name="0f72fd8a-8342-4372-b728-078a072c1400" msprop:DbTableName="H_VEHICULO" msprop:FriendlyName="H_VEHICULO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+            <xs:element name="dbo_D_VIAJES" msprop:design-time-name="29509f9c-da6c-4fdb-813b-ff3cede2bb45" msprop:DbTableName="D_VIAJES" msprop:FriendlyName="D_VIAJES" msprop:DbSchemaName="dbo" msprop:TableType="Table">
               <xs:complexType>
                 <xs:sequence>
-                  <xs:element name="ID_H_VEHICULO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2aed2ab5-7c87-4cbb-a957-b7946ba61398" msprop:DbColumnName="ID_H_VEHICULO" msprop:FriendlyName="ID_H_VEHICULO" type="xs:int" />
-                  <xs:element name="ID_MARCA" msprop:design-time-name="7d7835ab-b02c-47f1-b322-d209ba1a4843" msprop:DbColumnName="ID_MARCA" msprop:FriendlyName="ID_MARCA" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_MEDIO" msprop:design-time-name="d6c59418-6875-4f89-8a25-792dc533fc2c" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_VIAJE" msprop:design-time-name="90cfbd7e-3f9d-45f2-962a-009be4ea88e2" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" minOccurs="0" />
-                  <xs:element name="ID_TIEMPO" msprop:design-time-name="604a4cea-4b61-4407-99e3-4f1a71744193" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" minOccurs="0" />
-                  <xs:element name="ID_VEHICULO" msprop:design-time-name="1990a94f-d0c0-4a88-b596-138be49d6a5a" msprop:DbColumnName="ID_VEHICULO" msprop:FriendlyName="ID_VEHICULO" type="xs:int" minOccurs="0" />
-                  <xs:element name="NOMBRECLIENTE" msprop:design-time-name="c304a074-6f88-4b67-ac5c-d94ebbfa4b26" msprop:DbColumnName="NOMBRECLIENTE" msprop:FriendlyName="NOMBRECLIENTE" minOccurs="0">
+                  <xs:element name="ID_VIAJE" msprop:design-time-name="a783607d-5536-4ca3-ad6f-8294d22bc14f" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" />
+                  <xs:element name="DIRECCION" msprop:design-time-name="ddcc2fc0-0798-448a-ab27-b0efdc64ad94" msprop:DbColumnName="DIRECCION" msprop:FriendlyName="DIRECCION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MONTO" msprop:design-time-name="5e2a295f-38ac-4b8b-8085-fcd938242ec5" msprop:DbColumnName="MONTO" msprop:FriendlyName="MONTO" type="xs:int" minOccurs="0" />
+                  <xs:element name="ESTADO" msprop:design-time-name="507389e3-4b50-4f37-949c-e1be235be7ac" msprop:DbColumnName="ESTADO" msprop:FriendlyName="ESTADO" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_H_VEHICULO" msprop:design-time-name="f2218b6b-bc53-41f9-898d-f9e549796e8b" msprop:DbTableName="H_VEHICULO" msprop:FriendlyName="H_VEHICULO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_H_VEHICULO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0e61995a-1932-44fe-8e4a-0e68311bfc9f" msprop:DbColumnName="ID_H_VEHICULO" msprop:FriendlyName="ID_H_VEHICULO" type="xs:int" />
+                  <xs:element name="ID_MARCA" msprop:design-time-name="ba9928f5-c3a8-4ad6-98a1-0bf73cba6a22" msprop:DbColumnName="ID_MARCA" msprop:FriendlyName="ID_MARCA" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_MEDIO" msprop:design-time-name="c8dabb32-4a3b-4d5b-b17e-61d347285a9e" msprop:DbColumnName="ID_MEDIO" msprop:FriendlyName="ID_MEDIO" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_VIAJE" msprop:design-time-name="fed821d0-0cfb-4f42-b95d-8be331fce0f8" msprop:DbColumnName="ID_VIAJE" msprop:FriendlyName="ID_VIAJE" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_TIEMPO" msprop:design-time-name="f3479cd4-ec71-4292-9fe2-2d7265fe795e" msprop:DbColumnName="ID_TIEMPO" msprop:FriendlyName="ID_TIEMPO" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID_VEHICULO" msprop:design-time-name="37e3a86b-61a7-437a-94ec-7016fafec3be" msprop:DbColumnName="ID_VEHICULO" msprop:FriendlyName="ID_VEHICULO" type="xs:int" minOccurs="0" />
+                  <xs:element name="NOMBRECLIENTE" msprop:design-time-name="e7ad00ef-93bb-4065-be97-aabb5cfe63f5" msprop:DbColumnName="NOMBRECLIENTE" msprop:FriendlyName="NOMBRECLIENTE" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="1000" />
